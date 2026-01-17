@@ -1,0 +1,2319 @@
+food_label,years,unit,amount
+Apples,2000,t,208800.0
+Apples,2001,t,211800.0
+Apples,2002,t,179400.0
+Apples,2003,t,143900.0
+Apples,2004,t,170400.0
+Apples,2005,t,218100.0
+Apples,2006,t,269239.0
+Apples,2007,t,243100.0
+Apples,2008,t,242900.0
+Apples,2009,t,229000.0
+Apples,2010,t,235450.0
+Apples,2011,t,239890.0
+Apples,2012,t,203550.0
+Apples,2013,t,398500.0
+Apples,2014,t,451400.0
+Apples,2015,t,459600.0
+Apples,2016,t,481100.0
+Apples,2017,t,535300.0
+Apples,2018,t,548721.0
+Apples,2019,t,610443.91
+Apples,2020,t,631597.46
+Apples,2021,t,392459.39
+Apples,2022,t,470123.78
+Apples,2023,t,407769.78
+Asparagus,2000,t,1670.0
+Asparagus,2001,t,1500.0
+Asparagus,2002,t,1700.0
+Asparagus,2003,t,1700.0
+Asparagus,2004,t,1700.0
+Asparagus,2005,t,2300.0
+Asparagus,2006,t,2400.0
+Asparagus,2007,t,3000.0
+Asparagus,2008,t,3218.0
+Asparagus,2009,t,3500.0
+Asparagus,2010,t,3900.0
+Asparagus,2011,t,5100.0
+Asparagus,2012,t,5370.0
+Asparagus,2013,t,4920.0
+Asparagus,2014,t,5792.0
+Asparagus,2015,t,5393.0
+Asparagus,2016,t,5855.0
+Asparagus,2017,t,4958.0
+Asparagus,2018,t,4984.0
+Asparagus,2019,t,5023.0
+Asparagus,2020,t,5262.0
+Asparagus,2021,t,4317.56
+Asparagus,2022,t,4044.87
+Asparagus,2023,t,4703.38
+Barley,2000,t,6492000.0
+Barley,2001,t,6660000.0
+Barley,2002,t,6128000.0
+Barley,2003,t,6360000.0
+Barley,2004,t,5799000.0
+Barley,2005,t,5495000.0
+Barley,2006,t,5239000.0
+Barley,2007,t,5079000.0
+Barley,2008,t,6144000.0
+Barley,2009,t,6668000.0
+Barley,2010,t,5252000.0
+Barley,2011,t,5494000.0
+Barley,2012,t,5522000.0
+Barley,2013,t,7092000.0
+Barley,2014,t,6911000.0
+Barley,2015,t,7370000.0
+Barley,2016,t,6655000.0
+Barley,2017,t,7169000.0
+Barley,2018,t,6510000.0
+Barley,2019,t,8048000.0
+Barley,2020,t,8117000.0
+Barley,2021,t,6961000.0
+Barley,2022,t,7385000.0
+Barley,2023,t,6963000.0
+"Beer of barley, malted",2000,t,5527900.0
+"Beer of barley, malted",2001,t,5680200.0
+"Beer of barley, malted",2002,t,5667200.0
+"Beer of barley, malted",2003,t,5801400.0
+"Beer of barley, malted",2004,t,5745900.0
+"Beer of barley, malted",2005,t,5625500.0
+"Beer of barley, malted",2006,t,5376300.0
+"Beer of barley, malted",2007,t,5134100.0
+"Beer of barley, malted",2008,t,4946900.0
+"Beer of barley, malted",2009,t,4514100.0
+"Beer of barley, malted",2010,t,4499700.0
+"Beer of barley, malted",2011,t,4569400.0
+"Beer of barley, malted",2012,t,4296200.0
+"Beer of barley, malted",2013,t,4195600.0
+"Beer of barley, malted",2014,t,4120400.0
+"Beer of barley, malted",2015,t,4405400.0
+"Beer of barley, malted",2016,t,4373400.0
+"Beer of barley, malted",2017,t,4048000.0
+"Beer of barley, malted",2018,t,4073000.0
+"Beer of barley, malted",2019,t,3924700.0
+"Beer of barley, malted",2020,t,3221700.0
+"Beer of barley, malted",2021,t,3838200.0
+"Beer of barley, malted",2022,t,3752000.0
+"Broad beans and horse beans, dry",2000,t,180000.0
+"Broad beans and horse beans, dry",2001,t,86000.0
+"Broad beans and horse beans, dry",2002,t,110000.0
+"Broad beans and horse beans, dry",2003,t,170000.0
+"Broad beans and horse beans, dry",2004,t,113500.0
+"Broad beans and horse beans, dry",2005,t,100000.0
+"Broad beans and horse beans, dry",2006,t,120000.0
+"Broad beans and horse beans, dry",2007,t,110000.0
+"Broad beans and horse beans, dry",2008,t,100000.0
+"Broad beans and horse beans, dry",2009,t,180000.0
+"Broad beans and horse beans, dry",2010,t,350000.0
+"Broad beans and horse beans, dry",2011,t,300000.0
+"Broad beans and horse beans, dry",2012,t,250000.0
+"Broad beans and horse beans, dry",2013,t,270000.0
+"Broad beans and horse beans, dry",2014,t,382671.91
+"Broad beans and horse beans, dry",2015,t,463777.46
+"Broad beans and horse beans, dry",2016,t,651000.0
+"Broad beans and horse beans, dry",2017,t,770700.0
+"Broad beans and horse beans, dry",2018,t,401960.0
+"Broad beans and horse beans, dry",2019,t,547800.0
+"Broad beans and horse beans, dry",2020,t,554020.0
+"Broad beans and horse beans, dry",2021,t,694235.0
+"Broad beans and horse beans, dry",2022,t,635277.0
+"Broad beans and horse beans, dry",2023,t,685264.0
+"Broad beans and horse beans, green",2000,t,12900.0
+"Broad beans and horse beans, green",2001,t,11000.0
+"Broad beans and horse beans, green",2002,t,10300.0
+"Broad beans and horse beans, green",2003,t,27300.0
+"Broad beans and horse beans, green",2004,t,22080.0
+"Broad beans and horse beans, green",2005,t,22550.0
+"Broad beans and horse beans, green",2006,t,22080.0
+"Broad beans and horse beans, green",2007,t,22310.0
+"Broad beans and horse beans, green",2008,t,21390.0
+"Broad beans and horse beans, green",2009,t,26680.0
+"Broad beans and horse beans, green",2010,t,27140.0
+"Broad beans and horse beans, green",2011,t,11283.0
+"Broad beans and horse beans, green",2012,t,11505.0
+"Broad beans and horse beans, green",2013,t,14481.0
+"Broad beans and horse beans, green",2014,t,12876.0
+"Broad beans and horse beans, green",2015,t,14867.0
+"Broad beans and horse beans, green",2016,t,36000.0
+"Broad beans and horse beans, green",2017,t,30000.0
+"Broad beans and horse beans, green",2018,t,30000.0
+"Broad beans and horse beans, green",2019,t,32000.0
+"Broad beans and horse beans, green",2020,t,30666.67
+"Broad beans and horse beans, green",2021,t,30888.89
+"Broad beans and horse beans, green",2022,t,31185.19
+"Broad beans and horse beans, green",2023,t,30913.58
+Butter of cow milk,2000,t,132000.0
+Butter of cow milk,2001,t,126000.0
+Butter of cow milk,2002,t,136000.0
+Butter of cow milk,2003,t,131000.0
+Butter of cow milk,2004,t,122000.0
+Butter of cow milk,2005,t,130000.0
+Butter of cow milk,2006,t,117000.0
+Butter of cow milk,2007,t,120000.0
+Butter of cow milk,2008,t,111000.0
+Butter of cow milk,2009,t,118000.0
+Butter of cow milk,2010,t,120000.0
+Butter of cow milk,2011,t,130000.0
+Butter of cow milk,2012,t,145000.0
+Butter of cow milk,2013,t,145000.0
+Butter of cow milk,2014,t,143000.0
+Butter of cow milk,2015,t,145000.0
+Butter of cow milk,2016,t,143000.0
+Butter of cow milk,2017,t,161000.0
+Butter of cow milk,2018,t,152000.0
+Butter of cow milk,2019,t,194000.0
+Butter of cow milk,2020,t,200000.0
+Butter of cow milk,2021,t,214100.0
+Butter of cow milk,2022,t,208600.0
+Cabbages,2000,t,321500.0
+Cabbages,2001,t,336900.0
+Cabbages,2002,t,286700.0
+Cabbages,2003,t,285000.0
+Cabbages,2004,t,267000.0
+Cabbages,2005,t,309400.0
+Cabbages,2006,t,305800.0
+Cabbages,2007,t,258600.0
+Cabbages,2008,t,279100.0
+Cabbages,2009,t,277500.0
+Cabbages,2010,t,291700.0
+Cabbages,2011,t,281300.0
+Cabbages,2012,t,267800.0
+Cabbages,2013,t,271400.0
+Cabbages,2014,t,283000.0
+Cabbages,2015,t,332317.0
+Cabbages,2016,t,283071.0
+Cabbages,2017,t,275522.0
+Cabbages,2018,t,214818.0
+Cabbages,2019,t,192297.66
+Cabbages,2020,t,211064.59
+Cabbages,2021,t,200011.0
+Cabbages,2022,t,177265.13
+Cabbages,2023,t,166339.48
+Carrots and turnips,2000,t,857900.0
+Carrots and turnips,2001,t,901800.0
+Carrots and turnips,2002,t,822300.0
+Carrots and turnips,2003,t,698900.0
+Carrots and turnips,2004,t,768100.0
+Carrots and turnips,2005,t,813200.0
+Carrots and turnips,2006,t,701259.0
+Carrots and turnips,2007,t,752277.0
+Carrots and turnips,2008,t,719270.0
+Carrots and turnips,2009,t,718700.0
+Carrots and turnips,2010,t,763100.0
+Carrots and turnips,2011,t,694104.0
+Carrots and turnips,2012,t,674418.0
+Carrots and turnips,2013,t,729074.0
+Carrots and turnips,2014,t,754697.0
+Carrots and turnips,2015,t,730977.0
+Carrots and turnips,2016,t,839013.0
+Carrots and turnips,2017,t,957036.0
+Carrots and turnips,2018,t,850113.0
+Carrots and turnips,2019,t,904402.95
+Carrots and turnips,2020,t,878801.6
+Carrots and turnips,2021,t,888851.08
+Carrots and turnips,2022,t,872581.09
+Carrots and turnips,2023,t,822761.72
+Cattle,2000,An,11133000.0
+Cattle,2001,An,10600000.0
+Cattle,2002,An,10343000.0
+Cattle,2003,An,10517000.0
+Cattle,2004,An,10551000.0
+Cattle,2005,An,10770200.0
+Cattle,2006,An,10579000.0
+Cattle,2007,An,10304000.0
+Cattle,2008,An,10107000.0
+Cattle,2009,An,10025000.0
+Cattle,2010,An,10112000.0
+Cattle,2011,An,9933000.0
+Cattle,2012,An,9900000.0
+Cattle,2013,An,9844000.0
+Cattle,2014,An,9837000.0
+Cattle,2015,An,9919000.0
+Cattle,2016,An,10033000.0
+Cattle,2017,An,10004000.0
+Cattle,2018,An,9892000.0
+Cattle,2019,An,9739000.0
+Cattle,2020,An,9615000.0
+Cattle,2021,An,9603000.0
+Cattle,2022,An,9631892.0
+Cattle,2023,An,9555426.0
+"Cattle fat, unrendered",2000,t,60055.56
+"Cattle fat, unrendered",2001,t,54944.44
+"Cattle fat, unrendered",2002,t,59118.52
+"Cattle fat, unrendered",2003,t,59544.44
+"Cattle fat, unrendered",2004,t,61248.15
+"Cattle fat, unrendered",2005,t,64911.11
+"Cattle fat, unrendered",2006,t,72175.79
+"Cattle fat, unrendered",2007,t,75133.33
+"Cattle fat, unrendered",2008,t,73429.63
+"Cattle fat, unrendered",2009,t,70959.26
+"Cattle fat, unrendered",2010,t,77348.15
+"Cattle fat, unrendered",2011,t,79733.33
+"Cattle fat, unrendered",2012,t,75388.89
+"Cattle fat, unrendered",2013,t,72151.85
+"Cattle fat, unrendered",2014,t,74707.41
+"Cattle fat, unrendered",2015,t,75388.89
+"Cattle fat, unrendered",2016,t,77944.44
+"Cattle fat, unrendered",2017,t,77092.59
+"Cattle fat, unrendered",2018,t,78540.74
+"Cattle fat, unrendered",2019,t,77859.26
+"Cattle fat, unrendered",2020,t,79392.59
+"Cattle fat, unrendered",2021,t,77194.81
+"Cattle fat, unrendered",2022,t,78660.0
+"Cattle fat, unrendered",2023,t,76717.78
+Cauliflowers and broccoli,2000,t,217900.0
+Cauliflowers and broccoli,2001,t,167000.0
+Cauliflowers and broccoli,2002,t,169500.0
+Cauliflowers and broccoli,2003,t,188000.0
+Cauliflowers and broccoli,2004,t,233800.0
+Cauliflowers and broccoli,2005,t,220400.0
+Cauliflowers and broccoli,2006,t,195500.0
+Cauliflowers and broccoli,2007,t,190400.0
+Cauliflowers and broccoli,2008,t,188900.0
+Cauliflowers and broccoli,2009,t,186200.0
+Cauliflowers and broccoli,2010,t,188400.0
+Cauliflowers and broccoli,2011,t,180100.0
+Cauliflowers and broccoli,2012,t,156300.0
+Cauliflowers and broccoli,2013,t,160000.0
+Cauliflowers and broccoli,2014,t,160900.0
+Cauliflowers and broccoli,2015,t,163000.0
+Cauliflowers and broccoli,2016,t,151779.0
+Cauliflowers and broccoli,2017,t,159011.0
+Cauliflowers and broccoli,2018,t,146841.0
+Cauliflowers and broccoli,2019,t,154039.94
+Cauliflowers and broccoli,2020,t,185082.37
+Cauliflowers and broccoli,2021,t,171092.54
+Cauliflowers and broccoli,2022,t,143270.1
+Cauliflowers and broccoli,2023,t,134327.77
+Cheese from whole cow milk,2000,t,340000.0
+Cheese from whole cow milk,2001,t,395000.0
+Cheese from whole cow milk,2002,t,371000.0
+Cheese from whole cow milk,2003,t,352000.0
+Cheese from whole cow milk,2004,t,359000.0
+Cheese from whole cow milk,2005,t,391000.0
+Cheese from whole cow milk,2006,t,393300.0
+Cheese from whole cow milk,2007,t,373700.0
+Cheese from whole cow milk,2008,t,343400.0
+Cheese from whole cow milk,2009,t,360000.0
+Cheese from whole cow milk,2010,t,372500.0
+Cheese from whole cow milk,2011,t,390600.0
+Cheese from whole cow milk,2012,t,392700.0
+Cheese from whole cow milk,2013,t,384000.0
+Cheese from whole cow milk,2014,t,410000.0
+Cheese from whole cow milk,2015,t,430000.0
+Cheese from whole cow milk,2016,t,440000.0
+Cheese from whole cow milk,2017,t,460000.0
+Cheese from whole cow milk,2018,t,470000.0
+Cheese from whole cow milk,2019,t,471000.0
+Cheese from whole cow milk,2020,t,490000.0
+Cheese from whole cow milk,2021,t,497000.0
+Cheese from whole cow milk,2022,t,511800.0
+Cherries,2000,t,400.0
+Cherries,2001,t,1400.0
+Cherries,2002,t,1300.0
+Cherries,2003,t,1000.0
+Cherries,2004,t,1100.0
+Cherries,2005,t,1100.0
+Cherries,2006,t,1100.0
+Cherries,2007,t,1220.0
+Cherries,2008,t,1200.0
+Cherries,2009,t,1250.0
+Cherries,2010,t,1200.0
+Cherries,2011,t,1501.0
+Cherries,2012,t,1662.0
+Cherries,2013,t,3462.0
+Cherries,2014,t,3990.0
+Cherries,2015,t,4700.0
+Cherries,2016,t,1700.0
+Cherries,2017,t,6484.0
+Cherries,2018,t,3568.0
+Cherries,2019,t,5745.0
+Cherries,2020,t,5647.0
+Cherries,2021,t,3167.13
+Cherries,2022,t,3817.48
+Cherries,2023,t,3926.77
+Chickens,2000,1000 An,154504.0
+Chickens,2001,1000 An,163876.0
+Chickens,2002,1000 An,155005.0
+Chickens,2003,1000 An,165324.0
+Chickens,2004,1000 An,165931.0
+Chickens,2005,1000 An,160528.0
+Chickens,2006,1000 An,158202.0
+Chickens,2007,1000 An,157513.0
+Chickens,2008,1000 An,154180.0
+Chickens,2009,1000 An,159288.0
+Chickens,2010,1000 An,152000.0
+Chickens,2011,1000 An,151000.0
+Chickens,2012,1000 An,149000.0
+Chickens,2013,1000 An,152000.0
+Chickens,2014,1000 An,159000.0
+Chickens,2015,1000 An,157000.0
+Chickens,2016,1000 An,161000.0
+Chickens,2017,1000 An,171000.0
+Chickens,2018,1000 An,178000.0
+Chickens,2019,1000 An,176000.0
+Chickens,2020,1000 An,172000.0
+Chickens,2021,1000 An,180000.0
+Chickens,2022,1000 An,174193.0
+Chickens,2023,1000 An,170233.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2000,t,10800.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2001,t,11200.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2002,t,12900.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2003,t,13000.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2004,t,13600.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2005,t,13600.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2006,t,16000.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2007,t,14900.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2008,t,16300.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2009,t,19400.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2010,t,19200.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2011,t,19100.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2012,t,21300.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2013,t,23500.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2014,t,23700.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2015,t,23100.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2016,t,23040.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2017,t,20570.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2018,t,20640.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2019,t,20435.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2020,t,19975.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2021,t,18130.56
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2022,t,17347.0
+"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",2023,t,17090.3
+Coconut oil,2000,t,3100.0
+Coconut oil,2001,t,5700.0
+Coconut oil,2002,t,6700.0
+Coconut oil,2003,t,2300.0
+Coconut oil,2004,t,100.0
+Coconut oil,2005,t,0.0
+Coconut oil,2006,t,0.0
+Coconut oil,2007,t,0.0
+Coconut oil,2008,t,0.0
+Coconut oil,2009,t,0.0
+Coconut oil,2010,t,0.0
+Coconut oil,2011,t,0.0
+Coconut oil,2012,t,0.0
+Coconut oil,2013,t,0.0
+Coconut oil,2014,t,0.0
+Coconut oil,2015,t,0.0
+Coconut oil,2016,t,0.0
+Coconut oil,2017,t,0.0
+Coconut oil,2018,t,0.0
+"Cream, fresh",2000,t,75000.0
+"Cream, fresh",2001,t,70000.0
+"Cream, fresh",2002,t,80000.0
+"Cream, fresh",2003,t,100000.0
+"Cream, fresh",2004,t,68000.0
+"Cream, fresh",2005,t,63000.0
+"Cream, fresh",2006,t,58600.0
+"Cream, fresh",2007,t,36000.0
+"Cream, fresh",2008,t,36000.0
+"Cream, fresh",2009,t,36000.0
+"Cream, fresh",2010,t,36000.0
+"Cream, fresh",2011,t,36000.0
+"Cream, fresh",2012,t,60000.0
+"Cream, fresh",2013,t,40000.0
+"Cream, fresh",2014,t,46287.59
+"Cream, fresh",2015,t,50769.21
+"Cream, fresh",2016,t,44973.24
+"Cream, fresh",2017,t,47516.92
+"Cream, fresh",2018,t,10386.52
+"Cream, fresh",2019,t,10601.14
+"Cream, fresh",2020,t,10475.52
+"Cream, fresh",2021,t,10933.26
+"Cream, fresh",2022,t,10923.67
+Cucumbers and gherkins,2000,t,79800.0
+Cucumbers and gherkins,2001,t,71500.0
+Cucumbers and gherkins,2002,t,73600.0
+Cucumbers and gherkins,2003,t,77000.0
+Cucumbers and gherkins,2004,t,61400.0
+Cucumbers and gherkins,2005,t,59900.0
+Cucumbers and gherkins,2006,t,56500.0
+Cucumbers and gherkins,2007,t,49400.0
+Cucumbers and gherkins,2008,t,48925.0
+Cucumbers and gherkins,2009,t,57700.0
+Cucumbers and gherkins,2010,t,64600.0
+Cucumbers and gherkins,2011,t,66500.0
+Cucumbers and gherkins,2012,t,63300.0
+Cucumbers and gherkins,2013,t,57900.0
+Cucumbers and gherkins,2014,t,56500.0
+Cucumbers and gherkins,2015,t,53600.0
+Cucumbers and gherkins,2016,t,52965.0
+Cucumbers and gherkins,2017,t,52968.0
+Cucumbers and gherkins,2018,t,55080.0
+Cucumbers and gherkins,2019,t,58240.0
+Cucumbers and gherkins,2020,t,58410.0
+Cucumbers and gherkins,2021,t,54992.18
+Cucumbers and gherkins,2022,t,42750.0
+Cucumbers and gherkins,2023,t,46478.75
+Currants,2000,t,12300.0
+Currants,2001,t,15400.0
+Currants,2002,t,13000.0
+Currants,2003,t,19100.0
+Currants,2004,t,18200.0
+Currants,2005,t,19700.0
+Currants,2006,t,15555.0
+Currants,2007,t,12500.0
+Currants,2008,t,13700.0
+Currants,2009,t,15800.0
+Currants,2010,t,17300.0
+Currants,2011,t,11732.0
+Currants,2012,t,11910.0
+Currants,2013,t,16986.0
+Currants,2014,t,12698.0
+Currants,2015,t,15224.0
+Currants,2016,t,12238.0
+Currants,2017,t,13899.0
+Currants,2018,t,15141.0
+Currants,2019,t,14042.0
+Currants,2020,t,16375.42
+Currants,2021,t,12995.25
+Currants,2022,t,14878.26
+Currants,2023,t,15326.04
+Ducks,2000,1000 An,2901.0
+Ducks,2001,1000 An,3041.0
+Ducks,2002,1000 An,2658.0
+Ducks,2003,1000 An,2568.0
+Ducks,2004,1000 An,2648.0
+Ducks,2005,1000 An,2626.0
+Ducks,2006,1000 An,3271.0
+Ducks,2007,1000 An,2406.0
+Ducks,2008,1000 An,2227.0
+Ducks,2009,1000 An,2080.0
+Ducks,2010,1000 An,2200.0
+Ducks,2011,1000 An,2367.0
+Ducks,2012,1000 An,2294.0
+Ducks,2013,1000 An,2354.0
+Ducks,2014,1000 An,1998.0
+Ducks,2015,1000 An,2256.0
+Ducks,2016,1000 An,2011.0
+Ducks,2017,1000 An,2315.0
+Ducks,2018,1000 An,2084.0
+Ducks,2019,1000 An,1906.0
+Ducks,2020,1000 An,2026.0
+Ducks,2021,1000 An,1919.0
+Ducks,2022,1000 An,2174.0
+Ducks,2023,1000 An,1467.0
+"Edible offal of cattle, fresh, chilled or frozen",2000,t,66583.33
+"Edible offal of cattle, fresh, chilled or frozen",2001,t,60916.67
+"Edible offal of cattle, fresh, chilled or frozen",2002,t,65544.44
+"Edible offal of cattle, fresh, chilled or frozen",2003,t,66016.67
+"Edible offal of cattle, fresh, chilled or frozen",2004,t,67905.56
+"Edible offal of cattle, fresh, chilled or frozen",2005,t,71966.67
+"Edible offal of cattle, fresh, chilled or frozen",2006,t,80020.98
+"Edible offal of cattle, fresh, chilled or frozen",2007,t,83300.0
+"Edible offal of cattle, fresh, chilled or frozen",2008,t,81411.11
+"Edible offal of cattle, fresh, chilled or frozen",2009,t,78672.22
+"Edible offal of cattle, fresh, chilled or frozen",2010,t,85755.56
+"Edible offal of cattle, fresh, chilled or frozen",2011,t,88400.0
+"Edible offal of cattle, fresh, chilled or frozen",2012,t,83583.33
+"Edible offal of cattle, fresh, chilled or frozen",2013,t,79994.44
+"Edible offal of cattle, fresh, chilled or frozen",2014,t,82827.78
+"Edible offal of cattle, fresh, chilled or frozen",2015,t,83583.33
+"Edible offal of cattle, fresh, chilled or frozen",2016,t,86416.67
+"Edible offal of cattle, fresh, chilled or frozen",2017,t,85472.22
+"Edible offal of cattle, fresh, chilled or frozen",2018,t,87077.78
+"Edible offal of cattle, fresh, chilled or frozen",2019,t,86322.22
+"Edible offal of cattle, fresh, chilled or frozen",2020,t,88022.22
+"Edible offal of cattle, fresh, chilled or frozen",2021,t,85585.56
+"Edible offal of cattle, fresh, chilled or frozen",2022,t,87210.0
+"Edible offal of cattle, fresh, chilled or frozen",2023,t,85056.67
+"Edible offal of pigs, fresh, chilled or frozen",2000,t,69790.79
+"Edible offal of pigs, fresh, chilled or frozen",2001,t,60319.74
+"Edible offal of pigs, fresh, chilled or frozen",2002,t,60086.84
+"Edible offal of pigs, fresh, chilled or frozen",2003,t,55584.21
+"Edible offal of pigs, fresh, chilled or frozen",2004,t,54963.16
+"Edible offal of pigs, fresh, chilled or frozen",2005,t,54807.89
+"Edible offal of pigs, fresh, chilled or frozen",2006,t,54074.2
+"Edible offal of pigs, fresh, chilled or frozen",2007,t,57369.74
+"Edible offal of pigs, fresh, chilled or frozen",2008,t,57447.37
+"Edible offal of pigs, fresh, chilled or frozen",2009,t,55914.38
+"Edible offal of pigs, fresh, chilled or frozen",2010,t,58844.74
+"Edible offal of pigs, fresh, chilled or frozen",2011,t,62571.05
+"Edible offal of pigs, fresh, chilled or frozen",2012,t,64046.05
+"Edible offal of pigs, fresh, chilled or frozen",2013,t,64667.11
+"Edible offal of pigs, fresh, chilled or frozen",2014,t,66996.05
+"Edible offal of pigs, fresh, chilled or frozen",2015,t,69868.42
+"Edible offal of pigs, fresh, chilled or frozen",2016,t,71343.42
+"Edible offal of pigs, fresh, chilled or frozen",2017,t,70101.32
+"Edible offal of pigs, fresh, chilled or frozen",2018,t,71964.47
+"Edible offal of pigs, fresh, chilled or frozen",2019,t,74293.42
+"Edible offal of pigs, fresh, chilled or frozen",2020,t,76389.47
+"Edible offal of pigs, fresh, chilled or frozen",2021,t,80356.45
+"Edible offal of pigs, fresh, chilled or frozen",2022,t,80845.53
+"Edible offal of pigs, fresh, chilled or frozen",2023,t,71917.89
+"Edible offal of sheep, fresh, chilled or frozen",2000,t,54821.57
+"Edible offal of sheep, fresh, chilled or frozen",2001,t,38217.65
+"Edible offal of sheep, fresh, chilled or frozen",2002,t,43943.14
+"Edible offal of sheep, fresh, chilled or frozen",2003,t,43370.59
+"Edible offal of sheep, fresh, chilled or frozen",2004,t,44658.82
+"Edible offal of sheep, fresh, chilled or frozen",2005,t,47378.43
+"Edible offal of sheep, fresh, chilled or frozen",2006,t,47736.27
+"Edible offal of sheep, fresh, chilled or frozen",2007,t,47163.73
+"Edible offal of sheep, fresh, chilled or frozen",2008,t,47464.31
+"Edible offal of sheep, fresh, chilled or frozen",2009,t,44816.27
+"Edible offal of sheep, fresh, chilled or frozen",2010,t,41051.76
+"Edible offal of sheep, fresh, chilled or frozen",2011,t,43041.37
+"Edible offal of sheep, fresh, chilled or frozen",2012,t,39362.75
+"Edible offal of sheep, fresh, chilled or frozen",2013,t,41366.67
+"Edible offal of sheep, fresh, chilled or frozen",2014,t,42654.9
+"Edible offal of sheep, fresh, chilled or frozen",2015,t,43227.45
+"Edible offal of sheep, fresh, chilled or frozen",2016,t,41652.94
+"Edible offal of sheep, fresh, chilled or frozen",2017,t,42798.04
+"Edible offal of sheep, fresh, chilled or frozen",2018,t,41366.67
+"Edible offal of sheep, fresh, chilled or frozen",2019,t,43943.14
+"Edible offal of sheep, fresh, chilled or frozen",2020,t,42368.63
+"Edible offal of sheep, fresh, chilled or frozen",2021,t,40507.84
+"Edible offal of sheep, fresh, chilled or frozen",2022,t,41681.57
+"Edible offal of sheep, fresh, chilled or frozen",2023,t,40937.25
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2000,t,320.32
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2001,t,320.32
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2002,t,320.32
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2003,t,320.32
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2004,t,320.32
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2005,t,320.32
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2006,t,336.34
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2007,t,320.32
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2008,t,402.67
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2009,t,417.54
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2010,t,432.04
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2011,t,446.2
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2012,t,460.04
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2013,t,473.6
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2014,t,483.25
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2015,t,513.54
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2016,t,528.66
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2017,t,543.65
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2018,t,558.52
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2019,t,573.27
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2020,t,587.88
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2021,t,602.33
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2022,t,616.61
+"Edible offals of horses and other equines,  fresh, chilled or frozen",2023,t,605.28
+"Eggs from other birds in shell, fresh, n.e.c.",2000,t,15300.0
+"Eggs from other birds in shell, fresh, n.e.c.",2001,t,17189.0
+"Eggs from other birds in shell, fresh, n.e.c.",2002,t,17935.0
+"Eggs from other birds in shell, fresh, n.e.c.",2003,t,18110.0
+"Eggs from other birds in shell, fresh, n.e.c.",2004,t,16325.0
+"Eggs from other birds in shell, fresh, n.e.c.",2005,t,16000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2006,t,16648.0
+"Eggs from other birds in shell, fresh, n.e.c.",2007,t,13926.0
+"Eggs from other birds in shell, fresh, n.e.c.",2008,t,13378.0
+"Eggs from other birds in shell, fresh, n.e.c.",2009,t,13000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2010,t,13000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2011,t,16000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2012,t,15000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2013,t,14000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2014,t,15000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2015,t,14000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2016,t,14000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2017,t,14000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2018,t,14000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2019,t,14000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2020,t,11000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2021,t,11000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2022,t,8000.0
+"Eggs from other birds in shell, fresh, n.e.c.",2023,t,8000.0
+Fat of pigs,2000,t,56778.95
+Fat of pigs,2001,t,49073.68
+Fat of pigs,2002,t,48884.21
+Fat of pigs,2003,t,45221.05
+Fat of pigs,2004,t,44715.79
+Fat of pigs,2005,t,44589.47
+Fat of pigs,2006,t,43992.57
+Fat of pigs,2007,t,46673.68
+Fat of pigs,2008,t,46736.84
+Fat of pigs,2009,t,45489.66
+Fat of pigs,2010,t,47873.68
+Fat of pigs,2011,t,50905.26
+Fat of pigs,2012,t,52105.26
+Fat of pigs,2013,t,52610.53
+Fat of pigs,2014,t,54505.26
+Fat of pigs,2015,t,56842.11
+Fat of pigs,2016,t,58042.11
+Fat of pigs,2017,t,57031.58
+Fat of pigs,2018,t,58547.37
+Fat of pigs,2019,t,60442.11
+Fat of pigs,2020,t,62147.37
+Fat of pigs,2021,t,65374.74
+Fat of pigs,2022,t,65772.63
+Fat of pigs,2023,t,58509.47
+"Flax, raw or retted",2000,t,28000.0
+"Flax, raw or retted",2001,t,25708.55
+"Flax, raw or retted",2002,t,27178.6
+"Flax, raw or retted",2003,t,22679.65
+"Flax, raw or retted",2004,t,21330.31
+"Flax, raw or retted",2005,t,19984.63
+"Flax, raw or retted",2006,t,18000.0
+"Flax, raw or retted",2007,t,17500.0
+"Flax, raw or retted",2008,t,17472.1
+"Flax, raw or retted",2009,t,16840.03
+"Flax, raw or retted",2010,t,14499.0
+"Flax, raw or retted",2011,t,13776.0
+"Flax, raw or retted",2012,t,13825.0
+"Flax, raw or retted",2013,t,14000.0
+"Flax, raw or retted",2014,t,14987.2
+"Flax, raw or retted",2015,t,15320.17
+"Flax, raw or retted",2016,t,14265.79
+"Flax, raw or retted",2017,t,14857.72
+"Flax, raw or retted",2018,t,14269.38
+"Flax, raw or retted",2019,t,14464.3
+"Flax, raw or retted",2020,t,14530.47
+"Flax, raw or retted",2021,t,14421.38
+"Flax, raw or retted",2022,t,14472.05
+"Flax, raw or retted",2023,t,14500.0
+"Game meat, fresh, chilled or frozen",2000,t,5001.34
+"Game meat, fresh, chilled or frozen",2001,t,4984.75
+"Game meat, fresh, chilled or frozen",2002,t,4968.2
+"Game meat, fresh, chilled or frozen",2003,t,4951.68
+"Game meat, fresh, chilled or frozen",2004,t,4933.79
+"Game meat, fresh, chilled or frozen",2005,t,4916.88
+"Game meat, fresh, chilled or frozen",2006,t,4900.05
+"Game meat, fresh, chilled or frozen",2007,t,4883.22
+"Game meat, fresh, chilled or frozen",2008,t,4866.41
+"Game meat, fresh, chilled or frozen",2009,t,4849.61
+"Game meat, fresh, chilled or frozen",2010,t,4832.81
+"Game meat, fresh, chilled or frozen",2011,t,4800.0
+"Game meat, fresh, chilled or frozen",2012,t,4809.6
+"Game meat, fresh, chilled or frozen",2013,t,4804.54
+"Game meat, fresh, chilled or frozen",2014,t,4789.15
+"Game meat, fresh, chilled or frozen",2015,t,4763.32
+"Game meat, fresh, chilled or frozen",2016,t,4736.81
+"Game meat, fresh, chilled or frozen",2017,t,4713.91
+"Game meat, fresh, chilled or frozen",2018,t,4695.6
+"Game meat, fresh, chilled or frozen",2019,t,4667.29
+"Game meat, fresh, chilled or frozen",2020,t,4647.03
+"Game meat, fresh, chilled or frozen",2021,t,4645.38
+"Game meat, fresh, chilled or frozen",2022,t,4632.82
+"Game meat, fresh, chilled or frozen",2023,t,4620.27
+Geese,2000,1000 An,153.0
+Geese,2001,1000 An,160.0
+Geese,2002,1000 An,140.0
+Geese,2003,1000 An,135.0
+Geese,2004,1000 An,139.0
+Geese,2005,1000 An,164.0
+Geese,2006,1000 An,180.0
+Geese,2007,1000 An,114.0
+Geese,2008,1000 An,112.0
+Geese,2009,1000 An,115.0
+Geese,2010,1000 An,123.0
+Geese,2011,1000 An,111.0
+Geese,2012,1000 An,92.0
+Geese,2013,1000 An,86.0
+Geese,2014,1000 An,103.0
+Geese,2015,1000 An,150.0
+Geese,2016,1000 An,159.0
+Geese,2017,1000 An,165.0
+Geese,2018,1000 An,162.0
+Geese,2019,1000 An,148.0
+Geese,2020,1000 An,140.0
+Geese,2021,1000 An,119.0
+Geese,2022,1000 An,130.0
+Geese,2023,1000 An,125.0
+Goats,2000,An,77164.0
+Goats,2001,An,76218.0
+Goats,2002,An,74784.0
+Goats,2003,An,93380.0
+Goats,2004,An,89000.0
+Goats,2005,An,92000.0
+Goats,2006,An,98000.0
+Goats,2007,An,95000.0
+Goats,2008,An,92000.0
+Goats,2009,An,88000.0
+Goats,2010,An,93000.0
+Goats,2011,An,94000.0
+Goats,2012,An,98000.0
+Goats,2013,An,98000.0
+Goats,2014,An,100000.0
+Goats,2015,An,101000.0
+Goats,2016,An,104000.0
+Goats,2017,An,104000.0
+Goats,2020,An,112000.0
+Goats,2021,An,111000.0
+Goats,2022,An,111000.0
+Goats,2023,An,111000.0
+Gooseberries,2000,t,1500.0
+Gooseberries,2001,t,1380.0
+Gooseberries,2002,t,1580.0
+Gooseberries,2003,t,1610.0
+Gooseberries,2004,t,1610.0
+Gooseberries,2005,t,1610.0
+Gooseberries,2006,t,1860.0
+Gooseberries,2007,t,2300.0
+Gooseberries,2008,t,2200.0
+Gooseberries,2009,t,2600.0
+Gooseberries,2010,t,2550.0
+Gooseberries,2011,t,2498.31
+Gooseberries,2012,t,2438.29
+Gooseberries,2013,t,2491.06
+Gooseberries,2014,t,2405.87
+Gooseberries,2015,t,2160.09
+Gooseberries,2016,t,2352.34
+Gooseberries,2017,t,2306.1
+Gooseberries,2018,t,2272.84
+Gooseberries,2019,t,2310.43
+Gooseberries,2020,t,2296.46
+Gooseberries,2021,t,2293.24
+Gooseberries,2022,t,2300.04
+Gooseberries,2023,t,2296.58
+Grapes,2000,t,1400.0
+Grapes,2001,t,1484.0
+Grapes,2002,t,1500.0
+Grapes,2003,t,1200.0
+Grapes,2004,t,1112.43
+Grapes,2005,t,1110.58
+Grapes,2006,t,1055.12
+Grapes,2007,t,1000.0
+Grapes,2008,t,929.86
+Grapes,2009,t,870.65
+Grapes,2010,t,792.93
+Grapes,2011,t,729.02
+Grapes,2012,t,665.11
+Grapes,2013,t,601.2
+Grapes,2014,t,531.13
+Grapes,2015,t,470.38
+Grapes,2016,t,534.23
+Grapes,2017,t,511.91
+Grapes,2018,t,505.51
+Grapes,2019,t,517.22
+Grapes,2020,t,511.55
+Grapes,2021,t,511.42
+Grapes,2022,t,513.4
+Grapes,2023,t,512.12
+"Green tea (not fermented), black tea (fermented) and partly fermented tea, in immediate packings of a content not exceeding 3 kg",2020,t,26586.48
+"Green tea (not fermented), black tea (fermented) and partly fermented tea, in immediate packings of a content not exceeding 3 kg",2021,t,22025.76
+"Green tea (not fermented), black tea (fermented) and partly fermented tea, in immediate packings of a content not exceeding 3 kg",2022,t,23915.59
+"Hen eggs in shell, fresh",2000,t,568600.0
+"Hen eggs in shell, fresh",2001,1000 An,51345.0
+"Hen eggs in shell, fresh",2001,t,599250.0
+"Hen eggs in shell, fresh",2002,t,595800.0
+"Hen eggs in shell, fresh",2003,t,586700.0
+"Hen eggs in shell, fresh",2004,t,620800.0
+"Hen eggs in shell, fresh",2005,t,609000.0
+"Hen eggs in shell, fresh",2006,t,594000.0
+"Hen eggs in shell, fresh",2007,t,579245.0
+"Hen eggs in shell, fresh",2008,t,600102.0
+"Hen eggs in shell, fresh",2009,t,603000.0
+"Hen eggs in shell, fresh",2010,t,658000.0
+"Hen eggs in shell, fresh",2011,t,657000.0
+"Hen eggs in shell, fresh",2012,t,643000.0
+"Hen eggs in shell, fresh",2013,t,672000.0
+"Hen eggs in shell, fresh",2014,t,680000.0
+"Hen eggs in shell, fresh",2015,t,699000.0
+"Hen eggs in shell, fresh",2016,t,722000.0
+"Hen eggs in shell, fresh",2017,t,752000.0
+"Hen eggs in shell, fresh",2018,t,777000.0
+"Hen eggs in shell, fresh",2019,t,791000.0
+"Hen eggs in shell, fresh",2020,t,774000.0
+"Hen eggs in shell, fresh",2021,t,759100.0
+"Hen eggs in shell, fresh",2022,t,705406.0
+"Hen eggs in shell, fresh",2023,t,733400.0
+Hop cones,2000,t,2700.0
+Hop cones,2001,t,2500.0
+Hop cones,2002,t,2550.0
+Hop cones,2003,t,1950.0
+Hop cones,2004,t,2110.0
+Hop cones,2005,t,2110.0
+Hop cones,2006,t,1381.0
+Hop cones,2007,t,1500.0
+Hop cones,2008,t,1312.3
+Hop cones,2009,t,1250.55
+Hop cones,2010,t,1084.94
+Hop cones,2011,t,931.54
+Hop cones,2012,t,778.14
+Hop cones,2013,t,692.52
+Hop cones,2014,t,427.61
+Hop cones,2015,t,281.62
+Hop cones,2016,t,467.25
+Hop cones,2017,t,700.02
+Hop cones,2018,t,914.02
+Hop cones,2019,t,1292.9
+Hop cones,2020,t,1323.67
+Hop cones,2021,t,1126.94
+Hop cones,2022,t,1120.44
+Hop cones,2023,t,1124.89
+"Horse meat, fresh or chilled",2000,t,3080.0
+"Horse meat, fresh or chilled",2001,t,3080.0
+"Horse meat, fresh or chilled",2002,t,3080.0
+"Horse meat, fresh or chilled",2003,t,3080.0
+"Horse meat, fresh or chilled",2004,t,3080.0
+"Horse meat, fresh or chilled",2005,t,3080.0
+"Horse meat, fresh or chilled",2006,t,3234.0
+"Horse meat, fresh or chilled",2007,t,3080.0
+"Horse meat, fresh or chilled",2008,t,3871.83
+"Horse meat, fresh or chilled",2009,t,4014.84
+"Horse meat, fresh or chilled",2010,t,4154.21
+"Horse meat, fresh or chilled",2011,t,4290.34
+"Horse meat, fresh or chilled",2012,t,4423.49
+"Horse meat, fresh or chilled",2013,t,4553.88
+"Horse meat, fresh or chilled",2014,t,4646.65
+"Horse meat, fresh or chilled",2015,t,4937.89
+"Horse meat, fresh or chilled",2016,t,5083.23
+"Horse meat, fresh or chilled",2017,t,5227.4
+"Horse meat, fresh or chilled",2018,t,5370.42
+"Horse meat, fresh or chilled",2019,t,5512.22
+"Horse meat, fresh or chilled",2020,t,5652.68
+"Horse meat, fresh or chilled",2021,t,5791.64
+"Horse meat, fresh or chilled",2022,t,5928.9
+"Horse meat, fresh or chilled",2023,t,5819.96
+Horses,2000,An,300000.0
+Horses,2001,An,310000.0
+Horses,2002,An,320000.0
+Horses,2003,An,330000.0
+Horses,2004,An,350000.0
+Horses,2005,An,370000.0
+Horses,2006,An,388000.0
+Horses,2007,An,384000.0
+Horses,2008,An,446915.0
+Horses,2009,An,471895.0
+Horses,2010,An,497016.0
+Horses,2011,An,522285.0
+Horses,2012,An,547708.0
+Horses,2013,An,573293.0
+Horses,2014,An,598879.0
+Horses,2015,An,625993.0
+Horses,2016,An,652237.0
+Horses,2017,An,678676.0
+Horses,2018,An,705320.0
+Horses,2019,An,732180.0
+Horses,2020,An,759269.0
+Horses,2021,An,786598.0
+Horses,2022,An,814183.0
+Horses,2023,An,850000.0
+Leeks and other alliaceous vegetables,2000,t,44300.0
+Leeks and other alliaceous vegetables,2001,t,44300.0
+Leeks and other alliaceous vegetables,2002,t,38000.0
+Leeks and other alliaceous vegetables,2003,t,35900.0
+Leeks and other alliaceous vegetables,2004,t,40200.0
+Leeks and other alliaceous vegetables,2005,t,49700.0
+Leeks and other alliaceous vegetables,2006,t,46300.0
+Leeks and other alliaceous vegetables,2007,t,49100.0
+Leeks and other alliaceous vegetables,2008,t,42590.0
+Leeks and other alliaceous vegetables,2009,t,37200.0
+Leeks and other alliaceous vegetables,2010,t,42400.0
+Leeks and other alliaceous vegetables,2011,t,40700.0
+Leeks and other alliaceous vegetables,2012,t,37358.0
+Leeks and other alliaceous vegetables,2013,t,35053.0
+Leeks and other alliaceous vegetables,2014,t,35506.0
+Leeks and other alliaceous vegetables,2015,t,33949.0
+Leeks and other alliaceous vegetables,2016,t,38816.0
+Leeks and other alliaceous vegetables,2017,t,41956.0
+Leeks and other alliaceous vegetables,2018,t,36714.0
+Leeks and other alliaceous vegetables,2019,t,38328.65
+Leeks and other alliaceous vegetables,2020,t,46525.06
+Leeks and other alliaceous vegetables,2021,t,44729.19
+Leeks and other alliaceous vegetables,2022,t,41801.67
+Leeks and other alliaceous vegetables,2023,t,37912.18
+Lettuce and chicory,2000,t,154500.0
+Lettuce and chicory,2001,t,144800.0
+Lettuce and chicory,2002,t,125900.0
+Lettuce and chicory,2003,t,142200.0
+Lettuce and chicory,2004,t,152700.0
+Lettuce and chicory,2005,t,141100.0
+Lettuce and chicory,2006,t,132600.0
+Lettuce and chicory,2007,t,116100.0
+Lettuce and chicory,2008,t,124170.0
+Lettuce and chicory,2009,t,134300.0
+Lettuce and chicory,2010,t,133900.0
+Lettuce and chicory,2011,t,132400.0
+Lettuce and chicory,2012,t,122900.0
+Lettuce and chicory,2013,t,125800.0
+Lettuce and chicory,2014,t,135300.0
+Lettuce and chicory,2015,t,135500.0
+Lettuce and chicory,2016,t,106551.0
+Lettuce and chicory,2017,t,112368.0
+Lettuce and chicory,2018,t,107428.0
+Lettuce and chicory,2019,t,111591.87
+Lettuce and chicory,2020,t,107424.0
+Lettuce and chicory,2021,t,103160.58
+Lettuce and chicory,2022,t,97612.25
+Lettuce and chicory,2023,t,93028.35
+Linseed,2000,t,39863.0
+Linseed,2001,t,37506.0
+Linseed,2002,t,15302.0
+Linseed,2003,t,55798.0
+Linseed,2004,t,51888.0
+Linseed,2005,t,84551.0
+Linseed,2006,t,44004.0
+Linseed,2007,t,17423.0
+Linseed,2008,t,29298.0
+Linseed,2009,t,54175.0
+Linseed,2010,t,71894.0
+Linseed,2011,t,71083.0
+Linseed,2012,t,41730.0
+Linseed,2013,t,62131.0
+Linseed,2014,t,39253.0
+Linseed,2015,t,29000.0
+Linseed,2016,t,48000.0
+Linseed,2017,t,46000.0
+Linseed,2018,t,43000.0
+Linseed,2019,t,27000.0
+Linseed,2020,t,57374.0
+Linseed,2021,t,71248.0
+Linseed,2022,t,48484.0
+Linseed,2023,t,36194.0
+Margarine and shortening,2000,t,388000.0
+Margarine and shortening,2001,t,409200.0
+Margarine and shortening,2002,t,415000.0
+Margarine and shortening,2003,t,442000.0
+Margarine and shortening,2004,t,431000.0
+Margarine and shortening,2005,t,408800.0
+Margarine and shortening,2006,t,350000.0
+Margarine and shortening,2007,t,345000.0
+Margarine and shortening,2008,t,343000.0
+Margarine and shortening,2009,t,340000.0
+Margarine and shortening,2010,t,330000.0
+Margarine and shortening,2011,t,327000.0
+Margarine and shortening,2012,t,321000.0
+Margarine and shortening,2013,t,330000.0
+Margarine and shortening,2014,t,328000.0
+Margarine and shortening,2015,t,310000.0
+Margarine and shortening,2016,t,290000.0
+Margarine and shortening,2017,t,278000.0
+Margarine and shortening,2018,t,275000.0
+Margarine and shortening,2019,t,250000.0
+Margarine and shortening,2020,t,255000.0
+Margarine and shortening,2021,t,252000.0
+Margarine and shortening,2022,t,239000.0
+"Meat of cattle with the bone, fresh or chilled",2000,t,705000.0
+"Meat of cattle with the bone, fresh or chilled",2001,t,645000.0
+"Meat of cattle with the bone, fresh or chilled",2002,t,694000.0
+"Meat of cattle with the bone, fresh or chilled",2003,t,699000.0
+"Meat of cattle with the bone, fresh or chilled",2004,t,719000.0
+"Meat of cattle with the bone, fresh or chilled",2005,t,762000.0
+"Meat of cattle with the bone, fresh or chilled",2006,t,847281.0
+"Meat of cattle with the bone, fresh or chilled",2007,t,882000.0
+"Meat of cattle with the bone, fresh or chilled",2008,t,862000.0
+"Meat of cattle with the bone, fresh or chilled",2009,t,833000.0
+"Meat of cattle with the bone, fresh or chilled",2010,t,908000.0
+"Meat of cattle with the bone, fresh or chilled",2011,t,936000.0
+"Meat of cattle with the bone, fresh or chilled",2012,t,885000.0
+"Meat of cattle with the bone, fresh or chilled",2013,t,847000.0
+"Meat of cattle with the bone, fresh or chilled",2014,t,877000.0
+"Meat of cattle with the bone, fresh or chilled",2015,t,885000.0
+"Meat of cattle with the bone, fresh or chilled",2016,t,915000.0
+"Meat of cattle with the bone, fresh or chilled",2017,t,905000.0
+"Meat of cattle with the bone, fresh or chilled",2018,t,922000.0
+"Meat of cattle with the bone, fresh or chilled",2019,t,914000.0
+"Meat of cattle with the bone, fresh or chilled",2020,t,932000.0
+"Meat of cattle with the bone, fresh or chilled",2021,t,906200.0
+"Meat of cattle with the bone, fresh or chilled",2022,t,923400.0
+"Meat of cattle with the bone, fresh or chilled",2023,t,900600.0
+"Meat of chickens, fresh or chilled",2000,t,1214800.0
+"Meat of chickens, fresh or chilled",2001,t,1262730.0
+"Meat of chickens, fresh or chilled",2002,t,1272046.0
+"Meat of chickens, fresh or chilled",2003,t,1294783.0
+"Meat of chickens, fresh or chilled",2004,t,1294573.0
+"Meat of chickens, fresh or chilled",2005,t,1333789.0
+"Meat of chickens, fresh or chilled",2006,t,1288832.0
+"Meat of chickens, fresh or chilled",2007,t,1270170.0
+"Meat of chickens, fresh or chilled",2008,t,1259060.0
+"Meat of chickens, fresh or chilled",2009,t,1270000.0
+"Meat of chickens, fresh or chilled",2010,t,1376000.0
+"Meat of chickens, fresh or chilled",2011,t,1353000.0
+"Meat of chickens, fresh or chilled",2012,t,1379000.0
+"Meat of chickens, fresh or chilled",2013,t,1443000.0
+"Meat of chickens, fresh or chilled",2014,t,1442000.0
+"Meat of chickens, fresh or chilled",2015,t,1521000.0
+"Meat of chickens, fresh or chilled",2016,t,1608000.0
+"Meat of chickens, fresh or chilled",2017,t,1660000.0
+"Meat of chickens, fresh or chilled",2018,t,1750000.0
+"Meat of chickens, fresh or chilled",2019,t,1726000.0
+"Meat of chickens, fresh or chilled",2020,t,1794000.0
+"Meat of chickens, fresh or chilled",2021,t,1841000.0
+"Meat of chickens, fresh or chilled",2022,t,1846770.0
+"Meat of chickens, fresh or chilled",2023,t,1851010.0
+"Meat of ducks, fresh or chilled",2000,t,40500.0
+"Meat of ducks, fresh or chilled",2001,t,47301.0
+"Meat of ducks, fresh or chilled",2002,t,43540.0
+"Meat of ducks, fresh or chilled",2003,t,43228.0
+"Meat of ducks, fresh or chilled",2004,t,38538.0
+"Meat of ducks, fresh or chilled",2005,t,41654.0
+"Meat of ducks, fresh or chilled",2006,t,40520.0
+"Meat of ducks, fresh or chilled",2007,t,35369.0
+"Meat of ducks, fresh or chilled",2008,t,33082.0
+"Meat of ducks, fresh or chilled",2009,t,29991.0
+"Meat of ducks, fresh or chilled",2010,t,29600.0
+"Meat of ducks, fresh or chilled",2011,t,33000.0
+"Meat of ducks, fresh or chilled",2012,t,32000.0
+"Meat of ducks, fresh or chilled",2013,t,30200.0
+"Meat of ducks, fresh or chilled",2014,t,32100.0
+"Meat of ducks, fresh or chilled",2015,t,29200.0
+"Meat of ducks, fresh or chilled",2016,t,29600.0
+"Meat of ducks, fresh or chilled",2017,t,30600.0
+"Meat of ducks, fresh or chilled",2018,t,30400.0
+"Meat of ducks, fresh or chilled",2019,t,28300.0
+"Meat of ducks, fresh or chilled",2020,t,22700.0
+"Meat of ducks, fresh or chilled",2021,t,21300.0
+"Meat of ducks, fresh or chilled",2022,t,19700.0
+"Meat of ducks, fresh or chilled",2023,t,18100.0
+"Meat of geese, fresh or chilled",2000,t,2900.0
+"Meat of geese, fresh or chilled",2001,t,2797.0
+"Meat of geese, fresh or chilled",2002,t,2783.0
+"Meat of geese, fresh or chilled",2003,t,2876.0
+"Meat of geese, fresh or chilled",2004,t,2923.0
+"Meat of geese, fresh or chilled",2005,t,2935.0
+"Meat of geese, fresh or chilled",2006,t,3085.0
+"Meat of geese, fresh or chilled",2007,t,2381.0
+"Meat of geese, fresh or chilled",2008,t,1950.0
+"Meat of geese, fresh or chilled",2009,t,2254.0
+"Meat of geese, fresh or chilled",2010,t,2000.0
+"Meat of geese, fresh or chilled",2011,t,2000.0
+"Meat of geese, fresh or chilled",2012,t,1735.22
+"Meat of geese, fresh or chilled",2013,t,1619.33
+"Meat of geese, fresh or chilled",2014,t,1928.69
+"Meat of geese, fresh or chilled",2015,t,2769.95
+"Meat of geese, fresh or chilled",2016,t,2931.83
+"Meat of geese, fresh or chilled",2017,t,3036.97
+"Meat of geese, fresh or chilled",2018,t,2960.09
+"Meat of geese, fresh or chilled",2019,t,2688.53
+"Meat of geese, fresh or chilled",2020,t,2502.46
+"Meat of geese, fresh or chilled",2021,t,2090.7
+"Meat of geese, fresh or chilled",2022,t,2270.9
+"Meat of geese, fresh or chilled",2023,t,2172.77
+"Meat of pig with the bone, fresh or chilled",2000,t,899000.0
+"Meat of pig with the bone, fresh or chilled",2001,t,777000.0
+"Meat of pig with the bone, fresh or chilled",2002,t,774000.0
+"Meat of pig with the bone, fresh or chilled",2003,t,716000.0
+"Meat of pig with the bone, fresh or chilled",2004,t,708000.0
+"Meat of pig with the bone, fresh or chilled",2005,t,706000.0
+"Meat of pig with the bone, fresh or chilled",2006,t,696549.0
+"Meat of pig with the bone, fresh or chilled",2007,t,739000.0
+"Meat of pig with the bone, fresh or chilled",2008,t,740000.0
+"Meat of pig with the bone, fresh or chilled",2009,t,720253.0
+"Meat of pig with the bone, fresh or chilled",2010,t,758000.0
+"Meat of pig with the bone, fresh or chilled",2011,t,806000.0
+"Meat of pig with the bone, fresh or chilled",2012,t,825000.0
+"Meat of pig with the bone, fresh or chilled",2013,t,833000.0
+"Meat of pig with the bone, fresh or chilled",2014,t,863000.0
+"Meat of pig with the bone, fresh or chilled",2015,t,900000.0
+"Meat of pig with the bone, fresh or chilled",2016,t,919000.0
+"Meat of pig with the bone, fresh or chilled",2017,t,903000.0
+"Meat of pig with the bone, fresh or chilled",2018,t,927000.0
+"Meat of pig with the bone, fresh or chilled",2019,t,957000.0
+"Meat of pig with the bone, fresh or chilled",2020,t,984000.0
+"Meat of pig with the bone, fresh or chilled",2021,t,1035100.0
+"Meat of pig with the bone, fresh or chilled",2022,t,1041400.0
+"Meat of pig with the bone, fresh or chilled",2023,t,926400.0
+"Meat of sheep, fresh or chilled",2000,t,383000.0
+"Meat of sheep, fresh or chilled",2001,t,267000.0
+"Meat of sheep, fresh or chilled",2002,t,307000.0
+"Meat of sheep, fresh or chilled",2003,t,303000.0
+"Meat of sheep, fresh or chilled",2004,t,312000.0
+"Meat of sheep, fresh or chilled",2005,t,331000.0
+"Meat of sheep, fresh or chilled",2006,t,333500.0
+"Meat of sheep, fresh or chilled",2007,t,329500.0
+"Meat of sheep, fresh or chilled",2008,t,331600.0
+"Meat of sheep, fresh or chilled",2009,t,313100.0
+"Meat of sheep, fresh or chilled",2010,t,286800.0
+"Meat of sheep, fresh or chilled",2011,t,300700.0
+"Meat of sheep, fresh or chilled",2012,t,275000.0
+"Meat of sheep, fresh or chilled",2013,t,289000.0
+"Meat of sheep, fresh or chilled",2014,t,298000.0
+"Meat of sheep, fresh or chilled",2015,t,302000.0
+"Meat of sheep, fresh or chilled",2016,t,291000.0
+"Meat of sheep, fresh or chilled",2017,t,299000.0
+"Meat of sheep, fresh or chilled",2018,t,289000.0
+"Meat of sheep, fresh or chilled",2019,t,307000.0
+"Meat of sheep, fresh or chilled",2020,t,296000.0
+"Meat of sheep, fresh or chilled",2021,t,283000.0
+"Meat of sheep, fresh or chilled",2022,t,291200.0
+"Meat of sheep, fresh or chilled",2023,t,286000.0
+"Meat of turkeys, fresh or chilled",2000,t,255000.0
+"Meat of turkeys, fresh or chilled",2001,t,254000.0
+"Meat of turkeys, fresh or chilled",2002,t,237906.0
+"Meat of turkeys, fresh or chilled",2003,t,228602.0
+"Meat of turkeys, fresh or chilled",2004,t,227939.0
+"Meat of turkeys, fresh or chilled",2005,t,206031.0
+"Meat of turkeys, fresh or chilled",2006,t,183835.0
+"Meat of turkeys, fresh or chilled",2007,t,151339.0
+"Meat of turkeys, fresh or chilled",2008,t,135439.0
+"Meat of turkeys, fresh or chilled",2009,t,156744.0
+"Meat of turkeys, fresh or chilled",2010,t,162000.0
+"Meat of turkeys, fresh or chilled",2011,t,171000.0
+"Meat of turkeys, fresh or chilled",2012,t,196000.0
+"Meat of turkeys, fresh or chilled",2013,t,187000.0
+"Meat of turkeys, fresh or chilled",2014,t,172000.0
+"Meat of turkeys, fresh or chilled",2015,t,181000.0
+"Meat of turkeys, fresh or chilled",2016,t,166000.0
+"Meat of turkeys, fresh or chilled",2017,t,147000.0
+"Meat of turkeys, fresh or chilled",2018,t,157000.0
+"Meat of turkeys, fresh or chilled",2019,t,175100.0
+"Meat of turkeys, fresh or chilled",2020,t,174000.0
+"Meat of turkeys, fresh or chilled",2021,t,125000.0
+"Meat of turkeys, fresh or chilled",2022,t,116800.0
+"Meat of turkeys, fresh or chilled",2023,t,110400.0
+Mixed grain,2000,t,13000.0
+Mixed grain,2001,t,10000.0
+Mixed grain,2002,t,18000.0
+Mixed grain,2003,t,17800.0
+Mixed grain,2004,t,17300.0
+Mixed grain,2005,t,15100.0
+Mixed grain,2006,t,15000.0
+Mixed grain,2007,t,13000.0
+Mixed grain,2008,t,15000.0
+Mixed grain,2009,t,30000.0
+Mixed grain,2010,t,23000.0
+Mixed grain,2011,t,23500.0
+Mixed grain,2012,t,23000.0
+Mixed grain,2013,t,26600.0
+Mixed grain,2014,t,26039.0
+Mixed grain,2015,t,22121.0
+Mixed grain,2016,t,18632.0
+Mixed grain,2017,t,23603.0
+Mixed grain,2018,t,31630.0
+Mixed grain,2019,t,35161.0
+Mixed grain,2020,t,34971.0
+Mixed grain,2021,t,43438.0
+Mixed grain,2022,t,42471.0
+Mixed grain,2023,t,47275.0
+Molasses,2000,t,335000.0
+Molasses,2001,t,330000.0
+Molasses,2002,t,370000.0
+Molasses,2003,t,365000.0
+Molasses,2004,t,360000.0
+Molasses,2005,t,335000.0
+Molasses,2006,t,290000.0
+Molasses,2007,t,295000.0
+Molasses,2008,t,300000.0
+Molasses,2009,t,325000.0
+Molasses,2010,t,275000.0
+Molasses,2011,t,325000.0
+Molasses,2012,t,300000.0
+Molasses,2013,t,325000.0
+Molasses,2014,t,350000.0
+Molasses,2015,t,250000.0
+Molasses,2016,t,230000.0
+Molasses,2017,t,325000.0
+Molasses,2018,t,270000.0
+Molasses,2019,t,282000.0
+Molasses,2020,t,215000.0
+Molasses,2021,t,234387.1
+Molasses,2022,t,184709.68
+Mushrooms and truffles,2000,t,89900.0
+Mushrooms and truffles,2001,t,92600.0
+Mushrooms and truffles,2002,t,84700.0
+Mushrooms and truffles,2003,t,81000.0
+Mushrooms and truffles,2004,t,74000.0
+Mushrooms and truffles,2005,t,74000.0
+Mushrooms and truffles,2006,t,68000.0
+Mushrooms and truffles,2007,t,71500.0
+Mushrooms and truffles,2008,t,70200.0
+Mushrooms and truffles,2009,t,69400.0
+Mushrooms and truffles,2010,t,69300.0
+Mushrooms and truffles,2011,t,70740.0
+Mushrooms and truffles,2012,t,78580.0
+Mushrooms and truffles,2013,t,85484.0
+Mushrooms and truffles,2014,t,94857.0
+Mushrooms and truffles,2015,t,103197.0
+Mushrooms and truffles,2016,t,99813.0
+Mushrooms and truffles,2017,t,99652.0
+Mushrooms and truffles,2018,t,98509.0
+Mushrooms and truffles,2019,t,101339.47
+Mushrooms and truffles,2020,t,92926.13
+Mushrooms and truffles,2021,t,85754.04
+Mushrooms and truffles,2022,t,84147.97
+Mushrooms and truffles,2023,t,80001.97
+Natural honey,2000,t,2870.0
+Natural honey,2001,t,3000.0
+Natural honey,2002,t,5000.0
+Natural honey,2003,t,7000.0
+Natural honey,2004,t,5000.0
+Natural honey,2005,t,5856.78
+Natural honey,2006,t,7000.0
+Natural honey,2007,t,7200.0
+Natural honey,2008,t,7193.94
+Natural honey,2009,t,7362.1
+Natural honey,2010,t,7715.29
+Natural honey,2011,t,8001.79
+Natural honey,2012,t,8288.3
+Natural honey,2013,t,8574.8
+Natural honey,2014,t,8827.39
+Natural honey,2015,t,9180.64
+Natural honey,2016,t,8860.94
+Natural honey,2017,t,8976.53
+Natural honey,2018,t,9065.39
+Natural honey,2019,t,9331.12
+Natural honey,2020,t,9236.17
+Natural honey,2021,t,9435.63
+Natural honey,2022,t,9646.19
+Natural honey,2023,t,9873.18
+Oats,2000,t,639915.0
+Oats,2001,t,620839.0
+Oats,2002,t,753344.0
+Oats,2003,t,748590.0
+Oats,2004,t,625971.0
+Oats,2005,t,528500.0
+Oats,2006,t,727763.0
+Oats,2007,t,711696.0
+Oats,2008,t,783574.0
+Oats,2009,t,744417.0
+Oats,2010,t,685310.0
+Oats,2011,t,613369.0
+Oats,2012,t,627045.0
+Oats,2013,t,963563.0
+Oats,2014,t,819985.0
+Oats,2015,t,799000.0
+Oats,2016,t,816000.0
+Oats,2017,t,875000.0
+Oats,2018,t,850000.0
+Oats,2019,t,1076000.0
+Oats,2020,t,1031000.0
+Oats,2021,t,1123000.0
+Oats,2022,t,1107000.0
+Oats,2023,t,830000.0
+Oil of linseed,2000,t,29000.0
+Oil of linseed,2001,t,14600.0
+Oil of linseed,2002,t,8800.0
+Oil of linseed,2003,t,6100.0
+Oil of linseed,2004,t,6300.0
+Oil of linseed,2005,t,2900.0
+Oil of linseed,2006,t,4200.0
+Oil of linseed,2007,t,4400.0
+Oil of linseed,2008,t,3200.0
+Oil of linseed,2009,t,2900.0
+Oil of linseed,2010,t,3200.0
+Oil of linseed,2011,t,6200.0
+Oil of linseed,2012,t,5300.0
+Oil of linseed,2013,t,5600.0
+Oil of linseed,2014,t,6500.0
+Oil of linseed,2015,t,6400.0
+Oil of linseed,2016,t,7400.0
+Oil of linseed,2017,t,8800.0
+Oil of linseed,2018,t,9200.0
+Oil of linseed,2019,t,9600.0
+Oil of linseed,2020,t,7900.0
+Oil of linseed,2021,t,9100.0
+Oil of linseed,2022,t,14500.0
+Oil of maize,2000,t,14500.0
+Oil of maize,2001,t,17300.0
+Oil of maize,2002,t,19400.0
+Oil of maize,2003,t,19400.0
+Oil of maize,2004,t,19800.0
+Oil of maize,2005,t,20400.0
+Oil of maize,2006,t,20800.0
+Oil of maize,2007,t,21200.0
+Oil of maize,2008,t,21700.0
+Oil of maize,2009,t,22200.0
+Oil of maize,2010,t,22500.0
+Oil of maize,2011,t,22800.0
+Oil of maize,2012,t,23000.0
+Oil of maize,2013,t,23300.0
+Oil of maize,2014,t,23500.0
+Oil of maize,2015,t,24000.0
+Oil of maize,2016,t,25700.0
+Oil of maize,2017,t,29700.0
+Oil of maize,2018,t,34400.0
+Oil of maize,2019,t,30900.0
+Oil of maize,2020,t,31300.0
+Oil of maize,2021,t,34300.0
+Oil of maize,2022,t,35600.0
+Oil of palm kernel,2000,t,0.0
+Oil of palm kernel,2001,t,0.0
+Oil of palm kernel,2002,t,0.0
+Oil of palm kernel,2003,t,0.0
+Oil of palm kernel,2004,t,0.0
+Oil of palm kernel,2005,t,0.0
+Oil of palm kernel,2006,t,0.0
+Oil of palm kernel,2007,t,0.0
+Oil of palm kernel,2008,t,0.0
+Oil of palm kernel,2009,t,0.0
+Oil of palm kernel,2010,t,0.0
+Oil of palm kernel,2011,t,0.0
+Oil of palm kernel,2012,t,0.0
+Oil of palm kernel,2013,t,0.0
+Oil of palm kernel,2014,t,0.0
+Oil of palm kernel,2015,t,0.0
+Oil of palm kernel,2016,t,0.0
+Oil of palm kernel,2017,t,0.0
+Oil of palm kernel,2018,t,0.0
+"Onions and shallots, dry (excluding dehydrated)",2000,t,392700.0
+"Onions and shallots, dry (excluding dehydrated)",2001,t,374900.0
+"Onions and shallots, dry (excluding dehydrated)",2002,t,283400.0
+"Onions and shallots, dry (excluding dehydrated)",2003,t,373600.0
+"Onions and shallots, dry (excluding dehydrated)",2004,t,340900.0
+"Onions and shallots, dry (excluding dehydrated)",2005,t,413600.0
+"Onions and shallots, dry (excluding dehydrated)",2006,t,358800.0
+"Onions and shallots, dry (excluding dehydrated)",2007,t,304050.0
+"Onions and shallots, dry (excluding dehydrated)",2008,t,349200.0
+"Onions and shallots, dry (excluding dehydrated)",2009,t,354900.0
+"Onions and shallots, dry (excluding dehydrated)",2010,t,364500.0
+"Onions and shallots, dry (excluding dehydrated)",2011,t,328000.0
+"Onions and shallots, dry (excluding dehydrated)",2012,t,373606.0
+"Onions and shallots, dry (excluding dehydrated)",2013,t,354646.0
+"Onions and shallots, dry (excluding dehydrated)",2014,t,373819.0
+"Onions and shallots, dry (excluding dehydrated)",2015,t,394219.0
+"Onions and shallots, dry (excluding dehydrated)",2016,t,371889.0
+"Onions and shallots, dry (excluding dehydrated)",2017,t,379909.0
+"Onions and shallots, dry (excluding dehydrated)",2018,t,389116.0
+"Onions and shallots, dry (excluding dehydrated)",2019,t,356883.93
+"Onions and shallots, dry (excluding dehydrated)",2020,t,396141.05
+"Onions and shallots, dry (excluding dehydrated)",2021,t,376839.38
+"Onions and shallots, dry (excluding dehydrated)",2022,t,293154.9
+"Onions and shallots, dry (excluding dehydrated)",2023,t,293154.9
+"Onions and shallots, green",2000,t,19000.0
+"Onions and shallots, green",2001,t,13300.0
+"Onions and shallots, green",2002,t,11300.0
+"Onions and shallots, green",2003,t,16400.0
+"Onions and shallots, green",2004,t,14400.0
+"Onions and shallots, green",2005,t,24100.0
+"Onions and shallots, green",2006,t,24500.0
+"Onions and shallots, green",2007,t,19900.0
+"Onions and shallots, green",2008,t,15350.0
+"Onions and shallots, green",2009,t,13900.0
+"Onions and shallots, green",2010,t,14400.0
+"Onions and shallots, green",2011,t,14800.0
+"Onions and shallots, green",2012,t,14443.0
+"Onions and shallots, green",2013,t,13681.0
+"Onions and shallots, green",2014,t,13761.0
+"Onions and shallots, green",2015,t,13912.0
+"Onions and shallots, green",2016,t,18785.0
+"Onions and shallots, green",2017,t,14735.0
+"Onions and shallots, green",2018,t,15467.0
+"Onions and shallots, green",2019,t,14990.21
+"Onions and shallots, green",2020,t,14931.91
+"Onions and shallots, green",2021,t,15036.95
+"Onions and shallots, green",2022,t,14596.27
+"Onions and shallots, green",2023,t,13233.62
+"Other beans, green",2000,t,21600.0
+"Other beans, green",2001,t,18700.0
+"Other beans, green",2002,t,19300.0
+"Other beans, green",2003,t,20400.0
+"Other beans, green",2004,t,23100.0
+"Other beans, green",2005,t,20700.0
+"Other beans, green",2006,t,18100.0
+"Other beans, green",2007,t,16900.0
+"Other beans, green",2008,t,15807.0
+"Other beans, green",2009,t,15200.0
+"Other beans, green",2010,t,15600.0
+"Other beans, green",2011,t,15279.0
+"Other beans, green",2012,t,14200.0
+"Other beans, green",2013,t,14540.0
+"Other beans, green",2014,t,14587.0
+"Other beans, green",2015,t,13876.0
+"Other beans, green",2016,t,20160.0
+"Other beans, green",2017,t,20085.0
+"Other beans, green",2018,t,19116.0
+"Other beans, green",2019,t,20915.9
+"Other beans, green",2020,t,24237.32
+"Other beans, green",2021,t,22829.25
+"Other beans, green",2022,t,20423.5
+"Other beans, green",2023,t,21589.85
+Other berries and fruits of the genus vaccinium n.e.c.,2000,t,4700.0
+Other berries and fruits of the genus vaccinium n.e.c.,2001,t,3500.0
+Other berries and fruits of the genus vaccinium n.e.c.,2002,t,3900.0
+Other berries and fruits of the genus vaccinium n.e.c.,2003,t,3700.0
+Other berries and fruits of the genus vaccinium n.e.c.,2004,t,3700.0
+Other berries and fruits of the genus vaccinium n.e.c.,2005,t,3490.0
+Other berries and fruits of the genus vaccinium n.e.c.,2006,t,4140.0
+Other berries and fruits of the genus vaccinium n.e.c.,2007,t,5400.0
+Other berries and fruits of the genus vaccinium n.e.c.,2008,t,5300.0
+Other berries and fruits of the genus vaccinium n.e.c.,2009,t,6100.0
+Other berries and fruits of the genus vaccinium n.e.c.,2010,t,5950.0
+Other berries and fruits of the genus vaccinium n.e.c.,2011,t,7650.0
+Other berries and fruits of the genus vaccinium n.e.c.,2012,t,7525.0
+Other berries and fruits of the genus vaccinium n.e.c.,2013,t,7984.0
+Other berries and fruits of the genus vaccinium n.e.c.,2014,t,7876.0
+Other berries and fruits of the genus vaccinium n.e.c.,2015,t,9352.0
+Other berries and fruits of the genus vaccinium n.e.c.,2016,t,8320.0
+Other berries and fruits of the genus vaccinium n.e.c.,2017,t,10703.0
+Other berries and fruits of the genus vaccinium n.e.c.,2018,t,10397.0
+Other berries and fruits of the genus vaccinium n.e.c.,2019,t,10613.0
+Other berries and fruits of the genus vaccinium n.e.c.,2020,t,12350.0
+Other berries and fruits of the genus vaccinium n.e.c.,2021,t,11366.59
+Other berries and fruits of the genus vaccinium n.e.c.,2022,t,10220.99
+Other berries and fruits of the genus vaccinium n.e.c.,2023,t,10154.29
+"Other meat of mammals, fresh or chilled",2000,t,3172.23
+"Other meat of mammals, fresh or chilled",2001,t,1000.0
+"Other meat of mammals, fresh or chilled",2002,t,2101.27
+"Other meat of mammals, fresh or chilled",2003,t,2071.83
+"Other meat of mammals, fresh or chilled",2004,t,2114.93
+"Other meat of mammals, fresh or chilled",2005,t,2097.78
+"Other meat of mammals, fresh or chilled",2006,t,1995.71
+"Other meat of mammals, fresh or chilled",2007,t,2062.47
+"Other meat of mammals, fresh or chilled",2008,t,1600.0
+"Other meat of mammals, fresh or chilled",2009,t,2600.0
+"Other meat of mammals, fresh or chilled",2010,t,3000.0
+"Other meat of mammals, fresh or chilled",2011,t,2500.0
+"Other meat of mammals, fresh or chilled",2012,t,2230.84
+"Other meat of mammals, fresh or chilled",2013,t,2276.62
+"Other meat of mammals, fresh or chilled",2014,t,2133.13
+"Other meat of mammals, fresh or chilled",2015,t,2042.82
+"Other meat of mammals, fresh or chilled",2016,t,2150.85
+"Other meat of mammals, fresh or chilled",2017,t,2057.77
+"Other meat of mammals, fresh or chilled",2018,t,2068.32
+"Other meat of mammals, fresh or chilled",2019,t,2001.68
+"Other meat of mammals, fresh or chilled",2020,t,2046.0
+"Other meat of mammals, fresh or chilled",2021,t,2010.24
+"Other meat of mammals, fresh or chilled",2022,t,1989.35
+"Other meat of mammals, fresh or chilled",2023,t,1962.6
+Other pulses n.e.c.,2000,t,300000.0
+Other pulses n.e.c.,2001,t,520000.0
+Other pulses n.e.c.,2002,t,520800.0
+Other pulses n.e.c.,2003,t,464800.0
+Other pulses n.e.c.,2004,t,547500.0
+Other pulses n.e.c.,2005,t,616200.0
+Other pulses n.e.c.,2006,t,493000.0
+Other pulses n.e.c.,2007,t,455000.0
+Other pulses n.e.c.,2008,t,450000.0
+Other pulses n.e.c.,2009,t,508200.0
+Other pulses n.e.c.,2010,t,420000.0
+Other pulses n.e.c.,2011,t,300000.0
+Other pulses n.e.c.,2012,t,242000.0
+Other pulses n.e.c.,2013,t,280000.0
+Other pulses n.e.c.,2014,t,289039.66
+Other pulses n.e.c.,2015,t,280000.0
+Other pulses n.e.c.,2016,t,270000.0
+Other pulses n.e.c.,2017,t,280000.0
+Other pulses n.e.c.,2018,t,269274.13
+Other pulses n.e.c.,2019,t,273091.38
+Other pulses n.e.c.,2020,t,274121.84
+Other pulses n.e.c.,2021,t,272162.45
+Other pulses n.e.c.,2022,t,273125.22
+Other pulses n.e.c.,2023,t,273136.5
+"Other vegetables, fresh n.e.c.",2000,t,406400.0
+"Other vegetables, fresh n.e.c.",2001,t,157631.0
+"Other vegetables, fresh n.e.c.",2002,t,132497.0
+"Other vegetables, fresh n.e.c.",2003,t,151674.0
+"Other vegetables, fresh n.e.c.",2004,t,141237.0
+"Other vegetables, fresh n.e.c.",2005,t,157695.0
+"Other vegetables, fresh n.e.c.",2006,t,181054.0
+"Other vegetables, fresh n.e.c.",2007,t,190170.0
+"Other vegetables, fresh n.e.c.",2008,t,207356.0
+"Other vegetables, fresh n.e.c.",2009,t,206610.0
+"Other vegetables, fresh n.e.c.",2010,t,219099.0
+"Other vegetables, fresh n.e.c.",2011,t,444180.0
+"Other vegetables, fresh n.e.c.",2012,t,417720.0
+"Other vegetables, fresh n.e.c.",2013,t,450900.0
+"Other vegetables, fresh n.e.c.",2014,t,578000.0
+"Other vegetables, fresh n.e.c.",2015,t,287124.4
+"Other vegetables, fresh n.e.c.",2016,t,302875.83
+"Other vegetables, fresh n.e.c.",2017,t,330294.64
+"Other vegetables, fresh n.e.c.",2018,t,323436.6
+"Other vegetables, fresh n.e.c.",2019,t,323525.75
+"Other vegetables, fresh n.e.c.",2020,t,320319.02
+"Other vegetables, fresh n.e.c.",2021,t,317737.08
+"Other vegetables, fresh n.e.c.",2022,t,297717.59
+"Other vegetables, fresh n.e.c.",2023,t,266587.57
+Pears,2000,t,26600.0
+Pears,2001,t,38500.0
+Pears,2002,t,34200.0
+Pears,2003,t,29600.0
+Pears,2004,t,22700.0
+Pears,2005,t,23400.0
+Pears,2006,t,28400.0
+Pears,2007,t,20643.0
+Pears,2008,t,19800.0
+Pears,2009,t,20500.0
+Pears,2010,t,32800.0
+Pears,2011,t,32240.0
+Pears,2012,t,25610.0
+Pears,2013,t,22630.0
+Pears,2014,t,25880.0
+Pears,2015,t,26500.0
+Pears,2016,t,24000.0
+Pears,2017,t,26625.0
+Pears,2018,t,26573.0
+Pears,2019,t,27406.0
+Pears,2020,t,25011.0
+Pears,2021,t,19269.6
+Pears,2022,t,17871.7
+Pears,2023,t,15515.0
+"Peas, dry",2000,t,309000.0
+"Peas, dry",2001,t,361000.0
+"Peas, dry",2002,t,292000.0
+"Peas, dry",2003,t,288000.0
+"Peas, dry",2004,t,214866.0
+"Peas, dry",2005,t,161000.0
+"Peas, dry",2006,t,145000.0
+"Peas, dry",2007,t,130000.0
+"Peas, dry",2008,t,91000.0
+"Peas, dry",2009,t,151200.0
+"Peas, dry",2010,t,147000.0
+"Peas, dry",2011,t,123000.0
+"Peas, dry",2012,t,58000.0
+"Peas, dry",2013,t,107000.0
+"Peas, dry",2014,t,128000.0
+"Peas, dry",2015,t,180400.0
+"Peas, dry",2016,t,188800.0
+"Peas, dry",2017,t,160300.0
+"Peas, dry",2018,t,106700.0
+"Peas, dry",2019,t,159900.0
+"Peas, dry",2020,t,159805.0
+"Peas, dry",2021,t,195149.0
+"Peas, dry",2022,t,160289.0
+"Peas, dry",2023,t,182835.0
+"Peas, green",2000,t,439700.0
+"Peas, green",2001,t,384500.0
+"Peas, green",2002,t,406000.0
+"Peas, green",2003,t,399050.0
+"Peas, green",2004,t,315100.0
+"Peas, green",2005,t,312800.0
+"Peas, green",2006,t,299690.0
+"Peas, green",2007,t,238510.0
+"Peas, green",2008,t,364320.0
+"Peas, green",2009,t,400890.0
+"Peas, green",2010,t,372830.0
+"Peas, green",2011,t,424723.0
+"Peas, green",2012,t,130000.0
+"Peas, green",2013,t,161300.0
+"Peas, green",2014,t,160900.0
+"Peas, green",2015,t,162700.0
+"Peas, green",2016,t,157278.0
+"Peas, green",2017,t,124635.0
+"Peas, green",2018,t,119169.0
+"Peas, green",2019,t,161411.02
+"Peas, green",2020,t,171212.65
+"Peas, green",2021,t,175836.11
+"Peas, green",2022,t,155293.07
+"Peas, green",2023,t,155616.43
+"Pig fat, rendered",2000,t,16800.0
+"Pig fat, rendered",2001,t,13700.0
+"Pig fat, rendered",2002,t,13900.0
+"Pig fat, rendered",2003,t,12500.0
+"Pig fat, rendered",2004,t,12600.0
+"Pig fat, rendered",2005,t,12300.0
+"Pig fat, rendered",2006,t,12200.0
+"Pig fat, rendered",2007,t,12900.0
+"Pig fat, rendered",2008,t,12900.0
+"Pig fat, rendered",2009,t,12600.0
+"Pig fat, rendered",2010,t,13600.0
+"Pig fat, rendered",2011,t,14100.0
+"Pig fat, rendered",2012,t,14400.0
+"Pig fat, rendered",2013,t,14600.0
+"Pig fat, rendered",2014,t,15100.0
+"Pig fat, rendered",2015,t,15800.0
+"Pig fat, rendered",2016,t,16100.0
+"Pig fat, rendered",2017,t,15800.0
+"Pig fat, rendered",2018,t,16200.0
+"Pig fat, rendered",2019,t,16800.0
+"Pig fat, rendered",2020,t,17200.0
+"Pig fat, rendered",2021,t,18100.0
+"Pig fat, rendered",2022,t,18200.0
+Plums and sloes,2000,t,5300.0
+Plums and sloes,2001,t,14800.0
+Plums and sloes,2002,t,12600.0
+Plums and sloes,2003,t,15100.0
+Plums and sloes,2004,t,13600.0
+Plums and sloes,2005,t,14300.0
+Plums and sloes,2006,t,14100.0
+Plums and sloes,2007,t,13800.0
+Plums and sloes,2008,t,25000.0
+Plums and sloes,2009,t,12900.0
+Plums and sloes,2010,t,13200.0
+Plums and sloes,2011,t,12936.0
+Plums and sloes,2012,t,5597.0
+Plums and sloes,2013,t,12375.0
+Plums and sloes,2014,t,11656.0
+Plums and sloes,2015,t,11400.0
+Plums and sloes,2016,t,9230.0
+Plums and sloes,2017,t,8000.0
+Plums and sloes,2018,t,8680.0
+Plums and sloes,2019,t,7371.0
+Plums and sloes,2020,t,8319.0
+Plums and sloes,2021,t,3600.0
+Plums and sloes,2022,t,6300.0
+Plums and sloes,2023,t,5070.0
+Potatoes,2000,t,6636000.0
+Potatoes,2001,t,6649000.0
+Potatoes,2002,t,6966000.0
+Potatoes,2003,t,5918000.0
+Potatoes,2004,t,6316500.0
+Potatoes,2005,t,5979000.0
+Potatoes,2006,t,5864000.0
+Potatoes,2007,t,5635000.0
+Potatoes,2008,t,5999000.0
+Potatoes,2009,t,6396000.0
+Potatoes,2010,t,6056000.0
+Potatoes,2011,t,6310000.0
+Potatoes,2012,t,4553000.0
+Potatoes,2013,t,5685000.0
+Potatoes,2014,t,5911000.0
+Potatoes,2015,t,5644000.0
+Potatoes,2016,t,5395000.0
+Potatoes,2017,t,6218000.0
+Potatoes,2018,t,5060000.0
+Potatoes,2019,t,5307000.0
+Potatoes,2020,t,5512813.08
+Potatoes,2021,t,5127386.91
+Potatoes,2022,t,5062283.0
+Potatoes,2023,t,4703724.0
+Rape or colza seed,2000,t,1156797.0
+Rape or colza seed,2001,t,1157165.0
+Rape or colza seed,2002,t,1467720.0
+Rape or colza seed,2003,t,1770754.0
+Rape or colza seed,2004,t,1606834.0
+Rape or colza seed,2005,t,1897723.0
+Rape or colza seed,2006,t,1890093.0
+Rape or colza seed,2007,t,2108121.0
+Rape or colza seed,2008,t,1973227.0
+Rape or colza seed,2009,t,1912196.0
+Rape or colza seed,2010,t,2230148.0
+Rape or colza seed,2011,t,2758302.0
+Rape or colza seed,2012,t,2556643.0
+Rape or colza seed,2013,t,2128142.0
+Rape or colza seed,2014,t,2459576.0
+Rape or colza seed,2015,t,2542000.0
+Rape or colza seed,2016,t,1775000.0
+Rape or colza seed,2017,t,2167000.0
+Rape or colza seed,2018,t,2012000.0
+Rape or colza seed,2019,t,1752000.0
+Rape or colza seed,2020,t,1038000.0
+Rape or colza seed,2021,t,980762.41
+Rape or colza seed,2022,t,1361375.1
+Rape or colza seed,2023,t,1216107.66
+"Rapeseed or canola oil, crude",2000,t,615607.0
+"Rapeseed or canola oil, crude",2001,t,588512.0
+"Rapeseed or canola oil, crude",2002,t,609300.0
+"Rapeseed or canola oil, crude",2003,t,597800.0
+"Rapeseed or canola oil, crude",2004,t,607000.0
+"Rapeseed or canola oil, crude",2005,t,675900.0
+"Rapeseed or canola oil, crude",2006,t,754400.0
+"Rapeseed or canola oil, crude",2007,t,717000.0
+"Rapeseed or canola oil, crude",2008,t,747500.0
+"Rapeseed or canola oil, crude",2009,t,783700.0
+"Rapeseed or canola oil, crude",2010,t,789700.0
+"Rapeseed or canola oil, crude",2011,t,783100.0
+"Rapeseed or canola oil, crude",2012,t,731700.0
+"Rapeseed or canola oil, crude",2013,t,749000.0
+"Rapeseed or canola oil, crude",2014,t,831200.0
+"Rapeseed or canola oil, crude",2015,t,796500.0
+"Rapeseed or canola oil, crude",2016,t,740700.0
+"Rapeseed or canola oil, crude",2017,t,690200.0
+"Rapeseed or canola oil, crude",2018,t,832900.0
+"Rapeseed or canola oil, crude",2019,t,764200.0
+"Rapeseed or canola oil, crude",2020,t,580500.0
+"Rapeseed or canola oil, crude",2021,t,745400.0
+"Rapeseed or canola oil, crude",2022,t,727900.0
+Raspberries,2000,t,9800.0
+Raspberries,2001,t,7700.0
+Raspberries,2002,t,7300.0
+Raspberries,2003,t,8500.0
+Raspberries,2004,t,10000.0
+Raspberries,2005,t,12200.0
+Raspberries,2006,t,12220.0
+Raspberries,2007,t,14800.0
+Raspberries,2008,t,15500.0
+Raspberries,2009,t,15300.0
+Raspberries,2010,t,17000.0
+Raspberries,2011,t,15546.0
+Raspberries,2012,t,15578.0
+Raspberries,2013,t,14569.0
+Raspberries,2014,t,17765.0
+Raspberries,2015,t,17242.0
+Raspberries,2016,t,14908.0
+Raspberries,2017,t,16490.0
+Raspberries,2018,t,15799.0
+Raspberries,2019,t,17332.0
+Raspberries,2020,t,14980.0
+Raspberries,2021,t,15694.0
+Raspberries,2022,t,16342.99
+Raspberries,2023,t,15952.53
+Raw cane or beet sugar (centrifugal only),2000,t,1440300.0
+Raw cane or beet sugar (centrifugal only),2001,t,1328300.0
+Raw cane or beet sugar (centrifugal only),2002,t,1554400.0
+Raw cane or beet sugar (centrifugal only),2003,t,1487000.0
+Raw cane or beet sugar (centrifugal only),2004,t,1510900.0
+Raw cane or beet sugar (centrifugal only),2005,t,1457700.0
+Raw cane or beet sugar (centrifugal only),2006,t,1258000.0
+Raw cane or beet sugar (centrifugal only),2007,t,1141000.0
+Raw cane or beet sugar (centrifugal only),2008,t,1296000.0
+Raw cane or beet sugar (centrifugal only),2009,t,1391000.0
+Raw cane or beet sugar (centrifugal only),2010,t,1082000.0
+Raw cane or beet sugar (centrifugal only),2011,t,1429000.0
+Raw cane or beet sugar (centrifugal only),2012,t,1244000.0
+Raw cane or beet sugar (centrifugal only),2013,t,1439000.0
+Raw cane or beet sugar (centrifugal only),2014,t,1445000.0
+Raw cane or beet sugar (centrifugal only),2015,t,978000.0
+Raw cane or beet sugar (centrifugal only),2016,t,897000.0
+Raw cane or beet sugar (centrifugal only),2017,t,1364000.0
+Raw cane or beet sugar (centrifugal only),2018,t,1148115.0
+Raw cane or beet sugar (centrifugal only),2019,t,1188800.0
+Raw cane or beet sugar (centrifugal only),2020,t,905536.0
+Raw cane or beet sugar (centrifugal only),2021,t,1038000.0
+Raw cane or beet sugar (centrifugal only),2022,t,818000.0
+Raw hides and skins of cattle,2000,t,65277.78
+Raw hides and skins of cattle,2001,t,59722.22
+Raw hides and skins of cattle,2002,t,64259.26
+Raw hides and skins of cattle,2003,t,64722.22
+Raw hides and skins of cattle,2004,t,66574.07
+Raw hides and skins of cattle,2005,t,70555.56
+Raw hides and skins of cattle,2006,t,78451.94
+Raw hides and skins of cattle,2007,t,81666.67
+Raw hides and skins of cattle,2008,t,79814.81
+Raw hides and skins of cattle,2009,t,77129.63
+Raw hides and skins of cattle,2010,t,84074.07
+Raw hides and skins of cattle,2011,t,86666.67
+Raw hides and skins of cattle,2012,t,81944.44
+Raw hides and skins of cattle,2013,t,78425.93
+Raw hides and skins of cattle,2014,t,81203.7
+Raw hides and skins of cattle,2015,t,81944.44
+Raw hides and skins of cattle,2016,t,84722.22
+Raw hides and skins of cattle,2017,t,83796.3
+Raw hides and skins of cattle,2018,t,85370.37
+Raw hides and skins of cattle,2019,t,84629.63
+Raw hides and skins of cattle,2020,t,86296.3
+Raw hides and skins of cattle,2021,t,83907.41
+Raw hides and skins of cattle,2022,t,85500.0
+Raw hides and skins of cattle,2023,t,83388.89
+Raw hides and skins of sheep or lambs,2000,t,82607.84
+Raw hides and skins of sheep or lambs,2001,t,57588.24
+Raw hides and skins of sheep or lambs,2002,t,66215.69
+Raw hides and skins of sheep or lambs,2003,t,65352.94
+Raw hides and skins of sheep or lambs,2004,t,67294.12
+Raw hides and skins of sheep or lambs,2005,t,71392.16
+Raw hides and skins of sheep or lambs,2006,t,71931.37
+Raw hides and skins of sheep or lambs,2007,t,71068.63
+Raw hides and skins of sheep or lambs,2008,t,71521.57
+Raw hides and skins of sheep or lambs,2009,t,67531.37
+Raw hides and skins of sheep or lambs,2010,t,61858.82
+Raw hides and skins of sheep or lambs,2011,t,64856.86
+Raw hides and skins of sheep or lambs,2012,t,59313.73
+Raw hides and skins of sheep or lambs,2013,t,62333.33
+Raw hides and skins of sheep or lambs,2014,t,64274.51
+Raw hides and skins of sheep or lambs,2015,t,65137.25
+Raw hides and skins of sheep or lambs,2016,t,62764.71
+Raw hides and skins of sheep or lambs,2017,t,64490.2
+Raw hides and skins of sheep or lambs,2018,t,62333.33
+Raw hides and skins of sheep or lambs,2019,t,66215.69
+Raw hides and skins of sheep or lambs,2020,t,63843.14
+Raw hides and skins of sheep or lambs,2021,t,61039.22
+Raw hides and skins of sheep or lambs,2022,t,62807.84
+Raw hides and skins of sheep or lambs,2023,t,61686.27
+Raw milk of cattle,2000,t,14488000.0
+Raw milk of cattle,2001,t,14707000.0
+Raw milk of cattle,2002,t,14869000.0
+Raw milk of cattle,2003,t,15010000.0
+Raw milk of cattle,2004,t,14555000.0
+Raw milk of cattle,2005,t,14473000.0
+Raw milk of cattle,2006,t,14316000.0
+Raw milk of cattle,2007,t,14023000.0
+Raw milk of cattle,2008,t,13719000.0
+Raw milk of cattle,2009,t,13852000.0
+Raw milk of cattle,2010,t,14071000.0
+Raw milk of cattle,2011,t,13849000.0
+Raw milk of cattle,2012,t,13843000.0
+Raw milk of cattle,2013,t,13935000.0
+Raw milk of cattle,2014,t,15050000.0
+Raw milk of cattle,2015,t,15324000.0
+Raw milk of cattle,2016,t,14662000.0
+Raw milk of cattle,2017,t,15267000.0
+Raw milk of cattle,2018,t,15311000.0
+Raw milk of cattle,2019,t,15671450.0
+Raw milk of cattle,2020,t,15685870.0
+Raw milk of cattle,2021,t,15890600.0
+Raw milk of cattle,2022,t,15757400.0
+Raw milk of cattle,2023,t,15759500.0
+Rye,2000,t,44000.0
+Rye,2001,t,23000.0
+Rye,2002,t,29000.0
+Rye,2003,t,25200.0
+Rye,2004,t,32500.0
+Rye,2005,t,39500.0
+Rye,2006,t,42700.0
+Rye,2007,t,34200.0
+Rye,2008,t,31542.0
+Rye,2009,t,36000.0
+Rye,2010,t,38000.0
+Rye,2011,t,37000.0
+Rye,2012,t,33000.0
+Rye,2013,t,35000.0
+Rye,2014,t,55899.0
+Rye,2015,t,56534.0
+Rye,2016,t,48563.0
+Rye,2017,t,50890.0
+Rye,2018,t,95366.0
+Rye,2019,t,74850.0
+Rye,2020,t,72450.0
+Rye,2021,t,194009.0
+Rye,2022,t,242207.0
+Rye,2023,t,183543.0
+Sheep,2000,An,42264000.0
+Sheep,2001,An,36716000.0
+Sheep,2002,An,35834280.0
+Sheep,2003,An,35846000.0
+Sheep,2004,An,35848000.0
+Sheep,2005,An,35253048.0
+Sheep,2006,An,34722000.0
+Sheep,2007,An,33946000.0
+Sheep,2008,An,33131000.0
+Sheep,2009,An,31445000.0
+Sheep,2010,An,31084000.0
+Sheep,2011,An,31634000.0
+Sheep,2012,An,32215000.0
+Sheep,2013,An,32856000.0
+Sheep,2014,An,33743000.0
+Sheep,2015,An,33337000.0
+Sheep,2016,An,33943000.0
+Sheep,2017,An,34832000.0
+Sheep,2018,An,33781000.0
+Sheep,2019,An,33580000.0
+Sheep,2020,An,32697000.0
+Sheep,2021,An,32957000.0
+Sheep,2022,An,33173748.0
+Sheep,2023,An,31802536.0
+"Sheep fat, unrendered",2000,t,20276.47
+"Sheep fat, unrendered",2001,t,14135.29
+"Sheep fat, unrendered",2002,t,16252.94
+"Sheep fat, unrendered",2003,t,16041.18
+"Sheep fat, unrendered",2004,t,16517.65
+"Sheep fat, unrendered",2005,t,17523.53
+"Sheep fat, unrendered",2006,t,17655.88
+"Sheep fat, unrendered",2007,t,17444.12
+"Sheep fat, unrendered",2008,t,17555.29
+"Sheep fat, unrendered",2009,t,16575.88
+"Sheep fat, unrendered",2010,t,15183.53
+"Sheep fat, unrendered",2011,t,15919.41
+"Sheep fat, unrendered",2012,t,14558.82
+"Sheep fat, unrendered",2013,t,15300.0
+"Sheep fat, unrendered",2014,t,15776.47
+"Sheep fat, unrendered",2015,t,15988.24
+"Sheep fat, unrendered",2016,t,15405.88
+"Sheep fat, unrendered",2017,t,15829.41
+"Sheep fat, unrendered",2018,t,15300.0
+"Sheep fat, unrendered",2019,t,16252.94
+"Sheep fat, unrendered",2020,t,15670.59
+"Sheep fat, unrendered",2021,t,14982.35
+"Sheep fat, unrendered",2022,t,15416.47
+"Sheep fat, unrendered",2023,t,15141.18
+"Shorn wool, greasy, including fleece-washed shorn wool",2000,t,64000.0
+"Shorn wool, greasy, including fleece-washed shorn wool",2001,t,55000.0
+"Shorn wool, greasy, including fleece-washed shorn wool",2002,t,60000.0
+"Shorn wool, greasy, including fleece-washed shorn wool",2003,t,60000.0
+"Shorn wool, greasy, including fleece-washed shorn wool",2004,t,60000.0
+"Shorn wool, greasy, including fleece-washed shorn wool",2005,t,60000.0
+"Shorn wool, greasy, including fleece-washed shorn wool",2006,t,61041.89
+"Shorn wool, greasy, including fleece-washed shorn wool",2007,t,62000.0
+"Shorn wool, greasy, including fleece-washed shorn wool",2008,t,63151.71
+"Shorn wool, greasy, including fleece-washed shorn wool",2009,t,64335.67
+"Shorn wool, greasy, including fleece-washed shorn wool",2010,t,67000.0
+"Shorn wool, greasy, including fleece-washed shorn wool",2011,t,67500.0
+"Shorn wool, greasy, including fleece-washed shorn wool",2012,t,68000.0
+"Shorn wool, greasy, including fleece-washed shorn wool",2013,t,68000.0
+"Shorn wool, greasy, including fleece-washed shorn wool",2014,t,67425.75
+"Shorn wool, greasy, including fleece-washed shorn wool",2015,t,68390.26
+"Shorn wool, greasy, including fleece-washed shorn wool",2016,t,68790.9
+"Shorn wool, greasy, including fleece-washed shorn wool",2017,t,68903.64
+"Shorn wool, greasy, including fleece-washed shorn wool",2018,t,69282.21
+"Shorn wool, greasy, including fleece-washed shorn wool",2019,t,69648.92
+"Shorn wool, greasy, including fleece-washed shorn wool",2020,t,70148.86
+"Shorn wool, greasy, including fleece-washed shorn wool",2021,t,70798.63
+"Shorn wool, greasy, including fleece-washed shorn wool",2022,t,71240.17
+"Shorn wool, greasy, including fleece-washed shorn wool",2023,t,71689.67
+Skim milk and whey powder,2000,t,83000.0
+Skim milk and whey powder,2001,t,71000.0
+Skim milk and whey powder,2002,t,87000.0
+Skim milk and whey powder,2003,t,115000.0
+Skim milk and whey powder,2004,t,88000.0
+Skim milk and whey powder,2005,t,69000.0
+Skim milk and whey powder,2006,t,65000.0
+Skim milk and whey powder,2007,t,67000.0
+Skim milk and whey powder,2008,t,51300.0
+Skim milk and whey powder,2009,t,61700.0
+Skim milk and whey powder,2010,t,65300.0
+Skim milk and whey powder,2011,t,66600.0
+Skim milk and whey powder,2012,t,50300.0
+Skim milk and whey powder,2013,t,66600.0
+Skim milk and whey powder,2014,t,90510.17
+Skim milk and whey powder,2015,t,99282.43
+Skim milk and whey powder,2016,t,85814.17
+Skim milk and whey powder,2017,t,102866.1
+Skim milk and whey powder,2018,t,103838.33
+Skim milk and whey powder,2019,t,97690.46
+Skim milk and whey powder,2020,t,100054.54
+Skim milk and whey powder,2021,t,112015.52
+Skim milk and whey powder,2022,t,108667.04
+Skim milk of cows,2000,t,3313800.0
+Skim milk of cows,2001,t,3083400.0
+Skim milk of cows,2002,t,3449700.0
+Skim milk of cows,2003,t,3521700.0
+Skim milk of cows,2004,t,3047850.0
+Skim milk of cows,2005,t,3168900.0
+Skim milk of cows,2006,t,2869110.0
+Skim milk of cows,2007,t,2725740.0
+Skim milk of cows,2008,t,2544300.0
+Skim milk of cows,2009,t,2683800.0
+Skim milk of cows,2010,t,2725200.0
+Skim milk of cows,2011,t,2924100.0
+Skim milk of cows,2012,t,3439800.0
+Skim milk of cows,2013,t,3259800.0
+Skim milk of cows,2014,t,3276588.33
+Skim milk of cows,2015,t,3356922.86
+Skim milk of cows,2016,t,3122989.94
+Skim milk of cows,2017,t,3325606.62
+Skim milk of cows,2018,t,3133478.72
+Skim milk of cows,2019,t,3256371.78
+Skim milk of cows,2020,t,3217786.07
+Skim milk of cows,2021,t,3600217.52
+Skim milk of cows,2022,t,3518313.06
+"Skim milk, condensed",2000,t,100000.0
+"Skim milk, condensed",2001,t,100000.0
+"Skim milk, condensed",2002,t,100000.0
+"Skim milk, condensed",2003,t,100000.0
+"Skim milk, condensed",2004,t,100000.0
+"Skim milk, condensed",2005,t,100000.0
+"Skim milk, condensed",2006,t,79000.0
+"Skim milk, condensed",2007,t,76500.0
+"Skim milk, condensed",2008,t,77000.0
+"Skim milk, condensed",2009,t,74300.0
+"Skim milk, condensed",2010,t,75500.0
+"Skim milk, condensed",2011,t,78200.0
+"Skim milk, condensed",2012,t,77300.0
+"Skim milk, condensed",2013,t,77600.0
+"Skim milk, condensed",2014,t,116385.27
+"Skim milk, condensed",2015,t,131490.45
+"Skim milk, condensed",2016,t,107915.44
+"Skim milk, condensed",2017,t,132607.5
+"Skim milk, condensed",2018,t,133973.32
+"Skim milk, condensed",2019,t,126041.28
+"Skim milk, condensed",2020,t,129091.43
+"Skim milk, condensed",2021,t,144523.61
+"Skim milk, condensed",2022,t,140203.36
+Soya bean oil,2000,t,143400.0
+Soya bean oil,2001,t,140100.0
+Soya bean oil,2002,t,144500.0
+Soya bean oil,2003,t,143200.0
+Soya bean oil,2004,t,112700.0
+Soya bean oil,2005,t,119000.0
+Soya bean oil,2006,t,109500.0
+Soya bean oil,2007,t,120200.0
+Soya bean oil,2008,t,101800.0
+Soya bean oil,2009,t,124800.0
+Soya bean oil,2010,t,120900.0
+Soya bean oil,2011,t,129100.0
+Soya bean oil,2012,t,127400.0
+Soya bean oil,2013,t,122200.0
+Soya bean oil,2014,t,129400.0
+Soya bean oil,2015,t,117500.0
+Soya bean oil,2016,t,137100.0
+Soya bean oil,2017,t,122400.0
+Soya bean oil,2018,t,143000.0
+Soya bean oil,2019,t,138900.0
+Soya bean oil,2020,t,146700.0
+Soya bean oil,2021,t,122700.0
+Soya bean oil,2022,t,154700.0
+Strawberries,2000,t,37300.0
+Strawberries,2001,t,36600.0
+Strawberries,2002,t,41400.0
+Strawberries,2003,t,47100.0
+Strawberries,2004,t,52500.0
+Strawberries,2005,t,68600.0
+Strawberries,2006,t,73900.0
+Strawberries,2007,t,92100.0
+Strawberries,2008,t,104900.0
+Strawberries,2009,t,109900.0
+Strawberries,2010,t,102900.0
+Strawberries,2011,t,101859.0
+Strawberries,2012,t,94843.0
+Strawberries,2013,t,93888.0
+Strawberries,2014,t,104411.0
+Strawberries,2015,t,115494.0
+Strawberries,2016,t,120327.0
+Strawberries,2017,t,127420.0
+Strawberries,2018,t,140710.0
+Strawberries,2019,t,143524.0
+Strawberries,2020,t,129633.0
+Strawberries,2021,t,114614.0
+Strawberries,2022,t,119143.36
+Strawberries,2023,t,106432.94
+Sugar beet,2000,t,9079000.0
+Sugar beet,2001,t,8335000.0
+Sugar beet,2002,t,9557000.0
+Sugar beet,2003,t,9168000.0
+Sugar beet,2004,t,9042000.0
+Sugar beet,2005,t,8687000.0
+Sugar beet,2006,t,7400000.0
+Sugar beet,2007,t,6733000.0
+Sugar beet,2008,t,7641000.0
+Sugar beet,2009,t,8457000.0
+Sugar beet,2010,t,6527489.0
+Sugar beet,2011,t,8504000.0
+Sugar beet,2012,t,7291119.0
+Sugar beet,2013,t,8430000.0
+Sugar beet,2014,t,9310000.0
+Sugar beet,2015,t,6218000.0
+Sugar beet,2016,t,5687000.0
+Sugar beet,2017,t,8918000.0
+Sugar beet,2018,t,7600000.0
+Sugar beet,2019,t,7763000.0
+Sugar beet,2020,t,5984000.0
+Sugar beet,2021,t,7363561.0
+Sugar beet,2022,t,5574419.0
+Sugar beet,2023,t,7745929.0
+"Sunflower-seed oil, crude",2000,t,360.0
+"Sunflower-seed oil, crude",2001,t,1100.0
+"Sunflower-seed oil, crude",2002,t,1300.0
+"Sunflower-seed oil, crude",2003,t,1500.0
+"Sunflower-seed oil, crude",2004,t,0.0
+"Sunflower-seed oil, crude",2005,t,0.0
+"Sunflower-seed oil, crude",2006,t,0.0
+"Sunflower-seed oil, crude",2007,t,0.0
+"Sunflower-seed oil, crude",2008,t,0.0
+"Sunflower-seed oil, crude",2009,t,0.0
+"Sunflower-seed oil, crude",2010,t,0.0
+"Sunflower-seed oil, crude",2011,t,0.0
+"Sunflower-seed oil, crude",2012,t,0.0
+"Sunflower-seed oil, crude",2013,t,0.0
+"Sunflower-seed oil, crude",2014,t,0.0
+"Sunflower-seed oil, crude",2015,t,0.0
+"Sunflower-seed oil, crude",2016,t,0.0
+"Sunflower-seed oil, crude",2017,t,0.0
+"Sunflower-seed oil, crude",2018,t,0.0
+Swine / pigs,2000,An,6482000.0
+Swine / pigs,2001,An,5845000.0
+Swine / pigs,2002,An,5588000.0
+Swine / pigs,2003,An,5046800.0
+Swine / pigs,2004,An,5160600.0
+Swine / pigs,2005,An,4863600.0
+Swine / pigs,2006,An,4933000.0
+Swine / pigs,2007,An,4834000.0
+Swine / pigs,2008,An,4714000.0
+Swine / pigs,2009,An,4540000.0
+Swine / pigs,2010,An,4460000.0
+Swine / pigs,2011,An,4441000.0
+Swine / pigs,2012,An,4481000.0
+Swine / pigs,2013,An,4885000.0
+Swine / pigs,2014,An,4815000.0
+Swine / pigs,2015,An,4739000.0
+Swine / pigs,2016,An,4866000.0
+Swine / pigs,2017,An,4969000.0
+Swine / pigs,2018,An,5055000.0
+Swine / pigs,2019,An,5078000.0
+Swine / pigs,2020,An,5055000.0
+Swine / pigs,2021,An,5323000.0
+Swine / pigs,2022,An,5220443.0
+Swine / pigs,2023,An,4683319.0
+Tallow,2000,t,148400.0
+Tallow,2001,t,153000.0
+Tallow,2002,t,151000.0
+Tallow,2003,t,162000.0
+Tallow,2004,t,168000.0
+Tallow,2005,t,160000.0
+Tallow,2006,t,135000.0
+Tallow,2007,t,139500.0
+Tallow,2008,t,137800.0
+Tallow,2009,t,133900.0
+Tallow,2010,t,141200.0
+Tallow,2011,t,144400.0
+Tallow,2012,t,139200.0
+Tallow,2013,t,137500.0
+Tallow,2014,t,142200.0
+Tallow,2015,t,144800.0
+Tallow,2016,t,147500.0
+Tallow,2017,t,179700.0
+Tallow,2018,t,181300.0
+Tallow,2019,t,184900.0
+Tallow,2020,t,187900.0
+Tallow,2021,t,183400.0
+Tallow,2022,t,189200.0
+Tomatoes,2000,t,113100.0
+Tomatoes,2001,t,109100.0
+Tomatoes,2002,t,100900.0
+Tomatoes,2003,t,76840.0
+Tomatoes,2004,t,78290.0
+Tomatoes,2005,t,79540.0
+Tomatoes,2006,t,84100.0
+Tomatoes,2007,t,85600.0
+Tomatoes,2008,t,88690.0
+Tomatoes,2009,t,86800.0
+Tomatoes,2010,t,89320.0
+Tomatoes,2011,t,89800.0
+Tomatoes,2012,t,83000.0
+Tomatoes,2013,t,91100.0
+Tomatoes,2014,t,98500.0
+Tomatoes,2015,t,97200.0
+Tomatoes,2016,t,96556.0
+Tomatoes,2017,t,85508.0
+Tomatoes,2018,t,66893.0
+Tomatoes,2019,t,60861.07
+Tomatoes,2020,t,65222.1
+Tomatoes,2021,t,68319.11
+Tomatoes,2022,t,68325.5
+Tomatoes,2023,t,63441.68
+Triticale,2000,t,96000.0
+Triticale,2001,t,65000.0
+Triticale,2002,t,65000.0
+Triticale,2003,t,60770.0
+Triticale,2004,t,62200.0
+Triticale,2005,t,52900.0
+Triticale,2006,t,60700.0
+Triticale,2007,t,65000.0
+Triticale,2008,t,81303.0
+Triticale,2009,t,65000.0
+Triticale,2010,t,70000.0
+Triticale,2011,t,60000.0
+Triticale,2012,t,49000.0
+Triticale,2013,t,45000.0
+Triticale,2014,t,49909.0
+Triticale,2015,t,42909.0
+Triticale,2016,t,42936.0
+Triticale,2017,t,44573.0
+Triticale,2018,t,42350.0
+Triticale,2019,t,58292.0
+Triticale,2020,t,48568.0
+Triticale,2021,t,59662.0
+Triticale,2022,t,45633.0
+Triticale,2023,t,43602.0
+Turkeys,2000,1000 An,12215.0
+Turkeys,2001,1000 An,12803.0
+Turkeys,2002,1000 An,11193.0
+Turkeys,2003,1000 An,7522.0
+Turkeys,2004,1000 An,7297.0
+Turkeys,2005,1000 An,6935.0
+Turkeys,2006,1000 An,6123.0
+Turkeys,2007,1000 An,3832.0
+Turkeys,2008,1000 An,5514.0
+Turkeys,2009,1000 An,4400.0
+Turkeys,2010,1000 An,3900.0
+Turkeys,2011,1000 An,3930.0
+Turkeys,2012,1000 An,3747.0
+Turkeys,2013,1000 An,4100.0
+Turkeys,2014,1000 An,3800.0
+Turkeys,2015,1000 An,4300.0
+Turkeys,2016,1000 An,4200.0
+Turkeys,2017,1000 An,4100.0
+Turkeys,2018,1000 An,4100.0
+Turkeys,2019,1000 An,3900.0
+Turkeys,2020,1000 An,3700.0
+Turkeys,2021,1000 An,3800.0
+Turkeys,2022,1000 An,3700.0
+Turkeys,2023,1000 An,2500.0
+Wheat,2000,t,16703526.0
+Wheat,2001,t,11580107.0
+Wheat,2002,t,15972556.0
+Wheat,2003,t,14281852.0
+Wheat,2004,t,15473000.0
+Wheat,2005,t,14863000.0
+Wheat,2006,t,14755222.0
+Wheat,2007,t,13220620.0
+Wheat,2008,t,17227051.0
+Wheat,2009,t,14075596.0
+Wheat,2010,t,14877835.0
+Wheat,2011,t,15257083.0
+Wheat,2012,t,13261000.0
+Wheat,2013,t,11921304.0
+Wheat,2014,t,16606009.0
+Wheat,2015,t,16444000.0
+Wheat,2016,t,14383000.0
+Wheat,2017,t,14837000.0
+Wheat,2018,t,13555000.0
+Wheat,2019,t,16225000.0
+Wheat,2020,t,9658000.0
+Wheat,2021,t,13988000.0
+Wheat,2022,t,15540000.0
+Wheat,2023,t,13980000.0
+"Whey, condensed",2000,t,20000.0
+"Whey, condensed",2001,t,13000.0
+"Whey, condensed",2002,t,14000.0
+"Whey, condensed",2003,t,11800.0
+"Whey, condensed",2004,t,16800.0
+"Whey, condensed",2005,t,14000.0
+"Whey, condensed",2006,t,12500.0
+"Whey, condensed",2007,t,12800.0
+"Whey, condensed",2008,t,8000.0
+"Whey, condensed",2009,t,2000.0
+"Whey, condensed",2010,t,6500.0
+"Whey, condensed",2011,t,3000.0
+"Whey, condensed",2012,t,3000.0
+"Whey, condensed",2013,t,3500.0
+"Whey, condensed",2014,t,3284.83
+"Whey, condensed",2015,t,3524.75
+"Whey, condensed",2016,t,3530.86
+"Whey, condensed",2017,t,3402.34
+"Whey, condensed",2018,t,3894.5
+"Whey, condensed",2019,t,7013.35
+"Whey, condensed",2020,t,10998.29
+"Whey, condensed",2021,t,10482.7
+"Whey, condensed",2022,t,10695.61
+"Whey, dry",2000,t,55600.0
+"Whey, dry",2001,t,56000.0
+"Whey, dry",2002,t,56000.0
+"Whey, dry",2003,t,56000.0
+"Whey, dry",2004,t,56000.0
+"Whey, dry",2005,t,85000.0
+"Whey, dry",2006,t,85000.0
+"Whey, dry",2007,t,85000.0
+"Whey, dry",2008,t,88000.0
+"Whey, dry",2009,t,85000.0
+"Whey, dry",2010,t,76000.0
+"Whey, dry",2011,t,80000.0
+"Whey, dry",2012,t,75000.0
+"Whey, dry",2013,t,65000.0
+"Whey, dry",2014,t,76227.89
+"Whey, dry",2015,t,77653.32
+"Whey, dry",2016,t,74672.24
+"Whey, dry",2017,t,75215.13
+"Whey, dry",2018,t,81053.13
+"Whey, dry",2019,t,83472.71
+"Whey, dry",2020,t,80049.31
+"Whey, dry",2021,t,67276.44
+"Whey, dry",2022,t,68642.9
+Whole milk powder,2000,t,105000.0
+Whole milk powder,2001,t,87000.0
+Whole milk powder,2002,t,105000.0
+Whole milk powder,2003,t,102000.0
+Whole milk powder,2004,t,80000.0
+Whole milk powder,2005,t,52000.0
+Whole milk powder,2006,t,49000.0
+Whole milk powder,2007,t,50000.0
+Whole milk powder,2008,t,43000.0
+Whole milk powder,2009,t,40000.0
+Whole milk powder,2010,t,45000.0
+Whole milk powder,2011,t,45000.0
+Whole milk powder,2012,t,35000.0
+Whole milk powder,2013,t,45000.0
+Whole milk powder,2014,t,61734.07
+Whole milk powder,2015,t,67935.58
+Whole milk powder,2016,t,58406.79
+Whole milk powder,2017,t,70186.51
+Whole milk powder,2018,t,70858.25
+Whole milk powder,2019,t,66663.0
+Whole milk powder,2020,t,68276.22
+Whole milk powder,2021,t,76438.28
+Whole milk powder,2022,t,74153.3
+"Whole milk, evaporated",2000,t,62000.0
+"Whole milk, evaporated",2001,t,61000.0
+"Whole milk, evaporated",2002,t,74000.0
+"Whole milk, evaporated",2003,t,58000.0
+"Whole milk, evaporated",2004,t,61000.0
+"Whole milk, evaporated",2005,t,43000.0
+"Whole milk, evaporated",2006,t,34000.0
+"Whole milk, evaporated",2007,t,32500.0
+"Whole milk, evaporated",2008,t,33000.0
+"Whole milk, evaporated",2009,t,30000.0
+"Whole milk, evaporated",2010,t,25000.0
+"Whole milk, evaporated",2011,t,30000.0
+"Whole milk, evaporated",2012,t,27000.0
+"Whole milk, evaporated",2013,t,27000.0
+"Whole milk, evaporated",2014,t,28819.93
+"Whole milk, evaporated",2015,t,28828.92
+"Whole milk, evaporated",2016,t,27832.92
+"Whole milk, evaporated",2017,t,28622.35
+"Whole milk, evaporated",2018,t,29574.36
+"Whole milk, evaporated",2019,t,30185.44
+"Whole milk, evaporated",2020,t,29827.76
+"Whole milk, evaporated",2021,t,31131.12
+"Whole milk, evaporated",2022,t,31103.82
+Wine,2000,t,1319.0
+Wine,2001,t,1484.0
+Wine,2002,t,955.0
+Wine,2003,t,1450.0
+Wine,2004,t,1274.0
+Wine,2005,t,1314.0
+Wine,2006,t,1267.0
+Wine,2007,t,1370.0
+Wine,2008,t,1348.0
+Wine,2009,t,1268.0
+Wine,2010,t,1290.0
+Wine,2011,t,1590.0
+Wine,2012,t,1219.0
+Wine,2013,t,425.0
+Wine,2014,t,448.03
+Wine,2015,t,440.35
+Wine,2016,t,466.36
+Wine,2017,t,467.47
+Wine,2018,t,468.97
+Wine,2019,t,486.0
+Wine,2020,t,545.18
+Wine,2021,t,354.1
+Wine,2022,t,407.54
