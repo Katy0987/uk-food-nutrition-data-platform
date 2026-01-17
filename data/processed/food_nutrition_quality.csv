@@ -1,4 +1,4 @@
-food_name,energy_kcal ,fat_g,saturates_g,carbohydrate_g,sugars_g,starch_g,fibre_g,protein_g,salt_g
+food_name,energy_kcal,fat_g,saturates_g,carbohydrate_g,sugars_g,starch_g,fibre_g,protein_g,salt_g
 "Ackee, canned, drained",155,15.2,4.44,0.8,0.8,0.0,1.8,2.9,0.60
 "Agar, dried",180,1.2,0.30,0.0,0.0,0.0,81.1,1.6,0.28
 "Agar, dried, soaked and drained",32,0.1,0.00,0.0,0.0,0.0,15.0,0.2,0.03

@@ -21,8 +21,9 @@ engine = get_engine()
 def run_food_balance_etl(engine):
     df = extract_food_balance("data/processed/food_balance.csv")
     df = transform_food_balance(df)
-    validate_composite_key(df, ["food_label", "years"])
+    validate_composite_key(df, ["food_label", "years", "unit"])
     load_to_postgres(df, "food_balance", engine)
+
 
 def run_household_spending_etl(engine):
     df = extract_household_spending("data/processed/food_household_spending.csv")
