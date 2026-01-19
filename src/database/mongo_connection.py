@@ -47,7 +47,7 @@ def get_mongo_client():
             
     return _mongo_client
 
-def get_db_connection(db_name="food_price_db"):
+def get_db_connection(db_name="UK_food_intelligence_platform"):
     """
     Helper function to get a specific database object directly.
     """
