@@ -9,7 +9,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../.
 from collectors.scrapers.supermarkets.scraper import TescoScraper
 from collectors.scrapers.supermarkets.config import TescoConfig
 from database.mongo_connection import get_db_connection
-
+from core.utils.validators.scraped_validator import validate_daily_bucket
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -57,6 +57,13 @@ def run_daily_automatic_crawl():
                     "products": all_products  # This is the big array of all food items
                 }
 
+                # Run the validator
+                try:
+                    validate_daily_bucket(daily_bucket)
+                    collection.replace_one({"_id": daily_bucket["_id"]}, daily_bucket, upsert=True)
+                except ValueError as e:
+                    logger.error(f"❌ Validation failed: {e}")
+
                 # 4. Save to MongoDB
                 # replace_one + upsert=True means: 
                 # If the doc exists (you ran it twice today), overwrite it.
@@ -66,7 +73,7 @@ def run_daily_automatic_crawl():
                     daily_bucket,
                     upsert=True
                 )
-                
+                print(f"Created new bucket in supermarket.price: {daily_bucket['_id']}")
                 logger.info(f"✅ SUCCESSFULLY SAVED: {len(all_products)} products to bucket '{daily_bucket['_id']}'")
             else:
                 logger.warning(f"⚠️ No products were found for {category_slug}. Check if Tesco changed their layout.")
