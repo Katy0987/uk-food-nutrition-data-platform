@@ -7,9 +7,8 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from typing import List, Dict, Optional
 
-# Import Config and Model
+# Import Updated Config
 from collectors.scrapers.supermarkets.config import TescoConfig
-from core.models.price import FoodPrice  # Ensure this matches your model file
 
 # Setup Logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -19,7 +18,6 @@ class TescoScraper:
     def __init__(self):
         self.session = requests.Session()
         self.session.headers.update(TescoConfig.HEADERS)
-        self.search_url = "https://www.tesco.com/groceries/en-GB/search?query="
 
     def _sleep(self):
         """Ethical delay between requests to avoid being blocked."""
@@ -46,32 +44,52 @@ class TescoScraper:
         except ValueError:
             return 0.0
 
-    # --- NEW METHOD FOR OPTION 1 (DATABASE SYNC) ---
-    def search_and_extract(self, product_name: str) -> Optional[Dict]:
+    # --- NEW PAGINATION LOGIC ---
+    def scrape_category_with_pagination(self, base_url: str, category_name: str) -> List[Dict]:
         """
-        Searches for a specific product name and returns the top result.
-        Perfect for updating existing MongoDB Compass documents.
+        Automatically turns pages to collect all food products in a category.
         """
-        formatted_query = product_name.replace(" ", "+")
-        url = f"{self.search_url}{formatted_query}"
+        all_products = []
+        page_number = 1
         
-        html = self.fetch_page(url)
-        if not html:
-            return None
+        # 
+        while page_number <= TescoConfig.MAX_PAGES_PER_CATEGORY:
+            # Construct the URL for the current page
+            paginated_url = f"{base_url}?page={page_number}"
+            logger.info(f"📄 Scraping {category_name} - Page {page_number}")
+            
+            html = self.fetch_page(paginated_url)
+            if not html:
+                break
+            
+            # Extract products from this specific page
+            page_items = self.extract_from_html(html)
+            
+            if not page_items:
+                logger.info(f"⏹️ No more products found at page {page_number}. Ending category.")
+                break
+                
+            all_products.extend(page_items)
+            page_number += 1
+            
+        return all_products
 
+    def extract_from_html(self, html: str) -> List[Dict]:
+        """Finds all product cards on a page and parses them."""
         soup = BeautifulSoup(html, 'html.parser')
+        products = []
         
-        # Look for the first product item in search results
-        # Tesco usually uses a list item or a specific div for the tile
-        product_card = soup.find("li", class_=lambda x: x and "product-list--list-item" in x)
+        # Tesco list items for products
+        cards = soup.find_all("li", class_=lambda x: x and "product-list--list-item" in x)
         
-        if product_card:
-            return self.parse_product_card(product_card)
-        return None
+        for card in cards:
+            data = self.parse_product_card(card)
+            if data:
+                products.append(data)
+        return products
 
-    # --- UPDATED PARSING LOGIC ---
     def parse_product_card(self, card_soup) -> Optional[Dict]:
-        """Extracts data from an individual HTML product card."""
+        """Extracts simple info for the 'Bucket' array."""
         try:
             # 1. Name
             name_tag = card_soup.find("a", {"class": lambda x: x and "product-tile" in x and "title" in x})
@@ -91,43 +109,12 @@ class TescoScraper:
             link_tag = card_soup.find('a', href=True)
             full_url = "https://www.tesco.com" + link_tag['href'] if link_tag else None
 
+            # Returning a simplified version for the Bucket Model
             return {
-                "supermarket": "Tesco",
-                "name": product_name, # Matches your 'name' field in Compass
-                "category": "Dairy",
-                "price": {
-                    "value": price_float,
-                    "unit": "GBP"
-                },
-                "scraped_at": datetime.now() # MongoDB likes Python datetime objects
+                "name": product_name,
+                "price": price_float,
+                "url": full_url
             }
         except Exception as e:
             logger.debug(f"Error parsing card: {e}")
             return None
-
-    # --- CATEGORY SCRAPING (ORIGINAL STRATEGY) ---
-    def extract_products_from_json_ld(self, html: str, category_context: str) -> List[Dict]:
-        """Robust extraction via Schema.org JSON-LD."""
-        soup = BeautifulSoup(html, 'html.parser')
-        products = []
-        scripts = soup.find_all('script', type='application/ld+json')
-        
-        for script in scripts:
-            try:
-                data = json.loads(script.string)
-                if isinstance(data, dict) and data.get('@type') == 'ItemList':
-                    items = data.get('itemListElement', [])
-                    for item in items:
-                        item_data = item.get('item', {})
-                        if item_data:
-                            products.append({
-                                "source": "tesco",
-                                "product_name": item_data.get('name'),
-                                "category": category_context,
-                                "price": float(item_data.get('offers', {}).get('price', 0.0)),
-                                "unit": item_data.get('offers', {}).get('priceCurrency', 'GBP'),
-                                "timestamp": datetime.now().strftime("%Y-%m-%d")
-                            })
-            except:
-                continue
-        return products
