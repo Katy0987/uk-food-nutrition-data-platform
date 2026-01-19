@@ -10,7 +10,7 @@ class TescoConfig:
         f"{BASE_URL}/shop/bakery/all",
         f"{BASE_URL}/shop/frozen-food/all",
         f"{BASE_URL}/shop/food-cupboard/all",
-        f"{BASE_URL}/shop/drinks/all"
+        f"{BASE_URL}/shop/drinks/all",
         f"{BASE_URL}/shop/treats-and-snacks/all"
     ]
 
@@ -22,8 +22,11 @@ class TescoConfig:
     HEADERS = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-        "Accept-Language": "en-GB,en;q=0.9",
-        "Referer": "https://www.google.com/"
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-GB,en-US;q=0.9, en; q=0.8",
+        "Cache-Control": "max-age=0",
+        "Connection": "keep-alive"
+        # "Referer": "https://www.google.com/"
     }
 
     # Throttling (Keep these to stay ethical and avoid blocks)

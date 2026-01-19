@@ -29,9 +29,12 @@ class TescoScraper:
         """Fetches HTML with error handling and ethical delays."""
         try:
             self._sleep()
-            response = self.session.get(url, timeout=15)
+            response = self.session.get(url, timeout=30)
             response.raise_for_status()
             return response.text
+        except requests.exceptions.Timeout:
+            logger.error(f"Timeout error on {url}. Server is too slow.")
+            return None
         except requests.exceptions.RequestException as e:
             logger.error(f"Failed to fetch {url}: {e}")
             return None
