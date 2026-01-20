@@ -1,85 +1,87 @@
 import sys
 import os
 import logging
+import signal
 from datetime import datetime
 
-# Ensure the root directory is in python path to import database modules
+# Ensure the root directory is in python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
 
 from collectors.scrapers.supermarkets.scraper import TescoScraper
 from collectors.scrapers.supermarkets.config import TescoConfig
 from database.mongo_connection import get_db_connection
 from core.utils.validators.scraped_validator import validate_daily_bucket
+
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 def run_daily_automatic_crawl():
-    """
-    The main execution logic:
-    1. Connects to MongoDB.
-    2. Loops through food categories.
-    3. Scrapes all products (with pagination).
-    4. Saves them as a single 'Daily Bucket' document.
-    """
-    try:
-        db = get_db_connection()
-        # Uses the collection name from your config (e.g., 'daily_scrapes')
-        collection = db[TescoConfig.MONGO_COLLECTION]
-        scraper = TescoScraper()
+    # 1. Initialize DB and Scraper
+    db = get_db_connection()
+    collection = db[TescoConfig.MONGO_COLLECTION]
+    
+    # Set headless=False so you can help with security blocks if needed
+    scraper = TescoScraper(headless=False) 
+    
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    
+    print(f"\n🚀 Starting Automatic Food Crawl for: {today_str}")
+    print(f"--- Targeting {len(TescoConfig.CATEGORY_URLS)} Categories ---")
+    print(f"--- Standard Page Limit: {TescoConfig.MAX_PAGES_PER_CATEGORY} ---\n")
 
-        # Generate a standard timestamp for today
-        today_str = datetime.now().strftime("%Y-%m-%d")
+    for url in TescoConfig.CATEGORY_URLS:
+        # Determine clean category name (e.g., 'bakery')
+        category_slug = url.split('/')[-2] 
         
-        print(f"🚀 Starting Automatic Food Crawl for: {today_str}")
-        print(f"--- Targeting {len(TescoConfig.CATEGORY_URLS)} Categories ---")
+        logger.info(f"📂 Processing Category: {category_slug.upper()}")
 
-        for url in TescoConfig.CATEGORY_URLS:
-            # 1. Determine a clean category name from the URL
-            # e.g., 'fresh-food' from '.../fresh-food/all'
-            category_slug = url.split('/')[-2] 
-            
-            logger.info(f"📂 Processing Category: {category_slug.upper()}")
-
-            # 2. Scrape all items across multiple pages (Automatically handles pagination)
-            all_products = scraper.scrape_category_with_pagination(url, category_slug)
+        try:
+            # 2. Scrape using our new standard limit from Config
+            all_products = scraper.scrape_category_with_pagination(
+                url=url, 
+                category=category_slug,
+                max_pages=TescoConfig.MAX_PAGES_PER_CATEGORY
+            )
 
             if all_products:
                 # 3. Construct the 'Bucket' Document
-                # The _id is unique per day/category to prevent duplicate documents
                 daily_bucket = {
                     "_id": f"{today_str}_tesco_{category_slug}",
-                    "date": datetime.now(), # Stored as a Date object for Compass filtering
+                    "date": datetime.now(),
                     "date_str": today_str,
                     "supermarket": "Tesco",
                     "category": category_slug,
                     "count": len(all_products),
-                    "products": all_products  # This is the big array of all food items
+                    "products": all_products 
                 }
 
-                # Run the validator
+                # 4. Validate and Save
                 try:
                     validate_daily_bucket(daily_bucket)
-                    collection.replace_one({"_id": daily_bucket["_id"]}, daily_bucket, upsert=True)
+                    
+                    # upsert=True replaces old data if you run it twice in one day
+                    collection.replace_one(
+                        {"_id": daily_bucket["_id"]}, 
+                        daily_bucket, 
+                        upsert=True
+                    )
+                    logger.info(f"✅ SAVED: {len(all_products)} items to bucket '{daily_bucket['_id']}'")
+                
                 except ValueError as e:
-                    logger.error(f"❌ Validation failed: {e}")
+                    logger.error(f"❌ Validation failed for {category_slug}: {e}")
 
-                # 4. Save to MongoDB
-                # replace_one + upsert=True means: 
-                # If the doc exists (you ran it twice today), overwrite it.
-                # If it doesn't exist, create it.
-                collection.replace_one(
-                    {"_id": daily_bucket["_id"]},
-                    daily_bucket,
-                    upsert=True
-                )
-                print(f"Created new bucket in supermarket.price: {daily_bucket['_id']}")
-                logger.info(f"✅ SUCCESSFULLY SAVED: {len(all_products)} products to bucket '{daily_bucket['_id']}'")
             else:
-                logger.warning(f"⚠️ No products were found for {category_slug}. Check if Tesco changed their layout.")
+                logger.warning(f"⚠️ No products found for {category_slug}. Skipping database update.")
 
-    except Exception as e:
-        logger.error(f"❌ Critical error during the crawl: {e}")
+        except KeyboardInterrupt:
+            print("\n🛑 Stop signal received (Ctrl+C). Closing browser and exiting...")
+            break
+        except Exception as e:
+            logger.error(f"❌ Error during {category_slug} crawl: {e}")
+            continue # Move to next category if one fails
+
+    print(f"\n✨ Crawl completed for {today_str}")
 
 if __name__ == "__main__":
     run_daily_automatic_crawl()

@@ -1,7 +1,7 @@
 import os
 import logging
-from pymongo import MongoClient
-from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError
+from pymongo import MongoClient # type: ignore
+from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError # type: ignore
 
 # Setup Logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

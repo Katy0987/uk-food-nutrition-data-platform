@@ -1,123 +1,153 @@
-import requests
-import json
 import time
-import random
 import logging
-from bs4 import BeautifulSoup
-from datetime import datetime
+import random
 from typing import List, Dict, Optional
+from bs4 import BeautifulSoup # type: ignore
+from playwright.sync_api import sync_playwright # type: ignore
 
-# Import Updated Config
-from collectors.scrapers.supermarkets.config import TescoConfig
-
-# Setup Logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 class TescoScraper:
-    def __init__(self):
-        self.session = requests.Session()
-        self.session.headers.update(TescoConfig.HEADERS)
+    def __init__(self, headless: bool = False): # Default to False so you can see it
+        self.headless = headless
 
-    def _sleep(self):
-        """Ethical delay between requests to avoid being blocked."""
-        delay = random.uniform(TescoConfig.MIN_DELAY, TescoConfig.MAX_DELAY)
-        logger.info(f"Sleeping for {delay:.2f} seconds...")
-        time.sleep(delay)
+    def _apply_stealth(self, page):
+        """Hides the 'navigator.webdriver' flag."""
+        page.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', {
+                get: () => undefined
+            });
+        """)
 
-    def fetch_page(self, url: str) -> Optional[str]:
-        """Fetches HTML with error handling and ethical delays."""
+    def _accept_cookies(self, page):
         try:
-            self._sleep()
-            response = self.session.get(url, timeout=30)
-            response.raise_for_status()
-            return response.text
-        except requests.exceptions.Timeout:
-            logger.error(f"Timeout error on {url}. Server is too slow.")
-            return None
-        except requests.exceptions.RequestException as e:
-            logger.error(f"Failed to fetch {url}: {e}")
-            return None
+            selector = "button:has-text('Accept all')"
+            page.wait_for_selector(selector, timeout=5000)
+            page.click(selector)
+            logger.info("🍪 Cookie banner accepted.")
+            time.sleep(1.5) 
+        except Exception:
+            logger.info("ℹ️ Cookie banner not found.")
 
-    def _clean_price(self, price_str: str) -> float:
-        """Helper to convert price string (e.g. '£1.50') to float (1.50)."""
-        try:
-            clean = price_str.replace('£', '').replace('GBP', '').strip()
-            return float(clean)
-        except ValueError:
-            return 0.0
-
-    # --- NEW PAGINATION LOGIC ---
-    def scrape_category_with_pagination(self, base_url: str, category_name: str) -> List[Dict]:
-        """
-        Automatically turns pages to collect all food products in a category.
-        """
+    def scrape_category_with_pagination(self, url: str, category: str, max_pages: int = 3) -> List[Dict]:
         all_products = []
-        page_number = 1
         
-        # 
-        while page_number <= TescoConfig.MAX_PAGES_PER_CATEGORY:
-            # Construct the URL for the current page
-            paginated_url = f"{base_url}?page={page_number}"
-            logger.info(f"📄 Scraping {category_name} - Page {page_number}")
+        with sync_playwright() as p:
+            browser = p.chromium.launch(
+                headless=self.headless,
+                args=[
+                    '--disable-http2', 
+                    '--disable-blink-features=AutomationControlled',
+                    '--no-sandbox'
+                ]
+            )
             
-            html = self.fetch_page(paginated_url)
-            if not html:
-                break
+            context = browser.new_context(
+                viewport={'width': 1280, 'height': 800},
+                user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+                extra_http_headers={
+                    "Accept-Language": "en-GB,en;q=0.9",
+                    "Referer": "https://www.google.com/"
+                }
+            )
             
-            # Extract products from this specific page
-            page_items = self.extract_from_html(html)
-            
-            if not page_items:
-                logger.info(f"⏹️ No more products found at page {page_number}. Ending category.")
-                break
-                
-            all_products.extend(page_items)
-            page_number += 1
-            
+            page = context.new_page()
+            self._apply_stealth(page)
+
+            current_page = 1
+            while current_page <= max_pages:
+                full_url = f"{url}?page={current_page}"
+                logger.info(f"📄 Scraping {category} - Page {current_page}")
+                products_on_page = self._parse_html(soup, category)
+
+                if not products_on_page:
+                    logger.info(f"Reached the end of available products for {category} at page {current_page}.")
+                    break
+
+                try:
+                    # 1. Load Page
+                    page.goto(full_url, wait_until="domcontentloaded", timeout=60000)
+                    
+                    # 2. Check for Security Check
+                    if "security checks" in page.content().lower():
+                        print(f"\n🚨 BLOCK DETECTED ON {category}. PLEASE SOLVE MANUALLY IN BROWSER.")
+                        try:
+                            # Wait up to 60s for you to solve it
+                            page.wait_for_selector("li[data-testid='product-line']", timeout=60000)
+                            print("✅ Block cleared!")
+                        except:
+                            logger.error("❌ Failed to clear block.")
+                            break
+
+                    time.sleep(random.uniform(2, 4))
+
+                    # 3. Cookies
+                    if current_page == 1:
+                        self._accept_cookies(page)
+
+                    # 4. Wait for Content
+                    html = ""  # Pre-define html so it exists even if the wait fails
+                    try:
+                        # Increased timeout slightly for slow categories
+                        page.wait_for_selector("li[data-testid='product-line'], .product-list--list-item", timeout=15000)
+                        html = page.content()
+                    except Exception:
+                        logger.warning(f"⚠️ Timeout: Products didn't appear on page {current_page}. It might be a slow load or a block.")
+                        # If the page is totally blank or blocked, stop this category
+                        if "security checks" in page.content().lower():
+                            break
+                        else:
+                            # If it's just an empty category, we move to the next
+                            current_page += 1
+                            continue
+
+                    # 5. Parse (Only if we have HTML)
+                    if html:
+                        soup = BeautifulSoup(html, 'html.parser')
+                        products = self._parse_html(soup, category)
+                        
+                        if not products:
+                            logger.info("🔚 No more products found. Finishing category.")
+                            break
+                            
+                        all_products.extend(products)
+                        logger.info(f"✅ Found {len(products)} items.")
+                        current_page += 1
+                    else:
+                        break # Exit loop if no HTML was captured
+                except Exception as e:
+                    logger.error(f" Error: {e}")
+                    break
+            browser.close()
         return all_products
 
-    def extract_from_html(self, html: str) -> List[Dict]:
-        """Finds all product cards on a page and parses them."""
-        soup = BeautifulSoup(html, 'html.parser')
+    def _parse_html(self, soup: BeautifulSoup, category: str) -> List[Dict]:
         products = []
-        
-        # Tesco list items for products
-        cards = soup.find_all("li", class_=lambda x: x and "product-list--list-item" in x)
-        
-        for card in cards:
-            data = self.parse_product_card(card)
-            if data:
-                products.append(data)
+        # Target the list items using data-testid first
+        items = soup.find_all('li', {'data-testid': 'product-line'})
+        if not items:
+            items = soup.find_all('li', class_='product-list--list-item')
+
+        for item in items:
+            try:
+                name_tag = item.find('h3')
+                if not name_tag: continue
+                
+                price_tag = item.select_one("[data-testid='price'], .beans-price__text")
+                price = 0.0
+                if price_tag:
+                    raw_price = price_tag.get_text(strip=True).replace('£', '').split()[0]
+                    try: price = float(raw_price)
+                    except: pass
+
+                link_tag = item.find('a', href=True)
+                url = "https://www.tesco.com" + link_tag['href'] if link_tag else None
+
+                products.append({
+                    "name": name_tag.get_text(strip=True),
+                    "price": price,
+                    "category": category,
+                    "url": url
+                })
+            except: continue
         return products
-
-    def parse_product_card(self, card_soup) -> Optional[Dict]:
-        """Extracts simple info for the 'Bucket' array."""
-        try:
-            # 1. Name
-            name_tag = card_soup.find("a", {"class": lambda x: x and "product-tile" in x and "title" in x})
-            if not name_tag:
-                name_tag = card_soup.find("h3")
-            product_name = name_tag.get_text(strip=True) if name_tag else "Unknown"
-
-            # 2. Price
-            price_tag = card_soup.find("p", {"class": lambda x: x and "price-text" in x})
-            if not price_tag:
-                 price_tag = card_soup.find("span", string=lambda text: text and "£" in text)
-            
-            raw_price = price_tag.get_text(strip=True) if price_tag else "0.00"
-            price_float = self._clean_price(raw_price)
-
-            # 3. URL
-            link_tag = card_soup.find('a', href=True)
-            full_url = "https://www.tesco.com" + link_tag['href'] if link_tag else None
-
-            # Returning a simplified version for the Bucket Model
-            return {
-                "name": product_name,
-                "price": price_float,
-                "url": full_url
-            }
-        except Exception as e:
-            logger.debug(f"Error parsing card: {e}")
-            return None
