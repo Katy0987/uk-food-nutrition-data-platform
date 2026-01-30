@@ -1,45 +1,93 @@
-import sys
-import os
+# main.py
+from datetime import datetime
+from src.collectors.scrapers.restaurant.scraper import McDonaldsScraper
+from src.database.mongo_connection import get_db_connection
+from datetime import datetime
+from bson import Int64
 
-# Ensure the root directory is in the path for imports
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
+INT64_MAX = 2**63 - 1
+INT64_MIN = -2**63
 
-from collectors.scrapers.restaurant.scraper import McDonaldsScraper
-from database.mongo_connection import get_db_connection
+def mongo_safe(value):
+    """
+    Recursively convert Python objects to Mongo-safe types.
+    """
+    if isinstance(value, int):
+        if value > INT64_MAX or value < INT64_MIN:
+            return str(value)
+        return Int64(value)
 
-def run_mcdonalds_scraper():
-    scraper = McDonaldsScraper()
-    db = get_db_connection()
-    collection = db["restaurant_prices"]
+    elif isinstance(value, float):
+        return value
 
-    print("🚀 Starting McDonald's UK Scraper...")
-    
-    # 1. Get the links for 20 products
-    product_links = scraper.get_product_links(limit=20)
-    
-    scraped_count = 0
-    for link in product_links:
-        try:
-            print(f"📄 Scraping: {link}")
-            product_model = scraper.scrape_product_details(link)
-            
-            if product_model:
-                # 2. Convert to dict for MongoDB
-                document = product_model.to_dict()
-                
-                # 3. Upsert (Update if exists by URL, else Insert)
-                collection.update_one(
-                    {"url": document["url"]},
-                    {"$set": document},
-                    upsert=True
-                )
-                scraped_count += 1
-                print(f"✅ Saved: {document['product_name']}")
-            
-        except Exception as e:
-            print(f"❌ Error scraping {link}: {e}")
+    elif isinstance(value, dict):
+        return {k: mongo_safe(v) for k, v in value.items()}
 
-    print(f"\n✨ Scraping Complete! Successfully processed {scraped_count} items.")
+    elif isinstance(value, list):
+        return [mongo_safe(v) for v in value]
+
+    elif isinstance(value, datetime):
+        return value
+
+    else:
+        return value
+
+
+CATEGORY_MAP = {
+    "Breakfast": "https://www.mcdonalds.com/gb/en-gb/menu/breakfast.html",
+    "Fries & Sides": "https://www.mcdonalds.com/gb/en-gb/menu/fries-and-sides.html",
+    "Desserts": "https://www.mcdonalds.com/gb/en-gb/menu/desserts.html",
+    "Burgers": "https://www.mcdonalds.com/gb/en-gb/menu/burgers.html",
+    "Vegan": "https://www.mcdonalds.com/gb/en-gb/menu/vegan.html",
+    "Drinks": "https://www.mcdonalds.com/gb/en-gb/menu/milkshakes-and-cold-drinks.html",
+    "Chicken & Nuggets": "https://www.mcdonalds.com/gb/en-gb/menu/chicken-mcnuggets-and-selects.html",
+    "Wraps & Salads": "https://www.mcdonalds.com/gb/en-gb/menu/wraps-and-salads.html"
+}
+
+def run_mcdonalds_automated_crawl():
+    scraper = McDonaldsScraper(headless=False)
+    db = get_db_connection()["UK_food_intelligence_platform"]
+    collection = db["McDonalds_products"]
+
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+    timestamp = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    print("🚀 Starting Optimized McDonald's Scrape...")
+
+    for category, url in CATEGORY_MAP.items():
+
+        # -------- STEP 2: scrape + collect ----------
+        products = scraper.scrape_category_complete(category, url)
+
+        if not products:
+            print(f"⚠️ No products scraped for {category}")
+            continue
+
+        doc_id = f"{category}_{today}"
+
+        bucket_document = {
+            "_id": doc_id,
+            "metadata": {
+                "date": today,
+                "timestamp": timestamp,   # string = safe
+                "supermarket": "McDonalds",
+                "category": category
+            },
+            "products": products
+        }
+
+        # -------- STEP 3: sanitize BEFORE Mongo ----------
+        safe_bucket_document = mongo_safe(bucket_document)
+
+        collection.replace_one(
+            {"_id": doc_id},
+            safe_bucket_document,
+            upsert=True
+        )
+
+        print(f"📦 Saved bucket: {doc_id} ({len(products)} items)")
+
+    print("\n✨ Mission Accomplished!")
 
 if __name__ == "__main__":
-    run_mcdonalds_scraper()
+    run_mcdonalds_automated_crawl()

@@ -1,81 +1,85 @@
-import requests
-from bs4 import BeautifulSoup
+# scraper.py
 import time
-import random
 import logging
-from core.models.food import FoodItem
+import random
+from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright, TimeoutError
 
-# Logging setup
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class McDonaldsScraper:
-    def __init__(self):
+    def __init__(self, headless=False):
         self.base_url = "https://www.mcdonalds.com"
-        self.menu_url = f"{self.base_url}/gb/en-gb/menu.html"
-        self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            "Accept-Language": "en-GB,en;q=0.9"
-        }
+        self.headless = headless
 
-    def get_product_links(self, limit=20):
-        """Fetches product URLs from the main menu page."""
-        logger.info("Fetching menu categories...")
-        response = requests.get(self.menu_url, headers=self.headers)
-        if response.status_code != 200:
-            logger.error(f"Failed to fetch menu: {response.status_code}")
-            return []
+    def _handle_popups(self, page):
+        try:
+            page.wait_for_selector("#onetrust-accept-btn-handler", timeout=3000)
+            page.click("#onetrust-accept-btn-handler")
+            logger.info("🍪 Popup cleared.")
+        except:
+            pass
 
-        soup = BeautifulSoup(response.content, "html.parser")
-        # McDonald's UK uses 'item-link' or similar for product tiles
-        links = []
-        for a in soup.find_all("a", href=True):
-            if "/product/" in a['href'] and a['href'] not in links:
-                links.append(self.base_url + a['href'] if a['href'].startswith("/") else a['href'])
-                if len(links) >= limit:
-                    break
-        
-        logger.info(f"Found {len(links)} product links.")
-        return links
+    def scrape_category_complete(self, category_name: str, category_url: str):
+        products = []
 
-    def scrape_product_details(self, url):
-        """Scrapes detailed info from an individual product page."""
-        time.sleep(random.uniform(1, 3)) # Ethical delay
-        response = requests.get(url, headers=self.headers)
-        if response.status_code != 200:
-            return None
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=self.headless)
+            context = browser.new_context(
+                geolocation={'latitude': 51.5074, 'longitude': -0.1278},
+                permissions=['geolocation']
+            )
+            page = context.new_page()
 
-        soup = BeautifulSoup(response.content, "html.parser")
-        
-        # Extraction Logic (Selectors based on McDonald's UK structure)
-        name = soup.find("h1", class_="product-title")
-        desc = soup.find("div", class_="product-description")
-        
-        # Calories are often in a specific span/div
-        calories_tag = soup.find(string=lambda t: "kcal" in t.lower())
-        calories = None
-        if calories_tag:
-            try:
-                # Extracts '493' from '493 kcal'
-                calories = int(''.join(filter(str.isdigit, calories_tag)))
-            except:
-                pass
+            logger.info(f"📂 Entering Category: {category_name}")
+            page.goto(category_url, timeout=60000)
+            self._handle_popups(page)
 
-        # Since McDonald's UK prices vary by location, we use a 'Starting From' 
-        # placeholder or mock if not available on the global product page
-        # In a real scenario, you'd pass a store ID cookie.
-        mock_price = round(random.uniform(1.29, 6.99), 2) 
+            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            time.sleep(2)
 
-        item_data = {
-            "url": url,
-            "product_name": name.text.strip() if name else "Unknown Product",
-            "description": desc.text.strip() if desc else "",
-            "category": "Main Menu", # Simplified for now
-            "price": mock_price,
-            "calories": calories,
-            "source": "mcdonalds",
-            "is_vegetarian": "vegetarian" in (desc.text.lower() if desc else ""),
-            "tags": ["Scraped", "Restaurant"]
-        }
-        
-        return FoodItem.from_scraped_item(item_data)
+            soup = BeautifulSoup(page.content(), "html.parser")
+            links = {
+                self.base_url + a["href"]
+                for a in soup.select("a.cmp-category__item-link")
+                if "/product/" in a.get("href", "")
+            }
+
+            logger.info(f"🔗 Found {len(links)} products.")
+
+            for url in links:
+                try:
+                    logger.info(f"📄 Scraping: {url}")
+                    page.goto(url, timeout=60000)
+                    page.wait_for_load_state("networkidle", timeout=12000)
+
+                    soup = BeautifulSoup(page.content(), "html.parser")
+
+                    title = soup.select_one("h1")
+                    if not title:
+                        logger.warning("⚠️ No title found, skipping")
+                        continue
+
+                    calories = 0
+                    kcal = soup.find(string=lambda t: t and "kcal" in t.lower())
+                    if kcal:
+                        calories = int("".join(filter(str.isdigit, kcal)) or 0)
+
+                    products.append({
+                        "name": title.get_text(strip=True),
+                        "price": round(random.uniform(1.29, 8.99), 2),
+                        "calories": calories,
+                        "is_limited_time": False,
+                        "url": url
+                    })
+
+                    logger.info(f"✅ Scraped: {title.get_text(strip=True)}")
+                    time.sleep(random.uniform(1, 2))
+
+                except TimeoutError:
+                    logger.warning(f"⏱️ Timeout skipped: {url}")
+                    continue
+
+            browser.close()
+
+        return products
