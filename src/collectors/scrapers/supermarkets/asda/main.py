@@ -1,5 +1,5 @@
 """
-Main script to run Asda supermarket category scraping
+Updated Main script with Drinks category added
 Stores results in MongoDB using daily bucket schema
 """
 
@@ -21,7 +21,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-# Category mapping
+# FIXED: Added Drinks category
 CATEGORY_MAP = {
     "Fruit": "https://www.asda.com/groceries/fruit-veg-flowers/fruit",
     "Vegetables": "https://www.asda.com/groceries/fruit-veg-flowers/vegetables-potatoes",
@@ -31,17 +31,16 @@ CATEGORY_MAP = {
     "Dessert": "https://www.asda.com/groceries/bakery/desserts-cream-cakes",
     "Protein": "https://www.asda.com/groceries/chilled-food/milk-butter-cream-eggs",
     "Cheese": "https://www.asda.com/groceries/chilled-food/cheese",
-    "Sweets": "https://www.asda.com/groceries/food-cupboard/chocolates-sweets"
+    "Sweets": "https://www.asda.com/groceries/food-cupboard/chocolates-sweets",
+    "Drinks": "https://www.asda.com/groceries/drinks"  # NEW: Added drinks
 }
 
 def get_db_connection():
     """Get MongoDB connection."""
     try:
-        # Import here to avoid issues if MongoDB is not available
         from pymongo import MongoClient
         
         client = MongoClient("mongodb://localhost:27017/")
-        # Test connection
         client.admin.command('ping')
         logger.info("✅ Successfully connected to MongoDB")
         return client
@@ -68,10 +67,8 @@ def run_supermarket_bucket_crawl(
     logger.info("🚀 Starting Asda Supermarket Scraping")
     logger.info("=" * 80)
     
-    # Initialize scraper
     scraper = AsdaScraper(headless=headless)
     
-    # Connect to database
     try:
         db_client = get_db_connection()
         db = db_client["UK_food_intelligence_platform"]
@@ -82,7 +79,6 @@ def run_supermarket_bucket_crawl(
     
     date_str = datetime.now().strftime("%Y-%m-%d")
     
-    # Determine which categories to scrape
     if categories_to_scrape:
         categories = {k: v for k, v in CATEGORY_MAP.items() if k in categories_to_scrape}
     else:
@@ -93,19 +89,16 @@ def run_supermarket_bucket_crawl(
     logger.info(f"🎯 Target: {max_products_per_category} products per category")
     logger.info("")
     
-    # Statistics
     total_products = 0
     successful_categories = 0
     failed_categories = []
     
-    # Scrape each category
     for idx, (cat_name, url) in enumerate(categories.items(), 1):
         logger.info("─" * 80)
         logger.info(f"📦 [{idx}/{len(categories)}] Category: {cat_name}")
         logger.info("─" * 80)
         
         try:
-            # Scrape the category
             product_list = scraper.scrape_category_bucket(
                 cat_name, 
                 url, 
@@ -113,7 +106,6 @@ def run_supermarket_bucket_crawl(
             )
             
             if product_list:
-                # Create bucket document
                 bucket_id = f"{cat_name.replace(' ', '_')}_{date_str}"
                 bucket_doc = {
                     "_id": bucket_id,
@@ -126,7 +118,6 @@ def run_supermarket_bucket_crawl(
                     "url": url
                 }
                 
-                # Save to MongoDB
                 result = collection.update_one(
                     {"_id": bucket_id}, 
                     {"$set": bucket_doc}, 
@@ -137,7 +128,6 @@ def run_supermarket_bucket_crawl(
                     logger.info(f"💾 ✅ Bucket Saved: {bucket_id}")
                     logger.info(f"   📊 Products: {len(product_list)}")
                     
-                    # Count products with nutrition
                     with_nutrition = sum(1 for p in product_list if p.get('nutrition'))
                     if with_nutrition > 0:
                         logger.info(f"   📈 Nutrition data: {with_nutrition}/{len(product_list)} products")
@@ -159,16 +149,13 @@ def run_supermarket_bucket_crawl(
             logger.error(f"❌ Error in category {cat_name}: {str(e)}")
             failed_categories.append(cat_name)
             
-            # Log full traceback
             import traceback
             logger.error(traceback.format_exc())
             
-            # Continue with next category
             continue
         
         logger.info("")
     
-    # Print summary
     logger.info("=" * 80)
     logger.info("📊 SCRAPING SUMMARY")
     logger.info("=" * 80)
@@ -181,7 +168,6 @@ def run_supermarket_bucket_crawl(
     logger.info(f"💾 Database: UK_food_intelligence_platform.Asda_products")
     logger.info("=" * 80)
     
-    # Close database connection
     db_client.close()
     logger.info("🔒 Database connection closed")
 

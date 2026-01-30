@@ -1,9 +1,22 @@
 # main.py
+import logging
+import sys
 from datetime import datetime
 from src.collectors.scrapers.restaurant.scraper import McDonaldsScraper
 from src.database.mongo_connection import get_db_connection
-from datetime import datetime
 from bson import Int64
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(f'mcdonalds_scrape_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+
+logger = logging.getLogger(__name__)
 
 INT64_MAX = 2**63 - 1
 INT64_MIN = -2**63
@@ -45,6 +58,13 @@ CATEGORY_MAP = {
 }
 
 def run_mcdonalds_automated_crawl():
+    """
+    Main scraping function with improved error handling and progress tracking.
+    """
+    logger.info("=" * 80)
+    logger.info("🚀 Starting McDonald's Menu Scraper")
+    logger.info("=" * 80)
+    
     scraper = McDonaldsScraper(headless=False)
     db = get_db_connection()["UK_food_intelligence_platform"]
     collection = db["McDonalds_products"]
@@ -52,42 +72,98 @@ def run_mcdonalds_automated_crawl():
     today = datetime.utcnow().strftime("%Y-%m-%d")
     timestamp = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    print("🚀 Starting Optimized McDonald's Scrape...")
+    logger.info(f"📅 Date: {today}")
+    logger.info(f"📂 Categories to scrape: {len(CATEGORY_MAP)}")
+    logger.info("")
+    
+    # Track statistics
+    total_products = 0
+    successful_categories = 0
+    failed_categories = []
 
-    for category, url in CATEGORY_MAP.items():
+    for idx, (category, url) in enumerate(CATEGORY_MAP.items(), 1):
+        logger.info("─" * 80)
+        logger.info(f"📦 [{idx}/{len(CATEGORY_MAP)}] Category: {category}")
+        logger.info("─" * 80)
+        
+        try:
+            # Scrape category with improved retry logic
+            products = scraper.scrape_category_complete(category, url)
 
-        # -------- STEP 2: scrape + collect ----------
-        products = scraper.scrape_category_complete(category, url)
+            if not products:
+                logger.warning(f"⚠️  No products scraped for {category}")
+                failed_categories.append(category)
+                continue
 
-        if not products:
-            print(f"⚠️ No products scraped for {category}")
+            # Create bucket document
+            doc_id = f"{category.replace(' & ', '_').replace(' ', '_')}_{today}"
+
+            bucket_document = {
+                "_id": doc_id,
+                "metadata": {
+                    "date": today,
+                    "timestamp": timestamp,
+                    "supermarket": "McDonalds",
+                    "category": category
+                },
+                "products": products,
+                "item_count": len(products)
+            }
+
+            # Sanitize for MongoDB
+            safe_bucket_document = mongo_safe(bucket_document)
+
+            # Save to database
+            result = collection.replace_one(
+                {"_id": doc_id},
+                safe_bucket_document,
+                upsert=True
+            )
+
+            logger.info(f"💾 ✅ Bucket Saved: {doc_id}")
+            logger.info(f"   📊 Products: {len(products)}")
+            
+            total_products += len(products)
+            successful_categories += 1
+
+        except KeyboardInterrupt:
+            logger.warning("\n\n⚠️  Scraping interrupted by user (Ctrl+C)")
+            logger.info("💾 Saving progress...")
+            break
+        
+        except Exception as e:
+            logger.error(f"❌ Error in category {category}: {str(e)}")
+            failed_categories.append(category)
+            
+            import traceback
+            logger.error(traceback.format_exc())
+            
             continue
+        
+        logger.info("")
 
-        doc_id = f"{category}_{today}"
-
-        bucket_document = {
-            "_id": doc_id,
-            "metadata": {
-                "date": today,
-                "timestamp": timestamp,   # string = safe
-                "supermarket": "McDonalds",
-                "category": category
-            },
-            "products": products
-        }
-
-        # -------- STEP 3: sanitize BEFORE Mongo ----------
-        safe_bucket_document = mongo_safe(bucket_document)
-
-        collection.replace_one(
-            {"_id": doc_id},
-            safe_bucket_document,
-            upsert=True
-        )
-
-        print(f"📦 Saved bucket: {doc_id} ({len(products)} items)")
-
-    print("\n✨ Mission Accomplished!")
+    # Print final summary
+    logger.info("=" * 80)
+    logger.info("📊 SCRAPING SUMMARY")
+    logger.info("=" * 80)
+    logger.info(f"✅ Successful categories: {successful_categories}/{len(CATEGORY_MAP)}")
+    logger.info(f"📦 Total products scraped: {total_products}")
+    
+    if failed_categories:
+        logger.info(f"❌ Failed categories: {', '.join(failed_categories)}")
+    
+    logger.info(f"💾 Database: UK_food_intelligence_platform.McDonalds_products")
+    logger.info("=" * 80)
+    logger.info("\n✨ Mission Accomplished!")
 
 if __name__ == "__main__":
-    run_mcdonalds_automated_crawl()
+    try:
+        run_mcdonalds_automated_crawl()
+    except KeyboardInterrupt:
+        logger.info("\n👋 Goodbye!")
+        sys.exit(0)
+    except Exception as e:
+        logger.error(f"💥 Fatal error: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
+        sys.exit(1)
