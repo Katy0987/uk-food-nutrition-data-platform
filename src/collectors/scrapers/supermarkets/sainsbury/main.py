@@ -1,17 +1,19 @@
 """
-Fixed Sainsbury's Main Script
+Fixed Sainsbury's Main Script with Validation
 """
-
 from datetime import datetime
-from src.collectors.scrapers.supermarkets.sainsbury.scraper import SainsburysScraper  # Make sure this imports your fixed scraper
+from src.collectors.scrapers.supermarkets.sainsbury.scraper import SainsburysScraper
 from src.database.mongo_connection import get_db_connection
 import logging
+from core.utils.validators.scraped_validator import validate_daily_bucket, ValidationError
 
 # Setup logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
+
+logger = logging.getLogger(__name__)
 
 CATEGORY_MAP = {
     "Fruit and Vegetable": "https://www.sainsburys.co.uk/gol-ui/groceries/fruit-and-vegetables/c:1020082",
@@ -58,7 +60,7 @@ def run_supermarket_bucket_crawl():
 
             # Create bucket document
             bucket_id = f"{cat_name.replace(' ', '_')}_{date_str}"
-
+            
             bucket_doc = {
                 "_id": bucket_id,
                 "store": "Sainsbury",
@@ -69,7 +71,18 @@ def run_supermarket_bucket_crawl():
                 "created_at": datetime.utcnow().isoformat()
             }
 
-            # Save to database
+            # ✅ VALIDATE BEFORE SAVING - ADD THIS BLOCK
+            try:
+                validate_daily_bucket(bucket_doc)
+                logger.info(f"✅ Validation passed for {bucket_id}")
+            except ValidationError as e:
+                logger.error(f"❌ Validation failed for {cat_name}: {e}")
+                print(f"❌ Validation failed: {e}")
+                failed += 1
+                continue  # Skip saving this category
+            # END OF VALIDATION BLOCK
+
+            # Save to database (only if validation passed)
             collection.update_one(
                 {"_id": bucket_id},
                 {"$set": bucket_doc},
@@ -81,6 +94,7 @@ def run_supermarket_bucket_crawl():
 
         except Exception as e:
             print(f"❌ Error in category {cat_name}: {e}")
+            logger.error(f"Error details: {e}", exc_info=True)
             failed += 1
             continue
     

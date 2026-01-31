@@ -5,6 +5,7 @@ from datetime import datetime
 from src.collectors.scrapers.restaurant.scraper import McDonaldsScraper
 from src.database.mongo_connection import get_db_connection
 from bson import Int64
+from core.utils.validators.scraped_validator import validate_daily_bucket, ValidationError
 
 # Configure logging
 logging.basicConfig(
@@ -112,6 +113,16 @@ def run_mcdonalds_automated_crawl():
 
             # Sanitize for MongoDB
             safe_bucket_document = mongo_safe(bucket_document)
+
+            try:
+                validate_daily_bucket(safe_bucket_document)  # Auto-detects restaurant structure
+                logger.info(f"✅ Validation passed")
+    
+                collection.replace_one({"_id": doc_id}, safe_bucket_document, upsert=True)
+    
+            except ValidationError as e:
+                logger.error(f"❌ Validation failed: {e}")
+                continue
 
             # Save to database
             result = collection.replace_one(
