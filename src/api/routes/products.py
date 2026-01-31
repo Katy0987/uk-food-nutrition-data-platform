@@ -16,42 +16,6 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
-
-@router.get("/{barcode}")
-async def get_product(
-    barcode: str,
-    db: Session = Depends(get_db)
-):
-    """
-    Get product information by barcode.
-    
-    Returns eco-score, nutri-score, and environmental impact data.
-    """
-    start_time = time.time()
-    
-    try:
-        repo = OFFRepository(db)
-        result = repo.get_product(barcode)
-        
-        if not result:
-            raise HTTPException(status_code=404, detail="Product not found")
-        
-        process_time = (time.time() - start_time) * 1000
-        
-        return {
-            "success": True,
-            "data": result,
-            "meta": {
-                "response_time_ms": round(process_time, 2)
-            }
-        }
-    except HTTPException:
-        raise
-    except Exception as e:
-        logger.error(f"Get product error: {str(e)}", exc_info=True)
-        raise HTTPException(status_code=500, detail="Internal server error")
-
-
 @router.get("/search")
 async def search_products(
     query: Optional[str] = Query(None, description="Search terms"),
@@ -101,8 +65,7 @@ async def search_products(
     except Exception as e:
         logger.error(f"Product search error: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail="Internal server error")
-
-
+    
 @router.get("/compare")
 async def compare_products(
     barcodes: str = Query(..., description="Comma-separated barcodes (max 5)"),
@@ -229,4 +192,38 @@ async def get_category_statistics(
         }
     except Exception as e:
         logger.error(f"Category statistics error: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+@router.get("/{barcode}")
+async def get_product(
+    barcode: str,
+    db: Session = Depends(get_db)
+):
+    """
+    Get product information by barcode.
+    
+    Returns eco-score, nutri-score, and environmental impact data.
+    """
+    start_time = time.time()
+    
+    try:
+        repo = OFFRepository(db)
+        result = repo.get_product(barcode)
+        
+        if not result:
+            raise HTTPException(status_code=404, detail="Product not found")
+        
+        process_time = (time.time() - start_time) * 1000
+        
+        return {
+            "success": True,
+            "data": result,
+            "meta": {
+                "response_time_ms": round(process_time, 2)
+            }
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Get product error: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail="Internal server error")
