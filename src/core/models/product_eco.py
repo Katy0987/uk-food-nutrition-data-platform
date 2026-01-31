@@ -121,7 +121,7 @@ class ProductEco(Base):
         Index('idx_nutriscore', 'nutriscore_grade'),
         Index('idx_categories_ecoscore', 'main_category', 'ecoscore_grade'),
         Index('idx_brands_ecoscore', 'brands', 'ecoscore_grade'),
-        Index('idx_cached_at', 'cached_at'),
+        Index('idx_products_cached_at', 'cached_at'),
     )
 
     def __repr__(self) -> str:

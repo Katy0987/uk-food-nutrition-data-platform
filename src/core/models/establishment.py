@@ -81,7 +81,7 @@ class Establishment(Base):
         Index('idx_location', 'latitude', 'longitude'),
         Index('idx_business_name_postcode', 'business_name', 'postcode'),
         Index('idx_local_authority_rating', 'local_authority_name', 'rating_value'),
-        Index('idx_cached_at', 'cached_at'),
+        Index('idx_establishments_cached_at', 'cached_at'),
     )
 
     def __repr__(self) -> str:

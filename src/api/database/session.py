@@ -123,16 +123,11 @@ def get_db_context():
 
 
 def check_connection() -> bool:
-    """
-    Check if database connection is working.
-    
-    Returns:
-        True if connected, False otherwise
-    """
+    """Check if database connection is alive."""
     try:
+        from sqlalchemy import text
         with engine.connect() as conn:
-            conn.execute("SELECT 1")
-        logger.info("Database connection OK")
+            conn.execute(text("SELECT 1"))  # ✅ Fixed!
         return True
     except Exception as e:
         logger.error(f"Database connection failed: {str(e)}")
