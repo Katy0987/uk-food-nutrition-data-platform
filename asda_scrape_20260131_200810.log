@@ -1,0 +1,490 @@
+2026-01-31 20:08:10,329 - INFO - ================================================================================
+2026-01-31 20:08:10,329 - INFO - 🚀 Starting Asda Supermarket Scraping
+2026-01-31 20:08:10,330 - INFO - ================================================================================
+2026-01-31 20:08:10,428 - INFO - ✅ Successfully connected to MongoDB
+2026-01-31 20:08:10,429 - INFO - 📋 Scraping 10 categories
+2026-01-31 20:08:10,429 - INFO - 📅 Date: 2026-01-31
+2026-01-31 20:08:10,429 - INFO - 🎯 Target: 50 products per category
+2026-01-31 20:08:10,429 - INFO - 
+2026-01-31 20:08:10,429 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:08:10,429 - INFO - 📦 [1/10] Category: Fruit
+2026-01-31 20:08:10,429 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:08:18,384 - INFO - 🛒 Opening Category: Fruit
+2026-01-31 20:08:18,385 - INFO -    URL: https://www.asda.com/groceries/fruit-veg-flowers/fruit
+2026-01-31 20:08:25,549 - INFO - 🍪 Cookie banner cleared.
+2026-01-31 20:08:28,557 - INFO -    📜 Scrolling to load products...
+2026-01-31 20:08:36,490 - INFO -    🔍 Analyzing 130 links...
+2026-01-31 20:08:36,491 - INFO -    🔗 Found 44 potential product links
+2026-01-31 20:08:36,492 - INFO -    📦 Starting to scrape products (target: 50)...
+2026-01-31 20:08:42,333 - INFO -       ✅ [1] ASDA Tart & Sweet Plums 400g (£2.48)
+2026-01-31 20:08:47,076 - INFO -       ✅ [2] ASDA Crisp & Juicy Apple Slices & Grapes 80g (£0.44)
+2026-01-31 20:09:00,185 - INFO -       ✅ [3] ASDA Garden Gang 6 Amazing Apples (£1.17)
+2026-01-31 20:09:21,613 - INFO -       ✅ [4] ASDA Zingy & Crisp Braeburn Apples (£1.67)
+2026-01-31 20:09:22,937 - INFO -    📊 Progress: 4/50 products (10 checked, 5 promo filtered)
+2026-01-31 20:09:38,310 - INFO -       ✅ [5] ASDA Sweet & Bursting Blueberries 300g (£2.96)
+2026-01-31 20:09:42,295 - INFO -       ✅ [6] ASDA Crisp & Fragrant Russet Apples (£1.67)
+2026-01-31 20:09:46,801 - INFO -       ✅ [7] Love Me Tender Pomelo (£1.98)
+2026-01-31 20:10:07,352 - INFO -       ✅ [8] Stock Up & Save (£4.25)
+2026-01-31 20:10:08,654 - INFO -    📊 Progress: 8/50 products (20 checked, 11 promo filtered)
+2026-01-31 20:10:20,712 - INFO -       ✅ [9] ASDA Crisp & Juicy Apples (£1.67)
+2026-01-31 20:10:24,664 - INFO -       ✅ [10] ASDA Sweet & Juicy Melon Lolly 80g (£0.44)
+2026-01-31 20:10:30,505 - INFO -       ✅ [11] ASDA Sweet & Juicy Seedless Mixed Grapes 500g (£1.77)
+2026-01-31 20:10:39,581 - INFO -       ✅ [12] ASDA Royal Gala Apples (£1.67)
+2026-01-31 20:10:52,629 - INFO -    📊 Progress: 12/50 products (30 checked, 17 promo filtered)
+2026-01-31 20:11:04,312 - INFO -       ✅ [13] ASDA 6 Tart & Juicy Granny Smith Apples (£1.67)
+2026-01-31 20:11:12,426 - INFO -       ✅ [14] ASDA Sweet & Juicy Lychees 200g (£1.78)
+2026-01-31 20:11:21,117 - INFO -       ✅ [15] ASDA 4 Juicy & Crisp Honeycrunch Apples (£1.97)
+2026-01-31 20:11:25,795 - INFO -       ✅ [16] ASDA Crisp & Juicy Watermelon Slices 95g (£0.44)
+2026-01-31 20:11:29,897 - INFO -       ✅ [17] ASDA 6 Soft & Sweet Golden Delicious Apples (£1.67)
+2026-01-31 20:11:38,726 - INFO -       ✅ [18] ASDA Plump & Juicy Grapes 80g (£0.44)
+2026-01-31 20:11:39,626 - INFO -    📊 Progress: 18/50 products (40 checked, 21 promo filtered)
+2026-01-31 20:11:58,952 - INFO -       ✅ [19] ASDA Crisp & Juicy Apple Slices 80g (£0.44)
+2026-01-31 20:12:02,571 - INFO -       ✅ [20] ASDA Juicy & Sweet Pineapple Lolly 80g (£0.44)
+2026-01-31 20:12:08,399 - INFO -    🎯 Successfully scraped 20 products from Fruit
+2026-01-31 20:12:08,399 - INFO -    ⏭️  Skipped 24 items (24 promotional/invalid)
+2026-01-31 20:12:09,036 - INFO - 💾 ✅ Bucket Saved: Fruit_2026-01-31
+2026-01-31 20:12:09,036 - INFO -    📊 Products: 20
+2026-01-31 20:12:09,036 - INFO - 
+2026-01-31 20:12:09,038 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:12:09,038 - INFO - 📦 [2/10] Category: Vegetables
+2026-01-31 20:12:09,038 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:12:12,278 - INFO - 🛒 Opening Category: Vegetables
+2026-01-31 20:12:12,278 - INFO -    URL: https://www.asda.com/groceries/fruit-veg-flowers/vegetables-potatoes
+2026-01-31 20:12:19,387 - INFO - 🍪 Cookie banner cleared.
+2026-01-31 20:12:22,395 - INFO -    📜 Scrolling to load products...
+2026-01-31 20:12:30,141 - INFO -    🔍 Analyzing 166 links...
+2026-01-31 20:12:30,142 - INFO -    🔗 Found 57 potential product links
+2026-01-31 20:12:30,142 - INFO -    📦 Starting to scrape products (target: 50)...
+2026-01-31 20:12:33,305 - INFO -       ✅ [1] ASDA Mild & Tender Spinach 650g (£2.12)
+2026-01-31 20:12:37,625 - INFO -       ✅ [2] Exceptional by Asda Green Vegetable Selection 210g (£2.36)
+2026-01-31 20:12:42,189 - INFO -       ✅ [3] ASDA Broccoli (£0.79)
+2026-01-31 20:12:46,548 - INFO -       ✅ [4] ASDA Delicately Sweet Tenderheart Cabbage (£0.75)
+2026-01-31 20:12:50,661 - INFO -       ✅ [5] Exceptional by ASDA British Baby Potatoes 1kg (£1.52)
+2026-01-31 20:12:54,931 - INFO -       ✅ [6] ASDA Mild & Versatile Sliced Mushrooms 250g (£1.14)
+2026-01-31 20:13:03,996 - INFO -       ✅ [7] ASDA Mild & Delicate Courgettes 330g (£1.07)
+2026-01-31 20:13:08,586 - INFO -    📊 Progress: 7/50 products (10 checked, 2 promo filtered)
+2026-01-31 20:13:27,616 - INFO -       ✅ [8] ASDA Mild & Versatile White Mushrooms 400g (£1.29)
+2026-01-31 20:13:31,957 - INFO -       ✅ [9] ASDA Light & Nutty Cauliflower (£1.19)
+2026-01-31 20:13:40,350 - INFO -       ✅ [10] ASDA Crunchy & Sweet Carrots 500g (£0.50)
+2026-01-31 20:13:45,337 - INFO -       ✅ [11] ASDA 3 Sweet & Crunchy Red Onions (£0.95)
+2026-01-31 20:13:49,543 - INFO -       ✅ [12] ASDA Brown Onions 1kg (£0.99)
+2026-01-31 20:13:53,488 - INFO -       ✅ [13] ASDA Light & Fluffy Maris Piper Potatoes 2kg (£1.80)
+2026-01-31 20:13:54,560 - INFO -    📊 Progress: 13/50 products (20 checked, 6 promo filtered)
+2026-01-31 20:14:02,598 - INFO -       ✅ [14] ASDA Crunchy & Fragrant Chopped Onion 200g (£0.57)
+2026-01-31 20:14:06,905 - INFO -       ✅ [15] Exceptional by ASDA 4 British Baking Potatoes (£1.57)
+2026-01-31 20:14:11,325 - INFO -       ✅ [16] Exceptional by ASDA Tenderstem Broccoli Tips 100g (£1.14)
+2026-01-31 20:14:16,244 - INFO -       ✅ [17] ASDA 3 Crunchy & Fragrant Brown Onions (£0.95)
+2026-01-31 20:14:20,843 - INFO -       ✅ [18] Exceptional by ASDA British Potatoes 2kg (£1.97)
+2026-01-31 20:14:29,201 - INFO -       ✅ [19] ASDA Mild & Sweet Trimmed Leeks 500g (£1.39)
+2026-01-31 20:14:38,702 - INFO -       ✅ [20] ASDA Fluffy & Golden Large Baking Potatoes 4 Pack (£0.79)
+2026-01-31 20:14:39,638 - INFO -    📊 Progress: 20/50 products (30 checked, 9 promo filtered)
+2026-01-31 20:14:43,091 - INFO -       ✅ [21] Exceptional by ASDA British Purple Sprouting Brocc... (£1.77)
+2026-01-31 20:14:51,788 - INFO -       ✅ [22] ASDA Crunchy & Peppery Radishes 240g (£0.56)
+2026-01-31 20:14:56,125 - INFO -       ✅ [23] Exceptional by ASDA British Cavolo Nero Kale 150g (£1.00)
+2026-01-31 20:15:00,457 - INFO -       ✅ [24] Exceptional by Asda Dauphinoise Potatoes 400g (£2.43)
+2026-01-31 20:15:04,440 - INFO -       ✅ [25] Exceptional by ASDA Extra Large Onions (£1.68)
+2026-01-31 20:15:12,635 - INFO -       ✅ [26] Exceptional by ASDA Hasselback Potatoes 450g (£2.47)
+2026-01-31 20:15:16,811 - INFO -       ✅ [27] Exceptional by ASDA Exceptional by  Beef Dripping ... (£2.42)
+2026-01-31 20:15:22,659 - INFO -    📊 Progress: 27/50 products (40 checked, 12 promo filtered)
+2026-01-31 20:15:26,190 - INFO -       ✅ [28] Exceptional by ASDA Asparagus Tips 100g (£1.48)
+2026-01-31 20:15:39,476 - INFO -       ✅ [29] ASDA Carrots 1kg (£0.50)
+2026-01-31 20:15:46,928 - INFO -       ✅ [30] Exceptional by ASDA Garlic & Parmesan Baby Potatoe... (£2.47)
+2026-01-31 20:15:55,596 - INFO -       ✅ [31] ASDA Firm & Flavoursome Baby Potatoes 1kg (£0.88)
+2026-01-31 20:15:59,852 - INFO -       ✅ [32] ASDA Sprouts (£0.95)
+2026-01-31 20:16:08,937 - INFO -       ✅ [33] ASDA White Mushrooms 250g (£0.95)
+2026-01-31 20:16:10,003 - INFO -    📊 Progress: 33/50 products (50 checked, 16 promo filtered)
+2026-01-31 20:16:20,658 - INFO -       ✅ [34] ASDA Sweet & Nutty Trimmed Brussels Sprouts 200g (£1.00)
+2026-01-31 20:16:28,243 - INFO -       ✅ [35] ASDA British Swede (£0.62)
+2026-01-31 20:16:36,744 - INFO -       ✅ [36] Exceptional by ASDA British Mixed Mushrooms 150g (£1.72)
+2026-01-31 20:16:51,161 - INFO -    🎯 Successfully scraped 36 products from Vegetables
+2026-01-31 20:16:51,162 - INFO -    ⏭️  Skipped 21 items (21 promotional/invalid)
+2026-01-31 20:16:51,932 - INFO - 💾 ✅ Bucket Saved: Vegetables_2026-01-31
+2026-01-31 20:16:51,932 - INFO -    📊 Products: 36
+2026-01-31 20:16:51,932 - INFO - 
+2026-01-31 20:16:51,932 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:16:51,933 - INFO - 📦 [3/10] Category: Meat
+2026-01-31 20:16:51,933 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:16:55,088 - INFO - 🛒 Opening Category: Meat
+2026-01-31 20:16:55,089 - INFO -    URL: https://www.asda.com/groceries/meat-poultry-fish/meat-poultry
+2026-01-31 20:17:01,026 - INFO - 🍪 Cookie banner cleared.
+2026-01-31 20:17:04,035 - INFO -    📜 Scrolling to load products...
+2026-01-31 20:17:11,833 - INFO -    🔍 Analyzing 190 links...
+2026-01-31 20:17:11,834 - INFO -    🔗 Found 69 potential product links
+2026-01-31 20:17:11,834 - INFO -    📦 Starting to scrape products (target: 50)...
+2026-01-31 20:17:15,313 - INFO -       ✅ [1] Richmond 12 Thick Pork Sausages 615g (£3.17)
+2026-01-31 20:17:24,218 - INFO -       ✅ [2] ASDA Tender Chicken Breast Fillets 1.6kg (£10.48)
+2026-01-31 20:17:33,167 - INFO -       ✅ [3] Exceptional by ASDA 12 Cumberland Pork Chipolata S... (£3.00)
+2026-01-31 20:17:37,522 - INFO -       ✅ [4] ASDA Warming 6 Mediterranean Style Pork Loin Sizzl... (£4.74)
+2026-01-31 20:17:42,236 - INFO -       ✅ [5] Exceptional by ASDA 6 Honey & Mustard Pork Sausage... (£3.00)
+2026-01-31 20:17:54,588 - INFO -       ✅ [6] ASDA Tender Chicken Mince (£4.53)
+2026-01-31 20:17:55,988 - INFO -    📊 Progress: 6/50 products (10 checked, 3 promo filtered)
+2026-01-31 20:18:03,859 - INFO -       ✅ [7] ASDA Succulent Diced Pork Casserole 700g (£4.42)
+2026-01-31 20:18:08,274 - INFO -       ✅ [8] ASDA Slow Cooked Chicken Crown with Sage & Onion G... (£5.28)
+2026-01-31 20:18:12,574 - INFO -       ✅ [9] Exceptional by ASDA 12 Classic Pork Chipolata Saus... (£3.00)
+2026-01-31 20:18:16,721 - INFO -       ✅ [10] Exceptional by ASDA Exceptional 8 Wiltshire Cured ... (£3.24)
+2026-01-31 20:18:21,125 - INFO -       ✅ [11] Exceptional by ASDA 6 Triple Chilli Pork Sausages ... (£3.00)
+2026-01-31 20:18:25,701 - INFO -       ✅ [12] Exceptional by ASDA 6 Bacon & Maple Syrup Pork Sau... (£3.00)
+2026-01-31 20:18:30,099 - INFO -       ✅ [13] ASDA Tender Diced Chicken Breast 650g (£4.84)
+2026-01-31 20:18:38,821 - INFO -       ✅ [14] This Isn't Isn't Chicken Thighs 220g (£3.93)
+2026-01-31 20:18:39,769 - INFO -    📊 Progress: 14/50 products (20 checked, 5 promo filtered)
+2026-01-31 20:18:43,104 - INFO -       ✅ [15] Gressingham Whole Duck (£9.77)
+2026-01-31 20:18:47,387 - INFO -       ✅ [16] ASDA Lean Pork Fillet (Typically 0.5kg) (Typically... (£4.00)
+2026-01-31 20:18:56,099 - INFO -       ✅ [17] Exceptional by ASDA 8 Smoked Bacon Medallions 200g (£3.24)
+2026-01-31 20:19:00,614 - INFO -       ✅ [18] Richmond 12 Thin Pork Sausages 340g (£2.28)
+2026-01-31 20:19:05,185 - INFO -       ✅ [19] ASDA Tender Chicken Breast Portions (£2.40)
+2026-01-31 20:19:16,850 - INFO -       ✅ [20] Quorn 14 Cocktail Sausages 140g (£1.93)
+2026-01-31 20:19:21,239 - INFO -       ✅ [21] ASDA Tender Chicken Breast Fillets 1kg (£6.94)
+2026-01-31 20:19:26,516 - INFO -       ✅ [22] ASDA Thin Cut Beef Steaks 400g (£4.56)
+2026-01-31 20:19:27,832 - INFO -    📊 Progress: 22/50 products (30 checked, 7 promo filtered)
+2026-01-31 20:19:31,212 - INFO -       ✅ [23] ASDA Simple to Cook Cheese & Bacon Chicken Breast ... (£4.88)
+2026-01-31 20:19:36,282 - INFO -       ✅ [24] Stock Up & Save (£4.25)
+2026-01-31 20:19:45,064 - INFO -       ✅ [25] Exceptional by ASDA 6 Lincolnshire Pork Sausages 4... (£3.00)
+2026-01-31 20:19:49,279 - INFO -       ✅ [26] Richmond 12 Skinless Pork Sausages 319g (£2.28)
+2026-01-31 20:20:06,307 - INFO -       ✅ [27] ASDA Crispy Tempura Chicken Breast Mini Fillets 30... (£2.97)
+2026-01-31 20:20:10,348 - INFO -       ✅ [28] ASDA Classic Italian Salami & Cheese Selection 100... (£2.68)
+2026-01-31 20:20:14,482 - INFO -       ✅ [29] ASDA Seasoned 6 Southern Fried Chicken Steaks 750g (£4.57)
+2026-01-31 20:20:15,630 - INFO -    📊 Progress: 29/50 products (40 checked, 10 promo filtered)
+2026-01-31 20:20:23,415 - INFO -       ✅ [30] Exceptional by ASDA Creamy Wild Mushroom Sauce 150... (£1.66)
+2026-01-31 20:20:33,265 - INFO -       ✅ [31] ASDA Lean Diced Pork 600g (£4.87)
+2026-01-31 20:20:42,561 - INFO -       ✅ [32] ASDA Succulent Extra Tasty Small Chicken (£4.94)
+2026-01-31 20:20:51,532 - INFO -       ✅ [33] ASDA 4 Tender Pork Chops 700g (£4.97)
+2026-01-31 20:21:06,248 - INFO -    📊 Progress: 33/50 products (50 checked, 16 promo filtered)
+2026-01-31 20:21:09,778 - INFO -       ✅ [34] Richmond 8 Thick Pork Sausages 410g (£2.17)
+2026-01-31 20:21:26,236 - INFO -       ✅ [35] ASDA Tender Boneless & Rindless Pork Loin Joint 1k... (£5.97)
+2026-01-31 20:21:34,959 - INFO -       ✅ [36] Richmond Vegan & Vegetarian Meat Free 8 Tasty Saus... (£2.27)
+2026-01-31 20:21:39,471 - INFO -       ✅ [37] ASDA Extra Lean Turkey Mince 500g (£4.58)
+2026-01-31 20:21:52,177 - INFO -       ✅ [38] ASDA Joyous Continental Sharing Selection 100g (£2.68)
+2026-01-31 20:21:53,030 - INFO -    📊 Progress: 38/50 products (60 checked, 21 promo filtered)
+2026-01-31 20:22:05,546 - INFO -       ✅ [39] ASDA Tender Lean Diced Beef 400g (£5.22)
+2026-01-31 20:22:10,128 - INFO -       ✅ [40] Exceptional by ASDA 4 New York Style Hot Dog Sausa... (£3.00)
+2026-01-31 20:22:15,146 - INFO -       ✅ [41] ASDA Flavoursome 10 Smoked Reduced Fat Bacon Medal... (£2.74)
+2026-01-31 20:22:19,453 - INFO -       ✅ [42] ASDA Sirloin Beef Steak 227g (£6.64)
+2026-01-31 20:22:25,718 - INFO -       ✅ [43] ASDA Crispy Breaded Chicken Goujons 270g (£2.22)
+2026-01-31 20:22:35,658 - INFO -       ✅ [44] ASDA Magical Spanish Salami Selection 120g (£2.68)
+2026-01-31 20:22:42,327 - INFO -       ✅ [45] Exceptional by ASDA 6 Classic Pork Sausages 400g (£3.00)
+2026-01-31 20:22:43,260 - INFO -    🎯 Successfully scraped 45 products from Meat
+2026-01-31 20:22:43,261 - INFO -    ⏭️  Skipped 24 items (24 promotional/invalid)
+2026-01-31 20:22:44,055 - INFO - 💾 ✅ Bucket Saved: Meat_2026-01-31
+2026-01-31 20:22:44,055 - INFO -    📊 Products: 45
+2026-01-31 20:22:44,055 - INFO - 
+2026-01-31 20:22:44,056 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:22:44,056 - INFO - 📦 [4/10] Category: Fish
+2026-01-31 20:22:44,056 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:22:47,317 - INFO - 🛒 Opening Category: Fish
+2026-01-31 20:22:47,317 - INFO -    URL: https://www.asda.com/groceries/meat-poultry-fish/fish-seafood
+2026-01-31 20:22:53,898 - INFO - 🍪 Cookie banner cleared.
+2026-01-31 20:22:56,917 - INFO -    📜 Scrolling to load products...
+2026-01-31 20:23:04,876 - INFO -    🔍 Analyzing 153 links...
+2026-01-31 20:23:04,876 - INFO -    🔗 Found 47 potential product links
+2026-01-31 20:23:04,877 - INFO -    📦 Starting to scrape products (target: 50)...
+2026-01-31 20:23:08,282 - INFO -       ✅ [1] Exceptional by ASDA Cod, Roasted Tomato & Mozzarel... (£3.50)
+2026-01-31 20:23:13,960 - INFO -       ✅ [2] Leap Wild Sockeye Salmon Fillets 220g (£9.25)
+2026-01-31 20:23:22,031 - INFO -       ✅ [3] ASDA 4 Flavoursome Salmon Fillets 520g (£8.07)
+2026-01-31 20:23:27,505 - INFO -       ✅ [4] Exceptional by ASDA Cod Fishcakes With a Creamy Pa... (£3.50)
+2026-01-31 20:23:32,241 - INFO -       ✅ [5] ASDA Cooked & Peeled Cold Water Prawns 150g (£2.78)
+2026-01-31 20:23:45,789 - INFO -       ✅ [6] Exceptional by ASDA Beer Battered Cod Fishcakes 29... (£3.50)
+2026-01-31 20:23:51,750 - INFO -    📊 Progress: 6/50 products (10 checked, 3 promo filtered)
+2026-01-31 20:23:55,403 - INFO -       ✅ [7] ASDA Delicate 2 Hake Fillets 240g (£4.40)
+2026-01-31 20:24:00,960 - INFO -       ✅ [8] ASDA 2 Sea Bass Fillets 180g (£5.75)
+2026-01-31 20:24:05,833 - INFO -       ✅ [9] Exceptional by ASDA Salmon, Spinach & Lemon Fishca... (£3.50)
+2026-01-31 20:24:11,593 - INFO -       ✅ [10] MOWI Bistro Scottish Salmon with Lemon & Herb Butt... (£6.17)
+2026-01-31 20:24:20,336 - INFO -       ✅ [11] Exceptional by ASDA King Prawn & Cod Fishcakes wit... (£3.50)
+2026-01-31 20:24:31,817 - INFO -       ✅ [12] Exceptional by ASDA Smoked Haddock Fishcakes 290g (£3.50)
+2026-01-31 20:24:39,192 - INFO -       ✅ [13] Exceptional by ASDA 2 Beer Battered Cod Fillets 35... (£5.37)
+2026-01-31 20:24:49,390 - INFO -       ✅ [14] ASDA Golden 2 Breaded Cod Fillets (£4.27)
+2026-01-31 20:24:50,532 - INFO -    📊 Progress: 14/50 products (20 checked, 5 promo filtered)
+2026-01-31 20:24:55,165 - INFO -       ✅ [15] MOWI Superior Scottish Smoked Salmon 100g (£5.46)
+2026-01-31 20:25:00,509 - INFO -       ✅ [16] Stock Up & Save (£4.25)
+2026-01-31 20:25:05,359 - INFO -       ✅ [17] ASDA Delicious Prawn Cocktail 170g (£2.75)
+2026-01-31 20:25:18,528 - INFO -       ✅ [18] MOWI Superior Scottish Salmon Fillets 230g (£5.57)
+2026-01-31 20:25:22,758 - INFO -       ✅ [19] Exceptional by ASDA Cod Loin 260g (£7.52)
+2026-01-31 20:25:26,623 - INFO -       ✅ [20] ASDA Golden Battered Cod Bites 250g (£3.75)
+2026-01-31 20:25:34,619 - INFO -       ✅ [21] Exceptional by ASDA 2 Scottish Salmon Fillets 240g (£5.83)
+2026-01-31 20:25:39,275 - INFO -       ✅ [22] ASDA Crispy Tempura Battered King Prawns 200g (£3.20)
+2026-01-31 20:25:40,764 - INFO -    📊 Progress: 22/50 products (30 checked, 7 promo filtered)
+2026-01-31 20:25:43,870 - INFO -       ✅ [23] Mowi Infusions Ginger, Chilli & Lime Scottish Salm... (£5.43)
+2026-01-31 20:26:00,799 - INFO -       ✅ [24] ASDA Crisp 2 Lightly Dusted Basa Fillets 300g (£3.18)
+2026-01-31 20:26:09,146 - INFO -       ✅ [25] Fish Said Fred Big Sea Bass Fillets 240g (£7.75)
+2026-01-31 20:26:13,683 - INFO -       ✅ [26] ASDA Tasty 2 Smoked Haddock Fishcakes (£2.04)
+2026-01-31 20:26:17,990 - INFO -       ✅ [27] Leap Wild Yellowfin Tuna 2 Steaks 240g (£9.30)
+2026-01-31 20:26:22,318 - INFO -       ✅ [28] Mowi Infusions Garlic & Herb Scottish Salmon Fille... (£5.43)
+2026-01-31 20:26:26,597 - INFO -       ✅ [29] Leap Wild Smoked Sockeye Salmon 100g (£8.50)
+2026-01-31 20:26:27,925 - INFO -    📊 Progress: 29/50 products (40 checked, 10 promo filtered)
+2026-01-31 20:26:42,483 - INFO -       ✅ [30] Fish Said Fred 2 Big Cod Fillets 300g (£8.50)
+2026-01-31 20:26:46,767 - INFO -       ✅ [31] ASDA Tasty Cooked Mussels 150g (£1.74)
+2026-01-31 20:26:50,982 - INFO -       ✅ [32] ASDA Exceptional by  Chunky Breaded Cod Fillets 35... (£5.37)
+2026-01-31 20:26:55,385 - INFO -       ✅ [33] Exceptional by ASDA 2 Lightly Smoked Scottish Salm... (£5.48)
+2026-01-31 20:26:59,748 - INFO -       ✅ [34] Exceptional by ASDA Cooked & Peeled Jumbo King Pra... (£4.25)
+2026-01-31 20:27:03,806 - INFO -       ✅ [35] Young's 4 Fish Fillets in Golden Breadcrumb 600g (£4.63)
+2026-01-31 20:27:04,616 - INFO -    🎯 Successfully scraped 35 products from Fish
+2026-01-31 20:27:04,617 - INFO -    ⏭️  Skipped 12 items (12 promotional/invalid)
+2026-01-31 20:27:05,529 - INFO - 💾 ✅ Bucket Saved: Fish_2026-01-31
+2026-01-31 20:27:05,529 - INFO -    📊 Products: 35
+2026-01-31 20:27:05,530 - INFO - 
+2026-01-31 20:27:05,530 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:27:05,530 - INFO - 📦 [5/10] Category: Bakery
+2026-01-31 20:27:05,530 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:27:08,805 - INFO - 🛒 Opening Category: Bakery
+2026-01-31 20:27:08,805 - INFO -    URL: https://www.asda.com/groceries/bakery/bread-rolls
+2026-01-31 20:27:14,767 - INFO - 🍪 Cookie banner cleared.
+2026-01-31 20:27:17,775 - INFO -    📜 Scrolling to load products...
+2026-01-31 20:27:25,493 - INFO -    🔍 Analyzing 141 links...
+2026-01-31 20:27:25,494 - INFO -    🔗 Found 45 potential product links
+2026-01-31 20:27:25,494 - INFO -    📦 Starting to scrape products (target: 50)...
+2026-01-31 20:27:28,108 - INFO -       ✅ [1] Jason's No 06 Majestic Malted Sourdough 450g (£2.13)
+2026-01-31 20:27:32,861 - INFO -       ✅ [2] Warburtons 4 Large Sliced Rolls (£1.67)
+2026-01-31 20:27:37,369 - INFO -       ✅ [3] Jason's Wholemeal Sourdough 580g (£2.13)
+2026-01-31 20:27:41,674 - INFO -       ✅ [4] Kingsmill Tiger Bloomer 750g (£1.48)
+2026-01-31 20:27:45,387 - INFO -       ✅ [5] Warburtons 12 Pulses, Seeds & Grains Protein Power... (£2.00)
+2026-01-31 20:27:49,603 - INFO -       ✅ [6] Exceptional by ASDA White Sourdough Loaf 600g (£2.82)
+2026-01-31 20:27:54,038 - INFO -       ✅ [7] Kingsmill 50/50 Bread Thick Sliced Loaf 800g (£1.23)
+2026-01-31 20:28:05,806 - INFO -    📊 Progress: 7/50 products (10 checked, 2 promo filtered)
+2026-01-31 20:28:09,049 - INFO -       ✅ [8] The BAKERY at ASDA The Bakery 4 Sliced Brioche Bur... (£0.98)
+2026-01-31 20:28:13,656 - INFO -       ✅ [9] New York Bakery Co Fibre Plus Sliced Multiseeds & ... (£1.47)
+2026-01-31 20:28:17,838 - INFO -       ✅ [10] Warburtons 4 Protein Flatbreads (£1.75)
+2026-01-31 20:28:21,830 - INFO -       ✅ [11] Warburtons 4 Fibre Fix Soft Sliced Rolls (£2.00)
+2026-01-31 20:28:26,170 - INFO -       ✅ [12] Jason's Seeded Protein 580g (£2.75)
+2026-01-31 20:28:30,589 - INFO -       ✅ [13] Exceptional by ASDA Mixed Seed Sourdough Loaf 500g (£2.44)
+2026-01-31 20:28:35,223 - INFO -       ✅ [14] Schar Gluten-Free Sweet Brioche Style Rolls 2 x 10... (£2.40)
+2026-01-31 20:28:39,245 - INFO -       ✅ [15] Kingsmill 50/50 Bread Medium Sliced Loaf 800g (£1.23)
+2026-01-31 20:28:43,186 - INFO -       ✅ [16] New York Bakery Co Sliced Protein Boost NYC Bagels (£1.47)
+2026-01-31 20:28:47,247 - INFO -       ✅ [17] Bake at Home 4 Ciabatta Rolls 250g (£1.37)
+2026-01-31 20:28:48,253 - INFO -    📊 Progress: 17/50 products (20 checked, 2 promo filtered)
+2026-01-31 20:29:00,708 - INFO -       ✅ [18] Warburtons 9 Seeds & Grain Fibre Fix 500g (£2.00)
+2026-01-31 20:29:05,247 - INFO -       ✅ [19] The BAKERY at ASDA The Bakery Soft White Toastie T... (£0.75)
+2026-01-31 20:29:09,235 - INFO -       ✅ [20] Stock Up & Save (£4.25)
+2026-01-31 20:29:13,644 - INFO -       ✅ [21] Warburtons Soft White Our Dough 400g (£1.84)
+2026-01-31 20:29:19,659 - INFO -       ✅ [22] The Health Menu by ASDA The Health Menu 10 Seeds, ... (£1.06)
+2026-01-31 20:29:24,010 - INFO -       ✅ [23] Schar Panini Rolls 150g (£1.78)
+2026-01-31 20:29:31,892 - INFO -       ✅ [24] Kingsmill Tasty Wholemeal Bread Medium Sliced Loaf... (£1.23)
+2026-01-31 20:29:37,414 - INFO -    📊 Progress: 24/50 products (30 checked, 5 promo filtered)
+2026-01-31 20:29:43,812 - INFO -       ✅ [25] Exceptional by ASDA Parisian Pave 400g (£2.14)
+2026-01-31 20:29:48,336 - INFO -       ✅ [26] Kingsmill 50/50 Farmhouse Bread Sliced Loaf 800g (£1.48)
+2026-01-31 20:29:53,216 - INFO -       ✅ [27] Warburtons Gluten Free 4 Super Soft Sliced Seeded ... (£2.94)
+2026-01-31 20:30:10,115 - INFO -       ✅ [28] Warburtons 4 Protein Soft Pittas (£1.65)
+2026-01-31 20:30:14,387 - INFO -       ✅ [29] Genius Fruit Loaf 400g (£3.08)
+2026-01-31 20:30:18,526 - INFO -       ✅ [30] New York Bakery Co Sliced Lighter NYC Bagels (£1.47)
+2026-01-31 20:30:23,188 - INFO -       ✅ [31] Mission Protein Tortilla Wraps 6 Pack (£1.47)
+2026-01-31 20:30:24,258 - INFO -    📊 Progress: 31/50 products (40 checked, 8 promo filtered)
+2026-01-31 20:30:30,883 - INFO -       ✅ [32] Warburtons Thick Slice Soft Tiger Bloomer 600g (£1.65)
+2026-01-31 20:30:34,809 - INFO -       ✅ [33] Jason's No1 The Great White Sourdough 450g (£2.13)
+2026-01-31 20:30:39,028 - INFO -       ✅ [34] Warburtons 4 Tear & Toast Protein Muffins (£1.50)
+2026-01-31 20:30:47,106 - INFO -       ✅ [35] BFree Gluten Free High Protein Wraps 4 Pack (£3.60)
+2026-01-31 20:30:47,939 - INFO -    🎯 Successfully scraped 35 products from Bakery
+2026-01-31 20:30:47,939 - INFO -    ⏭️  Skipped 10 items (10 promotional/invalid)
+2026-01-31 20:30:48,623 - INFO - 💾 ✅ Bucket Saved: Bakery_2026-01-31
+2026-01-31 20:30:48,624 - INFO -    📊 Products: 35
+2026-01-31 20:30:48,624 - INFO - 
+2026-01-31 20:30:48,624 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:30:48,624 - INFO - 📦 [6/10] Category: Dessert
+2026-01-31 20:30:48,624 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:30:51,980 - INFO - 🛒 Opening Category: Dessert
+2026-01-31 20:30:51,980 - INFO -    URL: https://www.asda.com/groceries/bakery/desserts-cream-cakes
+2026-01-31 20:30:57,674 - INFO - 🍪 Cookie banner cleared.
+2026-01-31 20:31:00,684 - INFO -    📜 Scrolling to load products...
+2026-01-31 20:31:08,416 - INFO -    🔍 Analyzing 113 links...
+2026-01-31 20:31:08,417 - INFO -    🔗 Found 32 potential product links
+2026-01-31 20:31:08,417 - INFO -    📦 Starting to scrape products (target: 50)...
+2026-01-31 20:31:21,176 - INFO -       ✅ [1] The BAKERY at ASDA The Bakery Chocolate Sponge Pud... (£3.98)
+2026-01-31 20:31:25,798 - INFO -       ✅ [2] ASDA Easter Toffee & White Chocolate Cheesecake 50... (£5.38)
+2026-01-31 20:31:34,706 - INFO -       ✅ [3] The BAKERY at ASDA 2 Chocolate Éclairs (£1.47)
+2026-01-31 20:31:58,294 - INFO -    📊 Progress: 3/50 products (10 checked, 6 promo filtered)
+2026-01-31 20:32:24,672 - INFO -       ✅ [4] GU Zillionaire Cheesecake Dessert (2 x 91.5g) 183g (£3.77)
+2026-01-31 20:32:35,083 - INFO -       ✅ [5] Stock Up & Save (£4.25)
+2026-01-31 20:32:50,164 - INFO -    📊 Progress: 5/50 products (20 checked, 14 promo filtered)
+2026-01-31 20:33:28,549 - INFO -       ✅ [6] GU Chocolate & Honeycomb Cheesecake Dessert  2 x 8... (£3.77)
+2026-01-31 20:33:37,959 - INFO -    📊 Progress: 6/50 products (30 checked, 23 promo filtered)
+2026-01-31 20:33:41,454 - INFO -       ✅ [7] Krispy Kreme Original Glazed Bites Doughnuts (£4.49)
+2026-01-31 20:33:51,291 - INFO -       ✅ [8] GU Brownies Double Chocolate Dessert (£3.97)
+2026-01-31 20:33:52,142 - INFO -    🎯 Successfully scraped 8 products from Dessert
+2026-01-31 20:33:52,143 - INFO -    ⏭️  Skipped 24 items (24 promotional/invalid)
+2026-01-31 20:33:54,355 - INFO - 💾 ✅ Bucket Saved: Dessert_2026-01-31
+2026-01-31 20:33:54,356 - INFO -    📊 Products: 8
+2026-01-31 20:33:54,356 - INFO - 
+2026-01-31 20:33:54,356 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:33:54,356 - INFO - 📦 [7/10] Category: Protein
+2026-01-31 20:33:54,356 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:33:57,368 - INFO - 🛒 Opening Category: Protein
+2026-01-31 20:33:57,368 - INFO -    URL: https://www.asda.com/groceries/chilled-food/milk-butter-cream-eggs
+2026-01-31 20:34:02,447 - INFO - 🍪 Cookie banner cleared.
+2026-01-31 20:34:05,454 - INFO -    📜 Scrolling to load products...
+2026-01-31 20:34:13,318 - INFO -    🔍 Analyzing 186 links...
+2026-01-31 20:34:13,319 - INFO -    🔗 Found 73 potential product links
+2026-01-31 20:34:13,319 - INFO -    📦 Starting to scrape products (target: 50)...
+2026-01-31 20:34:16,599 - INFO -       ✅ [1] Arla LactoFREE Cream 250ml (£1.44)
+2026-01-31 20:34:20,988 - INFO -       ✅ [2] Flora Lighter Butter Alternative With Natural Ingr... (£2.64)
+2026-01-31 20:34:26,194 - INFO -       ✅ [3] Lurpak Slightly Salted Spreadable Blend of Butter ... (£6.98)
+2026-01-31 20:34:30,329 - INFO -       ✅ [4] Cravendale Arla  Filtered Fresh Semi Skimmed Milk ... (£2.50)
+2026-01-31 20:34:36,199 - INFO -       ✅ [5] Arla LactoFREE Whole Milk Drink 2 Litre (£2.48)
+2026-01-31 20:34:40,323 - INFO -       ✅ [6] Vitalite Dairy Free Spread 500g (£1.20)
+2026-01-31 20:34:55,002 - INFO -       ✅ [7] Starbucks ® Protein Drink With Coffee Caffè Latte ... (£2.57)
+2026-01-31 20:34:55,836 - INFO -    📊 Progress: 7/50 products (10 checked, 2 promo filtered)
+2026-01-31 20:34:59,216 - INFO -       ✅ [8] Starbucks Caffe Latte Iced Coffee 220ml (£1.10)
+2026-01-31 20:35:05,594 - INFO -       ✅ [9] Country Life Spreadable 750g (£5.62)
+2026-01-31 20:35:10,307 - INFO -       ✅ [10] Flora Unsalted Block Butter Alternative 200g (£0.98)
+2026-01-31 20:35:15,027 - INFO -       ✅ [11] Shaken Udder Vanillalicious! Milkshake 750ml (£2.64)
+2026-01-31 20:35:19,313 - INFO -       ✅ [12] Lurpak Lighter Spreadable Blend of Butter and Rape... (£6.98)
+2026-01-31 20:35:23,994 - INFO -       ✅ [13] Yazoo Vanilla Milk Drink 400ml (£1.28)
+2026-01-31 20:35:29,996 - INFO -       ✅ [14] Starbucks ® Protein Drink With Coffee Chocolate Mo... (£2.57)
+2026-01-31 20:35:34,116 - INFO -       ✅ [15] JUST ESSENTIALS by ASDA Semi Skimmed Long Life Mil... (£0.69)
+2026-01-31 20:35:41,101 - INFO -       ✅ [16] ASDA Classic Latte 330ml (£1.00)
+2026-01-31 20:35:45,434 - INFO -       ✅ [17] Starbucks ® Protein Drink With Coffee Caramel Haze... (£2.57)
+2026-01-31 20:35:46,638 - INFO -    📊 Progress: 17/50 products (20 checked, 2 promo filtered)
+2026-01-31 20:35:50,886 - INFO -       ✅ [18] Lurpak Plant Based Alternative to Spreadable or Bu... (£4.25)
+2026-01-31 20:36:00,328 - INFO -       ✅ [19] Arctic Caramel Latte 1 Litre (£1.80)
+2026-01-31 20:36:05,630 - INFO -       ✅ [20] The Happy Egg Co Free Range 10 Large (£3.96)
+2026-01-31 20:36:09,872 - INFO -       ✅ [21] Anchor Lighter Spreadable Blend of Butter and Rape... (£4.08)
+2026-01-31 20:36:24,891 - INFO -       ✅ [22] Shaken Udder White Choc Milkshake 750ml (£2.64)
+2026-01-31 20:36:31,325 - INFO -       ✅ [23] ASDA 12 Free Range Large Eggs (£3.30)
+2026-01-31 20:36:38,576 - INFO -       ✅ [24] Lurpak Slightly Salted Butter 200g (£2.47)
+2026-01-31 20:36:46,875 - INFO -    📊 Progress: 24/50 products (30 checked, 5 promo filtered)
+2026-01-31 20:36:52,714 - INFO -       ✅ [25] Anchor Spreadable Blend of Butter and Rapeseed Oil... (£4.08)
+2026-01-31 20:37:13,620 - INFO -       ✅ [26] Arctic Café Latte 1 Litre (£1.80)
+2026-01-31 20:37:21,312 - INFO -       ✅ [27] Arla LactoFREE Whole Milk Drink 1L (£1.94)
+2026-01-31 20:37:43,781 - INFO -       ✅ [28] ASDA British Milk Skimmed 4 Pints (£1.65)
+2026-01-31 20:37:54,064 - INFO -       ✅ [29] Cravendale Arla  Filtered Fresh Whole Milk 2L Fres... (£2.50)
+2026-01-31 20:38:02,421 - INFO -       ✅ [30] Arla LactoFREE Slightly Salted Spreadable Blend of... (£2.25)
+2026-01-31 20:38:11,888 - INFO -       ✅ [31] Flora Plant Butter Spreadable Butter Alternative 4... (£2.00)
+2026-01-31 20:38:12,779 - INFO -    📊 Progress: 31/50 products (40 checked, 8 promo filtered)
+2026-01-31 20:38:21,899 - INFO -       ✅ [32] Anchor Salted Butter 200g (£2.44)
+2026-01-31 20:38:45,023 - INFO -       ✅ [33] ASDA Vanilla Latte 330ml (£1.00)
+2026-01-31 20:39:05,332 - INFO -       ✅ [34] Yazoo Strawberry Milk Drink 6 x 200ml (£2.40)
+2026-01-31 20:39:18,154 - INFO -       ✅ [35] Mars Chocolate Milk Shake Drink No Added Sugar 400... (£1.60)
+2026-01-31 20:39:31,682 - INFO -       ✅ [36] ASDA 12 Free Range Medium Eggs (£2.85)
+2026-01-31 20:39:43,692 - INFO -       ✅ [37] ASDA British Milk Semi Skimmed 4 Pints (£1.65)
+2026-01-31 20:39:58,673 - INFO -    📊 Progress: 37/50 products (50 checked, 12 promo filtered)
+2026-01-31 20:40:05,616 - INFO -       ✅ [38] ASDA Caramel Latte 330ml (£1.00)
+2026-01-31 20:40:24,427 - INFO -       ✅ [39] ASDA British Milk Semi Skimmed 6 Pints (£2.40)
+2026-01-31 20:40:54,465 - INFO -       ✅ [40] Flora Salted Block Butter Alternative 200g (£0.98)
+2026-01-31 20:41:01,506 - INFO -       ✅ [41] Starbucks Skinny Latte No Added Sugar Iced Coffee ... (£1.98)
+2026-01-31 20:41:08,253 - INFO -    📊 Progress: 41/50 products (60 checked, 18 promo filtered)
+2026-01-31 20:41:14,584 - INFO -       ✅ [42] Anchor Spreadable Blend of Butter and Rapeseed Oil... (£7.48)
+2026-01-31 20:41:19,437 - INFO -       ✅ [43] ASDA Extra Shot Latte 330ml (£1.00)
+2026-01-31 20:41:42,740 - INFO -       ✅ [44] Biotiful Gut Health Kefir Milk Drink Cherry 500ml (£2.23)
+2026-01-31 20:41:52,790 - INFO -       ✅ [45] Blue Diamond Almond Breeze® Unsweetened UHT Drink ... (£1.90)
+2026-01-31 20:42:08,156 - INFO -       ✅ [46] ASDA Skinny Latte 330ml (£1.00)
+2026-01-31 20:42:34,694 - INFO -       ✅ [47] Starbucks Multiserve Caramel Macchiato Iced Coffee... (£2.00)
+2026-01-31 20:42:47,257 - INFO -       ✅ [48] ASDA Half Fat Crème Fraîche 300ml (£0.89)
+2026-01-31 20:42:57,652 - INFO -       ✅ [49] ASDA Long Life Skimmed Milk 1 Litre (£1.35)
+2026-01-31 20:42:58,837 - INFO -    📊 Progress: 49/50 products (70 checked, 20 promo filtered)
+2026-01-31 20:43:34,496 - INFO -       ✅ [50] Flora Original Butter Alternative With Natural Ing... (£2.64)
+2026-01-31 20:43:35,488 - INFO -    ✅ Reached target of 50 products
+2026-01-31 20:43:35,489 - INFO -    🎯 Successfully scraped 50 products from Protein
+2026-01-31 20:43:35,491 - INFO -    ⏭️  Skipped 21 items (21 promotional/invalid)
+2026-01-31 20:43:44,073 - INFO - 💾 ✅ Bucket Saved: Protein_2026-01-31
+2026-01-31 20:43:44,074 - INFO -    📊 Products: 50
+2026-01-31 20:43:44,075 - INFO - 
+2026-01-31 20:43:44,075 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:43:44,089 - INFO - 📦 [8/10] Category: Cheese
+2026-01-31 20:43:44,090 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:43:55,494 - INFO - 🛒 Opening Category: Cheese
+2026-01-31 20:43:55,495 - INFO -    URL: https://www.asda.com/groceries/chilled-food/cheese
+2026-01-31 20:44:04,664 - INFO -    📜 Scrolling to load products...
+2026-01-31 20:44:19,622 - INFO -    🔍 Analyzing 77 links...
+2026-01-31 20:44:19,623 - INFO -    🔗 Found 9 potential product links
+2026-01-31 20:44:19,623 - INFO -    📦 Starting to scrape products (target: 50)...
+2026-01-31 20:46:02,510 - INFO -    🎯 Successfully scraped 0 products from Cheese
+2026-01-31 20:46:02,510 - INFO -    ⏭️  Skipped 9 items (9 promotional/invalid)
+2026-01-31 20:46:05,842 - WARNING - ⚠️  No products scraped for Cheese
+2026-01-31 20:46:05,843 - INFO - 
+2026-01-31 20:46:05,843 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:46:05,844 - INFO - 📦 [9/10] Category: Sweets
+2026-01-31 20:46:05,844 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:46:16,660 - INFO - 🛒 Opening Category: Sweets
+2026-01-31 20:46:16,661 - INFO -    URL: https://www.asda.com/groceries/food-cupboard/chocolates-sweets
+2026-01-31 20:46:26,252 - INFO -    📜 Scrolling to load products...
+2026-01-31 20:46:41,910 - INFO -    🔍 Analyzing 114 links...
+2026-01-31 20:46:41,912 - INFO -    🔗 Found 30 potential product links
+2026-01-31 20:46:41,912 - INFO -    📦 Starting to scrape products (target: 50)...
+2026-01-31 20:46:54,638 - INFO -       ✅ [1] NOMO Salted Popcorn Bar 32g (£1.43)
+2026-01-31 20:47:10,107 - INFO -       ✅ [2] SweetZone Mega Stix 200g (£1.33)
+2026-01-31 20:47:30,107 - INFO -       ✅ [3] M&M's Milk Chocolate Bites Pouch Bag 112g (£1.88)
+2026-01-31 20:47:44,687 - INFO -       ✅ [4] Galaxy Dairy Free & Vegan Salted Caramel Chocolate... (£1.50)
+2026-01-31 20:48:35,207 - INFO -       ✅ [5] The BAKERY at ASDA The Bakery 8 White Wraps 488g (£1.18)
+2026-01-31 20:48:51,601 - INFO -       ✅ [6] ASDA Brown Onions 1kg (£0.99)
+2026-01-31 20:48:52,686 - INFO -    📊 Progress: 6/50 products (10 checked, 3 promo filtered)
+2026-01-31 20:49:05,452 - INFO -       ✅ [7] Candy Kittens Shox Sweets 140g (£1.98)
+2026-01-31 20:49:19,109 - INFO -       ✅ [8] NOMO Choc Lollies 3 x 12g (36g) (£2.04)
+2026-01-31 20:49:25,017 - INFO -       ✅ [9] Lily O'Briens Luxury Collection 270g (£12.47)
+2026-01-31 20:49:29,090 - INFO -       ✅ [10] Candy Kittens Crunchy Corn Treets 120g (£1.98)
+2026-01-31 20:49:34,184 - INFO -       ✅ [11] Stock Up & Save (£4.25)
+2026-01-31 20:50:00,052 - INFO -    📊 Progress: 11/50 products (20 checked, 8 promo filtered)
+2026-01-31 20:50:11,024 - INFO -       ✅ [12] Galaxy Minstrels Milk Chocolate Buttons Pouch Bag ... (£1.88)
+2026-01-31 20:50:15,294 - INFO -       ✅ [13] ASDA Rainbow Belts 180g (£1.10)
+2026-01-31 20:50:20,029 - INFO -       ✅ [14] M&M's Crispy Milk Chocolate Bites Pouch Bag 107g (£1.88)
+2026-01-31 20:50:27,442 - INFO -       ✅ [15] M&M's Minis Milk Chocolate Bites Pouch Bag 115g (£1.88)
+2026-01-31 20:50:35,846 - INFO -       ✅ [16] M&M's Peanut Chocolate Pouch Bag 112g (£1.88)
+2026-01-31 20:50:41,064 - INFO -    📊 Progress: 16/50 products (30 checked, 13 promo filtered)
+2026-01-31 20:50:44,423 - INFO -       ✅ [17] KitKat Chunky Milk Chocolate Small Easter Egg 110g (£1.74)
+2026-01-31 20:50:45,247 - INFO -    🎯 Successfully scraped 17 products from Sweets
+2026-01-31 20:50:45,247 - INFO -    ⏭️  Skipped 13 items (13 promotional/invalid)
+2026-01-31 20:50:45,798 - INFO - 💾 ✅ Bucket Saved: Sweets_2026-01-31
+2026-01-31 20:50:45,798 - INFO -    📊 Products: 17
+2026-01-31 20:50:45,798 - INFO - 
+2026-01-31 20:50:45,799 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:50:45,799 - INFO - 📦 [10/10] Category: Drinks
+2026-01-31 20:50:45,799 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:50:49,094 - INFO - 🛒 Opening Category: Drinks
+2026-01-31 20:50:49,094 - INFO -    URL: https://www.asda.com/groceries/drinks
+2026-01-31 20:50:54,284 - INFO - 🍪 Cookie banner cleared.
+2026-01-31 20:50:57,296 - INFO -    📜 Scrolling to load products...
+2026-01-31 20:51:05,069 - INFO -    🔍 Analyzing 164 links...
+2026-01-31 20:51:05,070 - INFO -    🔗 Found 50 potential product links
+2026-01-31 20:51:05,070 - INFO -    📦 Starting to scrape products (target: 50)...
+2026-01-31 20:51:08,354 - INFO -       ✅ [1] Robinsons Summer Fruits No Added Sugar Squash 1L (£1.84)
+2026-01-31 20:51:13,328 - INFO -       ✅ [2] Pepsi Max No Sugar Cola Bottle 2L (£2.14)
+2026-01-31 20:51:29,088 - INFO -       ✅ [3] 7UP Zero Sugar Free Lemon & Lime Cans 24 x 330ml (£9.48)
+2026-01-31 20:51:40,502 - INFO -       ✅ [4] IRN-BRU Soft Drink Cans 24 x 330ml (£9.48)
+2026-01-31 20:51:45,882 - INFO -       ✅ [5] ASDA Cherries & Berries Squash 1.5 Litres (£1.10)
+2026-01-31 20:51:49,684 - INFO -       ✅ [6] Monster Energy Drink Zero Sugar 9 x 500ml (£10.48)
+2026-01-31 20:51:58,868 - INFO -    📊 Progress: 6/50 products (10 checked, 3 promo filtered)
+2026-01-31 20:52:03,338 - INFO -       ✅ [7] Clipper Organic  Everyday Tea 160 Tea Bags 464g (£6.95)
+2026-01-31 20:52:10,586 - INFO -       ✅ [8] Lucozade Lucozade Energy Original 8 x 380ml Multip... (£4.48)
+2026-01-31 20:52:18,697 - INFO -       ✅ [9] Monster Energy Drink Ultra Zero Sugar 9 x 500ml (£10.48)
+2026-01-31 20:52:26,548 - INFO -       ✅ [10] ASDA Apple & Strawberry Squash 1.5 Litres (£1.10)
+2026-01-31 20:52:34,036 - INFO -       ✅ [11] Volvic Touch of Peach & Raspberry 1.5L (£0.98)
+2026-01-31 20:52:42,020 - INFO -       ✅ [12] Highland Spring Still Spring Water 12 x 500ml (£3.58)
+2026-01-31 20:52:47,572 - INFO -       ✅ [13] Buxton Still Natural Mineral Water 6x1.5L (£3.94)
+2026-01-31 20:52:53,778 - INFO -       ✅ [14] Diet Coke 2L (£2.14)
+2026-01-31 20:53:01,355 - INFO -       ✅ [15] Volvic Touch of Fruit Strawberry Sugar Free Still ... (£0.98)
+2026-01-31 20:53:05,737 - INFO -       ✅ [16] PG Tips 210 Original Tea Bags 609g (£5.17)
+2026-01-31 20:53:07,142 - INFO -    📊 Progress: 16/50 products (20 checked, 3 promo filtered)
+2026-01-31 20:53:13,332 - INFO -       ✅ [17] Tango Apple Sugar Free Cans 24 x 330ml (£9.48)
+2026-01-31 20:53:25,405 - INFO -       ✅ [18] Nestle Still Spring Water 6x1.5L (£3.24)
+2026-01-31 20:53:31,472 - INFO -       ✅ [19] Stock Up & Save (£4.25)
+2026-01-31 20:53:38,951 - INFO -       ✅ [20] Diet Coke 30 x 330ml (£8.00)
+2026-01-31 20:53:45,595 - INFO -       ✅ [21] Diet Coke 8 x 330ml (£4.24)
+2026-01-31 20:53:52,603 - INFO -       ✅ [22] Vimto Real Fruit Squash 2 Litre (£2.98)
+2026-01-31 20:54:14,036 - INFO -       ✅ [23] Red Bull Sugarfree Energy Drink 250ml 8 Pack (£9.48)
+2026-01-31 20:54:15,179 - INFO -    📊 Progress: 23/50 products (30 checked, 6 promo filtered)
+2026-01-31 20:54:21,282 - INFO -       ✅ [24] Coca-Cola Zero Sugar 18 x 330ml (£9.24)
+2026-01-31 20:54:45,197 - INFO -       ✅ [25] ASDA Diet Cloudy Lemonade 2 Litres (£0.82)
+2026-01-31 20:55:03,139 - INFO -       ✅ [26] Red Bull l Zero Energy Drink 250ml 8 Pack (£9.48)
+2026-01-31 20:55:11,930 - INFO -       ✅ [27] IRN-BRU Sugar Free Soft Drink Cans 24 x 330ml (£9.48)
+2026-01-31 20:55:34,413 - INFO -       ✅ [28] Tango Zero'd Cherry Sugar Free Cans 24 x 330ml (£9.48)
+2026-01-31 20:55:47,704 - INFO -       ✅ [29] Coca-Cola Original Taste 1.75L (£2.58)
+2026-01-31 20:55:59,100 - INFO -    📊 Progress: 29/50 products (40 checked, 10 promo filtered)
+2026-01-31 20:56:08,983 - INFO -       ✅ [30] Dr Pepper Zero 24 x 330ml (£10.98)
+2026-01-31 20:56:21,610 - INFO -       ✅ [31] Volvic Touch of Summer Fruits Natural Flavours 1.5... (£0.98)
+2026-01-31 20:56:55,440 - INFO -       ✅ [32] Clipper Fairtrade 80 Organic English Breakfast in ... (£3.75)
+2026-01-31 20:57:10,404 - INFO -       ✅ [33] Red Bull Energy Drink 250ml 4 Pack (£4.80)
+2026-01-31 20:57:29,170 - INFO -       ✅ [34] Robinsons Robinsons Fruit & Barley with Vitamins A... (£1.84)
+2026-01-31 20:58:05,635 - INFO -       ✅ [35] Pepsi Max Cherry No Sugar Cola Cans 8 x 330ml (£3.48)
+2026-01-31 20:58:30,201 - INFO -       ✅ [36] L'OR Decaff Instant Coffee 150g (£7.28)
+2026-01-31 20:58:51,233 - INFO -       ✅ [37] ASDA Diet Lemon & Lime 2 Litres (£0.82)
+2026-01-31 20:58:52,155 - INFO -    📊 Progress: 37/50 products (50 checked, 12 promo filtered)
+2026-01-31 20:59:13,263 - INFO -       ✅ [38] Yakult Original 8 x 65ml (520ml) (£3.70)
+2026-01-31 20:59:14,705 - INFO -    🎯 Successfully scraped 38 products from Drinks
+2026-01-31 20:59:14,706 - INFO -    ⏭️  Skipped 12 items (12 promotional/invalid)
+2026-01-31 20:59:30,192 - INFO - 💾 ✅ Bucket Saved: Drinks_2026-01-31
+2026-01-31 20:59:30,193 - INFO -    📊 Products: 38
+2026-01-31 20:59:30,194 - INFO - 
+2026-01-31 20:59:30,194 - INFO - ================================================================================
+2026-01-31 20:59:30,194 - INFO - 📊 SCRAPING SUMMARY
+2026-01-31 20:59:30,195 - INFO - ================================================================================
+2026-01-31 20:59:30,195 - INFO - ✅ Successful categories: 9/10
+2026-01-31 20:59:30,196 - INFO - 📦 Total products scraped: 284
+2026-01-31 20:59:30,197 - INFO - ❌ Failed categories: Cheese
+2026-01-31 20:59:30,197 - INFO - 💾 Database: UK_food_intelligence_platform.Asda_products
+2026-01-31 20:59:30,197 - INFO - ================================================================================
+2026-01-31 20:59:30,263 - INFO - 🔒 Database connection closed

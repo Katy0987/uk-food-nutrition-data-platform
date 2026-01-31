@@ -4,8 +4,8 @@ import sys
 from datetime import datetime
 from src.collectors.scrapers.restaurant.scraper import McDonaldsScraper
 from src.database.mongo_connection import get_db_connection
-from bson import Int64
-from core.utils.validators.scraped_validator import validate_daily_bucket, ValidationError
+from json import Int64
+from src.core.utils.validators.scraped_validator import validate_daily_bucket, ValidationError
 
 # Configure logging
 logging.basicConfig(

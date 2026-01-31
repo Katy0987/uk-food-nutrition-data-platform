@@ -5,7 +5,7 @@ from datetime import datetime
 from src.collectors.scrapers.supermarkets.sainsbury.scraper import SainsburysScraper
 from src.database.mongo_connection import get_db_connection
 import logging
-from core.utils.validators.scraped_validator import validate_daily_bucket, ValidationError
+from src.core.utils.validators.scraped_validator import validate_daily_bucket, ValidationError
 
 # Setup logging
 logging.basicConfig(

@@ -8,7 +8,7 @@ import os
 import logging
 from datetime import datetime
 from src.collectors.scrapers.supermarkets.asda.scraper import AsdaScraper
-from core.utils.validators.scraped_validator import validate_daily_bucket, ValidationError
+from src.core.utils.validators.scraped_validator import validate_daily_bucket, ValidationError
 
 # Configure logging
 logging.basicConfig(

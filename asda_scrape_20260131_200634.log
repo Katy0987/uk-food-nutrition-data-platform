@@ -1,0 +1,427 @@
+2026-01-31 20:06:34,476 - INFO - ================================================================================
+2026-01-31 20:06:34,477 - INFO - 🚀 Starting Asda Supermarket Scraping
+2026-01-31 20:06:34,477 - INFO - ================================================================================
+2026-01-31 20:06:35,808 - INFO - ✅ Successfully connected to MongoDB
+2026-01-31 20:06:35,808 - INFO - 📋 Scraping 10 categories
+2026-01-31 20:06:35,808 - INFO - 📅 Date: 2026-01-31
+2026-01-31 20:06:35,808 - INFO - 🎯 Target: 50 products per category
+2026-01-31 20:06:35,809 - INFO - 
+2026-01-31 20:06:35,809 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:35,809 - INFO - 📦 [1/10] Category: Fruit
+2026-01-31 20:06:35,809 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:38,959 - ERROR - ❌ Error in category Fruit: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-01-31 20:06:38,961 - ERROR - Traceback (most recent call last):
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/main.py", line 103, in run_supermarket_bucket_crawl
+    product_list = scraper.scrape_category_bucket(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/scraper.py", line 368, in scrape_category_bucket
+    browser = p.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 14566, in launch
+    self._sync(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2026-01-31 20:06:38,961 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:38,962 - INFO - 📦 [2/10] Category: Vegetables
+2026-01-31 20:06:38,962 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:39,665 - ERROR - ❌ Error in category Vegetables: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-01-31 20:06:39,666 - ERROR - Traceback (most recent call last):
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/main.py", line 103, in run_supermarket_bucket_crawl
+    product_list = scraper.scrape_category_bucket(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/scraper.py", line 368, in scrape_category_bucket
+    browser = p.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 14566, in launch
+    self._sync(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2026-01-31 20:06:39,667 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:39,667 - INFO - 📦 [3/10] Category: Meat
+2026-01-31 20:06:39,667 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:40,309 - ERROR - ❌ Error in category Meat: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-01-31 20:06:40,310 - ERROR - Traceback (most recent call last):
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/main.py", line 103, in run_supermarket_bucket_crawl
+    product_list = scraper.scrape_category_bucket(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/scraper.py", line 368, in scrape_category_bucket
+    browser = p.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 14566, in launch
+    self._sync(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2026-01-31 20:06:40,311 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:40,311 - INFO - 📦 [4/10] Category: Fish
+2026-01-31 20:06:40,311 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:41,040 - ERROR - ❌ Error in category Fish: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-01-31 20:06:41,041 - ERROR - Traceback (most recent call last):
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/main.py", line 103, in run_supermarket_bucket_crawl
+    product_list = scraper.scrape_category_bucket(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/scraper.py", line 368, in scrape_category_bucket
+    browser = p.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 14566, in launch
+    self._sync(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2026-01-31 20:06:41,041 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:41,042 - INFO - 📦 [5/10] Category: Bakery
+2026-01-31 20:06:41,042 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:41,856 - ERROR - ❌ Error in category Bakery: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-01-31 20:06:41,857 - ERROR - Traceback (most recent call last):
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/main.py", line 103, in run_supermarket_bucket_crawl
+    product_list = scraper.scrape_category_bucket(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/scraper.py", line 368, in scrape_category_bucket
+    browser = p.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 14566, in launch
+    self._sync(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2026-01-31 20:06:41,858 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:41,858 - INFO - 📦 [6/10] Category: Dessert
+2026-01-31 20:06:41,858 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:42,602 - ERROR - ❌ Error in category Dessert: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-01-31 20:06:42,603 - ERROR - Traceback (most recent call last):
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/main.py", line 103, in run_supermarket_bucket_crawl
+    product_list = scraper.scrape_category_bucket(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/scraper.py", line 368, in scrape_category_bucket
+    browser = p.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 14566, in launch
+    self._sync(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2026-01-31 20:06:42,604 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:42,604 - INFO - 📦 [7/10] Category: Protein
+2026-01-31 20:06:42,604 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:43,312 - ERROR - ❌ Error in category Protein: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-01-31 20:06:43,313 - ERROR - Traceback (most recent call last):
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/main.py", line 103, in run_supermarket_bucket_crawl
+    product_list = scraper.scrape_category_bucket(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/scraper.py", line 368, in scrape_category_bucket
+    browser = p.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 14566, in launch
+    self._sync(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2026-01-31 20:06:43,313 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:43,314 - INFO - 📦 [8/10] Category: Cheese
+2026-01-31 20:06:43,314 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:44,062 - ERROR - ❌ Error in category Cheese: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-01-31 20:06:44,063 - ERROR - Traceback (most recent call last):
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/main.py", line 103, in run_supermarket_bucket_crawl
+    product_list = scraper.scrape_category_bucket(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/scraper.py", line 368, in scrape_category_bucket
+    browser = p.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 14566, in launch
+    self._sync(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2026-01-31 20:06:44,064 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:44,064 - INFO - 📦 [9/10] Category: Sweets
+2026-01-31 20:06:44,064 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:44,923 - ERROR - ❌ Error in category Sweets: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-01-31 20:06:44,924 - ERROR - Traceback (most recent call last):
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/main.py", line 103, in run_supermarket_bucket_crawl
+    product_list = scraper.scrape_category_bucket(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/scraper.py", line 368, in scrape_category_bucket
+    browser = p.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 14566, in launch
+    self._sync(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2026-01-31 20:06:44,925 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:44,925 - INFO - 📦 [10/10] Category: Drinks
+2026-01-31 20:06:44,925 - INFO - ────────────────────────────────────────────────────────────────────────────────
+2026-01-31 20:06:45,553 - ERROR - ❌ Error in category Drinks: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-01-31 20:06:45,554 - ERROR - Traceback (most recent call last):
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/main.py", line 103, in run_supermarket_bucket_crawl
+    product_list = scraper.scrape_category_bucket(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/src/collectors/scrapers/supermarkets/asda/scraper.py", line 368, in scrape_category_bucket
+    browser = p.chromium.launch(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 14566, in launch
+    self._sync(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    await self._channel.send(
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yongyili/Documents/GitHub/uk-food-nutrition-data-platform/venv/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /Users/yongyili/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+2026-01-31 20:06:45,554 - INFO - ================================================================================
+2026-01-31 20:06:45,554 - INFO - 📊 SCRAPING SUMMARY
+2026-01-31 20:06:45,555 - INFO - ================================================================================
+2026-01-31 20:06:45,555 - INFO - ✅ Successful categories: 0/10
+2026-01-31 20:06:45,555 - INFO - 📦 Total products scraped: 0
+2026-01-31 20:06:45,555 - INFO - ❌ Failed categories: Fruit, Vegetables, Meat, Fish, Bakery, Dessert, Protein, Cheese, Sweets, Drinks
+2026-01-31 20:06:45,555 - INFO - 💾 Database: UK_food_intelligence_platform.Asda_products
+2026-01-31 20:06:45,555 - INFO - ================================================================================
+2026-01-31 20:06:45,560 - INFO - 🔒 Database connection closed
