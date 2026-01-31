@@ -1,167 +1,163 @@
 """
-SQLAlchemy model for FSA establishment data (cached hygiene ratings).
+API routes for FSA establishment endpoints.
 """
 
-from datetime import datetime
+import logging
+import time
 from typing import Optional
 
-from sqlalchemy import Column, DateTime, Float, Integer, String, Text, Index
-from sqlalchemy.ext.declarative import declarative_base
+from fastapi import APIRouter, Depends, HTTPException, Query
+from sqlalchemy.orm import Session
 
-Base = declarative_base()
+from api.database.session import get_db
+from api.repositories.fsa_repository import FSARepository
+
+logger = logging.getLogger(__name__)
+
+router = APIRouter()
 
 
-class Establishment(Base):
+@router.get("/search")
+async def search_establishments(
+    name: Optional[str] = Query(None, description="Business name to search"),
+    postcode: Optional[str] = Query(None, description="UK postcode"),
+    rating_value: Optional[str] = Query(None, description="Rating filter (0-5)"),
+    limit: int = Query(20, ge=1, le=100, description="Maximum results"),
+    db: Session = Depends(get_db)
+):
     """
-    Cached FSA establishment data with hygiene ratings.
-    Stores data from Food Standards Agency API.
+    Search for food establishments by name, postcode, or rating.
+    
+    Returns establishment hygiene rating data from the FSA.
     """
-
-    __tablename__ = "establishments"
-
-    # Primary Key
-    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
+    start_time = time.time()
     
-    # FSA Unique ID
-    fhrsid = Column(Integer, unique=True, nullable=False, index=True)
-    
-    # Business Information
-    business_name = Column(String(255), nullable=False, index=True)
-    business_type = Column(String(100))
-    business_type_id = Column(Integer)
-    
-    # Address Information
-    address_line_1 = Column(String(255))
-    address_line_2 = Column(String(255))
-    address_line_3 = Column(String(255))
-    address_line_4 = Column(String(255))
-    postcode = Column(String(10), index=True)
-    
-    # Rating Information
-    rating_value = Column(String(10), index=True)  # Can be '0'-'5', 'AwaitingInspection', 'Exempt'
-    rating_date = Column(DateTime)
-    rating_key = Column(String(50))
-    
-    # Scores (lower is better, 0 is best)
-    hygiene_score = Column(Integer)
-    structural_score = Column(Integer)
-    confidence_in_management_score = Column(Integer)
-    
-    # Location
-    latitude = Column(Float)
-    longitude = Column(Float)
-    
-    # Authority Information
-    local_authority_code = Column(Integer)
-    local_authority_name = Column(String(100), index=True)
-    local_authority_website = Column(Text)
-    local_authority_email = Column(String(255))
-    
-    # Additional Information
-    scheme_type = Column(String(50))
-    new_rating_pending = Column(String(10))
-    right_to_reply = Column(Text)
-    
-    # Geocode
-    geocode_longitude = Column(Float)
-    geocode_latitude = Column(Float)
-    
-    # Cache Management
-    cached_at = Column(DateTime, default=datetime.utcnow, nullable=False)
-    updated_at = Column(
-        DateTime,
-        default=datetime.utcnow,
-        onupdate=datetime.utcnow,
-        nullable=False
-    )
-    
-    # Composite indexes for common queries
-    __table_args__ = (
-        Index('idx_postcode_rating', 'postcode', 'rating_value'),
-        Index('idx_location', 'latitude', 'longitude'),
-        Index('idx_business_name_postcode', 'business_name', 'postcode'),
-        Index('idx_local_authority_rating', 'local_authority_name', 'rating_value'),
-        Index('idx_cached_at', 'cached_at'),
-    )
-
-    def __repr__(self) -> str:
-        return (
-            f"<Establishment(fhrsid={self.fhrsid}, "
-            f"name='{self.business_name}', "
-            f"rating='{self.rating_value}', "
-            f"postcode='{self.postcode}')>"
+    try:
+        repo = FSARepository(db)
+        results = repo.search_establishments(
+            name=name,
+            postcode=postcode,
+            rating_value=rating_value,
+            limit=limit
         )
-
-    def to_dict(self) -> dict:
-        """Convert model to dictionary."""
+        
+        process_time = (time.time() - start_time) * 1000
+        
         return {
-            "id": self.id,
-            "fhrsid": self.fhrsid,
-            "business_name": self.business_name,
-            "business_type": self.business_type,
-            "business_type_id": self.business_type_id,
-            "address": {
-                "line1": self.address_line_1,
-                "line2": self.address_line_2,
-                "line3": self.address_line_3,
-                "line4": self.address_line_4,
-                "postcode": self.postcode,
-            },
-            "rating": {
-                "value": self.rating_value,
-                "date": self.rating_date.isoformat() if self.rating_date else None,
-                "key": self.rating_key,
-            },
-            "scores": {
-                "hygiene": self.hygiene_score,
-                "structural": self.structural_score,
-                "confidence_in_management": self.confidence_in_management_score,
-            },
-            "location": {
-                "latitude": self.latitude,
-                "longitude": self.longitude,
-            },
-            "local_authority": {
-                "code": self.local_authority_code,
-                "name": self.local_authority_name,
-                "website": self.local_authority_website,
-                "email": self.local_authority_email,
-            },
-            "scheme_type": self.scheme_type,
-            "new_rating_pending": self.new_rating_pending,
-            "right_to_reply": self.right_to_reply,
-            "cached_at": self.cached_at.isoformat() if self.cached_at else None,
-            "updated_at": self.updated_at.isoformat() if self.updated_at else None,
+            "success": True,
+            "data": results,
+            "meta": {
+                "count": len(results),
+                "limit": limit,
+                "response_time_ms": round(process_time, 2)
+            }
         }
+    except Exception as e:
+        logger.error(f"Search error: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
-    @property
-    def is_stale(self, hours: int = 24) -> bool:
-        """Check if cached data is stale."""
-        if not self.cached_at:
-            return True
-        age = datetime.utcnow() - self.cached_at
-        return age.total_seconds() > (hours * 3600)
 
-    @property
-    def full_address(self) -> str:
-        """Get formatted full address."""
-        parts = [
-            self.address_line_1,
-            self.address_line_2,
-            self.address_line_3,
-            self.address_line_4,
-            self.postcode,
-        ]
-        return ", ".join(filter(None, parts))
+@router.get("/{fhrsid}")
+async def get_establishment(
+    fhrsid: int,
+    db: Session = Depends(get_db)
+):
+    """
+    Get detailed information for a specific establishment by FHRSID.
+    
+    Returns comprehensive hygiene rating data including scores and location.
+    """
+    start_time = time.time()
+    
+    try:
+        repo = FSARepository(db)
+        result = repo.get_establishment(fhrsid)
+        
+        if not result:
+            raise HTTPException(status_code=404, detail="Establishment not found")
+        
+        process_time = (time.time() - start_time) * 1000
+        
+        return {
+            "success": True,
+            "data": result,
+            "meta": {
+                "response_time_ms": round(process_time, 2)
+            }
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Get establishment error: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
 
-    @property
-    def total_score(self) -> Optional[int]:
-        """Calculate total hygiene score (sum of all scores)."""
-        scores = [
-            self.hygiene_score,
-            self.structural_score,
-            self.confidence_in_management_score,
-        ]
-        if all(s is not None for s in scores):
-            return sum(scores)
-        return None
+
+@router.get("/nearby")
+async def get_nearby_establishments(
+    lat: float = Query(..., description="Latitude", ge=-90, le=90),
+    lon: float = Query(..., description="Longitude", ge=-180, le=180),
+    radius: int = Query(1, description="Search radius in miles", ge=1, le=10),
+    limit: int = Query(20, ge=1, le=100, description="Maximum results"),
+    db: Session = Depends(get_db)
+):
+    """
+    Find establishments near geographic coordinates.
+    
+    Returns establishments within the specified radius sorted by distance.
+    """
+    start_time = time.time()
+    
+    try:
+        repo = FSARepository(db)
+        results = repo.get_nearby_establishments(
+            latitude=lat,
+            longitude=lon,
+            radius_miles=radius,
+            limit=limit
+        )
+        
+        process_time = (time.time() - start_time) * 1000
+        
+        return {
+            "success": True,
+            "data": results,
+            "meta": {
+                "count": len(results),
+                "search_radius_miles": radius,
+                "coordinates": {"lat": lat, "lon": lon},
+                "response_time_ms": round(process_time, 2)
+            }
+        }
+    except Exception as e:
+        logger.error(f"Nearby search error: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+
+@router.get("/statistics/{postcode}")
+async def get_postcode_statistics(
+    postcode: str,
+    db: Session = Depends(get_db)
+):
+    """
+    Get hygiene rating statistics for a postcode area.
+    
+    Returns aggregated statistics including rating distribution and averages.
+    """
+    start_time = time.time()
+    
+    try:
+        repo = FSARepository(db)
+        stats = repo.get_statistics_by_postcode(postcode)
+        
+        process_time = (time.time() - start_time) * 1000
+        
+        return {
+            "success": True,
+            "data": stats,
+            "meta": {
+                "response_time_ms": round(process_time, 2)
+            }
+        }
+    except Exception as e:
+        logger.error(f"Statistics error: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
