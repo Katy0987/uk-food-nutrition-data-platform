@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, text# type: ignore
+from sqlalchemy import create_engine, text
 
 def load_to_postgres(df, table_name, engine):
     with engine.begin() as conn:
