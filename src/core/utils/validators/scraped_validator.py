@@ -198,10 +198,22 @@ def validate_restaurant_bucket(bucket_doc: Dict[str, Any]) -> bool:
     # 8. Validate calories if present
     if "calories" in first_product:
         calories = first_product["calories"]
-        if not isinstance(calories, int):
-            logger.warning(f"Calories should be an integer, got: {type(calories)}")
-        if calories < 0:
-            logger.warning(f"Calories cannot be negative: {calories}")
+    
+    # Handle different types safely
+        if isinstance(calories, str):
+            try:
+                calories_int = int(calories)
+                if calories_int < 0:
+                    logger.warning(f"Calories cannot be negative: {calories_int}")
+            except ValueError:
+                logger.warning(f"Calories is not a valid number: '{calories}'")
+        elif isinstance(calories, int):
+            if calories < 0:
+                logger.warning(f"Calories cannot be negative: {calories}")
+        elif isinstance(calories, float):
+            logger.warning(f"Calories should be an integer, got float: {calories}")
+        else:
+            logger.warning(f"Calories has unexpected type: {type(calories)}")
     
     restaurant_name = metadata.get("supermarket", "Unknown")
     category = metadata.get("category", "Unknown")

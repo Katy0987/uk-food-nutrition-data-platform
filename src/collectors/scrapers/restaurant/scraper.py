@@ -2,6 +2,7 @@
 import time
 import logging
 import random
+import re
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright, TimeoutError
 
@@ -66,9 +67,16 @@ class McDonaldsScraper:
                 kcal = soup.find(string=lambda t: t and "kcal" in t.lower())
                 if kcal:
                     try:
-                        calories = int("".join(filter(str.isdigit, kcal)) or 0)
-                    except:
+                        import re
+                        digits = re.findall(r'\d+', str(kcal))
+                        if digits:
+                            calories = int(digits[0])  # Take first number found
+                        else:
+                            calories = 0
+                    except (ValueError, AttributeError, IndexError):
                         calories = 0
+
+                calories = int(calories) if isinstance(calories, (int,   float)) else 0
                 
                 # Create product data
                 product = {
