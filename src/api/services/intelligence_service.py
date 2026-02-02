@@ -10,6 +10,88 @@ from sqlalchemy.orm import Session
 
 from api.repositories.fsa_repository import FSARepository
 from api.repositories.off_repository import OFFRepository
+from src.api.services.fsa_service import get_fsa_service
+
+logger = logging.getLogger(__name__)
+
+
+class IntelligenceService:
+    """Service for aggregated intelligence and insights."""
+
+    def __init__(self, db: Session):
+        """
+        Initialize intelligence service.
+        
+        Args:
+            db: Database session
+        """
+        self.db = db
+        self.fsa_repo = FSARepository(db)
+        self.off_repo = OFFRepository(db)
+        # ADD THIS LINE:
+        self.fsa_service = get_fsa_service()
+
+    # Now you can use self.fsa_service in your methods
+    # For example, if you need to fetch fresh data from FSA API:
+    
+    def get_district_intelligence(self, postcode: str) -> Dict[str, Any]:
+        """
+        Get comprehensive district intelligence by postcode.
+        Combines FSA hygiene data with eco-score insights.
+        
+        Args:
+            postcode: UK postcode
+            
+        Returns:
+            District intelligence data
+        """
+        logger.info(f"Generating district intelligence for {postcode}")
+        
+        # OPTION 1: Use repository (from database - EXISTING)
+        hygiene_stats = self.fsa_repo.get_statistics_by_postcode(postcode)
+        establishments = self.fsa_repo.search_establishments(
+            postcode=postcode,
+            limit=50
+        )
+        
+        # OPTION 2: Use FSA service to fetch fresh data from API (NEW)
+        # Uncomment this if you want fresh data from the API instead of database:
+        # try:
+        #     fresh_data = self.fsa_service.search_establishments_by_postcode(
+        #         postcode=postcode,
+        #         page_size=50
+        #     )
+        #     establishments = fresh_data.get('establishments', [])
+        # except Exception as e:
+        #     logger.warning(f"Failed to fetch fresh FSA data: {e}, using database")
+        #     establishments = self.fsa_repo.search_establishments(
+        #         postcode=postcode,
+        #         limit=50
+        #     )
+        
+        # Get eco-friendly products (sample from database)
+        eco_products = self.off_repo.get_top_eco_products(limit=10)
+        
+        # Calculate insights
+        insights = self._calculate_insights(hygiene_stats, eco_products)
+        
+        return {
+            "postcode": postcode,
+            "hygiene_stats": {
+                "total_establishments": hygiene_stats.get("total_establishments", 0),
+                "rating_distribution": hygiene_stats.get("rating_distribution", {}),
+                "average_hygiene_score": hygiene_stats.get("average_hygiene_score"),
+                "top_rated_count": hygiene_stats.get("rating_distribution", {}).get("5", 0)
+            },
+            "establishments_sample": establishments[:10],  # Top 10
+            "eco_insights": {
+                "top_sustainable_products": eco_products[:5],
+                "average_ecoscore": self._calculate_average_ecoscore(eco_products),
+                "eco_friendly_count": len([p for p in eco_products if p.get("ecoscore", {}).get("grade") in ["a", "b"]])
+            },
+            "insights": insights,
+            "recommendations": self._generate_recommendations(hygiene_stats, eco_products)
+        }
 
 logger = logging.getLogger(__name__)
 

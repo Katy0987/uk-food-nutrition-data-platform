@@ -11,6 +11,8 @@ from sqlalchemy.orm import Session
 
 from api.database.session import get_db
 from api.repositories.fsa_repository import FSARepository
+# ADD THIS IMPORT:
+from src.api.services.fsa_service import get_fsa_service, FSAAPIError
 
 logger = logging.getLogger(__name__)
 
@@ -96,6 +98,80 @@ async def search_establishments(
         logger.error(f"Search error: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail="Internal server error")
 
+
+# ADD THIS NEW ENDPOINT that uses FSA Service to fetch fresh data from API:
+@router.get("/search/live")
+async def search_establishments_live(
+    postcode: Optional[str] = Query(None, description="UK postcode"),
+    name: Optional[str] = Query(None, description="Business name to search"),
+    local_authority: Optional[str] = Query(None, description="Local authority name"),
+    rating_key: Optional[str] = Query(None, description="Rating filter (0-5)"),
+    page_size: int = Query(20, ge=1, le=100, description="Results per page"),
+    page_number: int = Query(1, ge=1, description="Page number")
+):
+    """
+    Search for establishments using live FSA API data (not from database).
+    
+    This endpoint fetches fresh data directly from the FSA API.
+    Use this when you need the most up-to-date information.
+    """
+    start_time = time.time()
+    
+    try:
+        fsa_service = get_fsa_service()
+        
+        # Choose search method based on parameters
+        if postcode and not local_authority:
+            # Search by postcode (with automatic local authority lookup)
+            results = fsa_service.search_establishments_by_postcode(
+                postcode=postcode,
+                name=name,
+                rating_key=rating_key,
+                page_number=page_number,
+                page_size=page_size
+            )
+        elif local_authority:
+            # Search by local authority name
+            results = fsa_service.search_establishments_by_area(
+                local_authority_name=local_authority,
+                name=name,
+                postcode=postcode,
+                rating_key=rating_key,
+                page_number=page_number,
+                page_size=page_size
+            )
+        else:
+            raise HTTPException(
+                status_code=400,
+                detail="Either 'postcode' or 'local_authority' parameter is required"
+            )
+        
+        establishments = results.get('establishments', [])
+        process_time = (time.time() - start_time) * 1000
+        
+        return {
+            "success": True,
+            "data": establishments,
+            "meta": {
+                "count": len(establishments),
+                "page_number": page_number,
+                "page_size": page_size,
+                "total_count": results.get('meta', {}).get('totalCount'),
+                "total_pages": results.get('meta', {}).get('totalPages'),
+                "response_time_ms": round(process_time, 2),
+                "data_source": "FSA API (live)"
+            }
+        }
+    except FSAAPIError as e:
+        logger.error(f"FSA API error: {str(e)}")
+        raise HTTPException(status_code=502, detail=f"FSA API error: {str(e)}")
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Live search error: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+
 @router.get("/statistics/{postcode}")
 async def get_postcode_statistics(
     postcode: str,
@@ -156,6 +232,40 @@ async def get_establishment(
         }
     except HTTPException:
         raise
+    except Exception as e:
+        logger.error(f"Get establishment error: {str(e)}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+
+# ADD OPTIONAL: Endpoint to get live establishment details from API
+@router.get("/{fhrsid}/live")
+async def get_establishment_live(
+    fhrsid: int
+):
+    """
+    Get establishment details directly from FSA API (live data).
+    
+    Use this when you need the most current information for an establishment.
+    """
+    start_time = time.time()
+    
+    try:
+        fsa_service = get_fsa_service()
+        result = fsa_service.get_establishment_details(fhrsid)
+        
+        process_time = (time.time() - start_time) * 1000
+        
+        return {
+            "success": True,
+            "data": result,
+            "meta": {
+                "response_time_ms": round(process_time, 2),
+                "data_source": "FSA API (live)"
+            }
+        }
+    except FSAAPIError as e:
+        logger.error(f"FSA API error: {str(e)}")
+        raise HTTPException(status_code=502, detail=f"FSA API error: {str(e)}")
     except Exception as e:
         logger.error(f"Get establishment error: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail="Internal server error")

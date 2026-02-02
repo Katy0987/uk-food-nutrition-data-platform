@@ -6,7 +6,6 @@ Documentation: https://api.ratings.food.gov.uk/help
 
 import logging
 from typing import Dict, List, Optional, Any
-from urllib.parse import urljoin
 
 import httpx
 from tenacity import (
@@ -41,42 +40,34 @@ class FSAClient:
     def __init__(
         self,
         base_url: Optional[str] = None,
-        api_version: Optional[str] = None,
         timeout: Optional[int] = None,
-        max_retries: Optional[int] = None,
     ):
         """
         Initialize FSA API client.
         
         Args:
             base_url: FSA API base URL (default from settings)
-            api_version: API version (default from settings)
-            timeout: Request timeout in seconds (default from settings)
-            max_retries: Maximum number of retries (default from settings)
+            timeout: Request timeout in seconds (default 30)
         """
-        self.base_url = base_url or settings.fsa_api_base_url
-        self.api_version = api_version or settings.fsa_api_version
-        self.timeout = timeout or settings.fsa_api_timeout
-        self.max_retries = max_retries or settings.fsa_api_max_retries
+        # FIXED: Use base URL directly, no version in path
+        self.base_url = base_url or "https://api.ratings.food.gov.uk"
+        self.timeout = timeout or 30
         
-        # FSA API requires specific headers
+        # FIXED: FSA API requires version in HEADER, not URL
         self.headers = {
-            "x-api-version": "2",
+            "x-api-version": "2",  # This is the key fix!
             "Accept": "application/json",
             "Content-Type": "application/json",
         }
         
-        # Build full API URL
-        self.api_url = urljoin(self.base_url, self.api_version)
-        
         # Create HTTP client
         self.client = httpx.Client(
-            base_url=self.api_url,
+            base_url=self.base_url,
             headers=self.headers,
             timeout=self.timeout,
         )
         
-        logger.info(f"FSA Client initialized with base URL: {self.api_url}")
+        logger.info(f"FSA Client initialized with base URL: {self.base_url}")
 
     def __enter__(self):
         """Context manager entry."""
@@ -295,6 +286,61 @@ class FSAClient:
         """
         response = self._request("GET", "/SchemeTypes")
         return response.get("schemeTypes", [])
+    
+    def get_local_authority_by_name(self, name: str) -> Optional[Dict[str, Any]]:
+        """
+        Find local authority by name (case-insensitive partial match).
+        
+        Args:
+            name: Local authority name to search for
+            
+        Returns:
+            Local authority dictionary or None if not found
+        """
+        authorities = self.get_local_authorities()
+        name_lower = name.lower()
+        
+        # Try exact match first
+        for authority in authorities:
+            if authority.get('Name', '').lower() == name_lower:
+                return authority
+        
+        # Try partial match
+        for authority in authorities:
+            if name_lower in authority.get('Name', '').lower():
+                return authority
+        
+        return None
+
+    def get_local_authority_from_postcode(self, postcode: str) -> Optional[Dict[str, Any]]:
+        """
+        Get local authority for a postcode by searching with minimal results.
+        
+        Args:
+            postcode: Postcode to lookup
+            
+        Returns:
+            Local authority dictionary or None if not found
+        """
+        try:
+            # Use a generic name filter to get any establishment in that postcode
+            result = self.search_establishments(
+                postcode=postcode,
+                name='',  # Empty string matches all
+                page_size=1
+            )
+            
+            establishments = result.get('establishments', [])
+            if establishments:
+                # Get the local authority from the first establishment
+                local_authority_id = establishments[0].get('LocalAuthorityBusinessID')
+                if local_authority_id:
+                    return self.get_local_authority(local_authority_id)
+            
+            return None
+        except FSAAPIError:
+            logger.warning(f"Could not determine local authority for postcode {postcode}")
+            return None
 
 
 # Singleton instance for convenience
