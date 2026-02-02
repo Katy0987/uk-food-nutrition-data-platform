@@ -43,7 +43,6 @@ def get_food_balance_metadata(db: Session = Depends(get_db)):
     service = FoodService(db)
     metadata = service.get_food_balance_metadata()
     
-    # Add unique units to metadata
     from src.api.repositories.food_balance_repository import FoodBalanceRepository
     repo = FoodBalanceRepository(db)
     metadata['unique_units'] = repo.get_unique_units()
