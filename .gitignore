@@ -97,3 +97,5 @@ htmlcov/
 *.bak
 *.swp
 *~.nib
+__pycache__/
+*.pyc
